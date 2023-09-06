@@ -1,0 +1,21 @@
+server:
+  port: 9090
+  servlet:
+    context-path: /rest/team
+
+spring:
+  application:
+    name: team-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9080/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: info

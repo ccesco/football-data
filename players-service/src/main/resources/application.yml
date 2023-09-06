@@ -1,0 +1,22 @@
+server:
+  port: 9091
+  servlet:
+    context-path: /rest/player
+
+spring:
+  application:
+    name: players-service
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9080/eureka/
+    registerWithEureka: true
+    fetchRegistry: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"

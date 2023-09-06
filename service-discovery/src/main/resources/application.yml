@@ -1,0 +1,22 @@
+server:
+  port: 9080
+
+spring:
+  application:
+    name: service-discovery
+
+eureka:
+  instance:
+    hostname: localhost
+    #    prefer-ip-address: true
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://localhost:${server.port}/eureka
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "health,info"
