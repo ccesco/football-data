@@ -6,6 +6,15 @@ server:
 spring:
   application:
     name: players-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/football_data_db
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
 
 eureka:
   client:

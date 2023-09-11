@@ -25,6 +25,9 @@ Utilisation de la stack Netflix pour l'architecture micro-service car :
 - avec quelques annotations, on peut créer rapidement et facilement une architecture.
 - l'architecture a été éprouvée depuis.
 
+Utilisation de Postgrespl via Docker :
+Avec Docker, le processus est automatisé, mais ça permet aussi de le rendre reproductible et portable. 
+Mais si le projet arrive en production, je ne pense pas l'utiliser de cette manière, dans ce cas c'est pour faciliter le développement.
 
 ## Documentation
 
