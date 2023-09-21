@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 public class OpenApiConfig {
 
     @Bean
-    public OpenAPI usersMicroserviceOpenAPI() {
+    public OpenAPI playersMicroserviceOpenAPI() {
         return new OpenAPI();
     }
 }

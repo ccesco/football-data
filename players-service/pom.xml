@@ -129,6 +129,7 @@
 							<supportingFilesToGenerate>
 								ApiUtil.java
 							</supportingFilesToGenerate>
+							<modelNameSuffix>Dto</modelNameSuffix>
 							<configOptions>
 								<delegatePattern>true</delegatePattern>
 								<useSpringBoot3>true</useSpringBoot3>
