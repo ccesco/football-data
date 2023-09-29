@@ -16,7 +16,9 @@ services:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=football_data_db
     volumes:
-      - ./data:/data
+      - ./data:/var/lib/postgresql/data
+      # copy the sql script to create tables
+      - ./database/sql/create_tables.sql:/docker-entrypoint-initdb.d/create_tables.sql
 
   pgadmin:
     container_name: pgadmin4_container

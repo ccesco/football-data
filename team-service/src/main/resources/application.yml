@@ -6,6 +6,16 @@ server:
 spring:
   application:
     name: team-service
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/football_data_db
+    username: postgres
+    password: postgres
+  jpa:
+    show-sql: true
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+
 
 eureka:
   client:
@@ -18,4 +28,12 @@ management:
   endpoints:
     web:
       exposure:
-        include: info
+        include:
+          - "*"
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true

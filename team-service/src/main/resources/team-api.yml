@@ -1,0 +1,75 @@
+openapi: 3.0.1
+info:
+  description: Team REST API
+  title: Team REST API
+  version: 1.0.0
+servers:
+  - url: http://localhost:9090
+
+paths:
+  /teams/{id}:
+    get:
+      description: Get team informations identified by the id
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            format: string
+            type: string
+          example: '123456'
+
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Team'
+          description: Returns team
+        400:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+          description: Bad request
+        500:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+          description: Internal error
+
+
+components:
+  schemas:
+    Team:
+      type: object
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        officialName:
+          type: string
+        stadiumName:
+          type: string
+
+    Error:
+      properties:
+        title:
+          type: string
+        status:
+          type: integer
+        detail:
+          type: string
+      type: object
+    ErrorList:
+      properties:
+        errors:
+          description: error
+          items:
+            $ref: '#/components/schemas/Error'
+          type: array
+      required:
+        - errors
+      type: object
