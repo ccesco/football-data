@@ -7,13 +7,12 @@ spring:
 
 eureka:
   instance:
-    hostname: localhost
-    #    prefer-ip-address: true
+    hostname: discovery
   client:
     register-with-eureka: false
     fetch-registry: false
-    service-url:
-      defaultZone: http://localhost:${server.port}/eureka
+  server:
+    enableSelfPreservation: false
 
 management:
   endpoints:

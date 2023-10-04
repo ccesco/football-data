@@ -33,7 +33,7 @@ class PlayerServiceTest {
     @Test
     void should_return_player_with_specific_id() {
         when(getPlayerUseCase.getPlayer("2")).thenReturn(getPlayer());
-        ResponseEntity<PlayerDto> playerDtoResponseEntity = playerService.playerIdGet("2");
+        ResponseEntity<PlayerDto> playerDtoResponseEntity = playerService.playersIdGet("2");
 
         PlayerDto playerDto = new PlayerDto();
         playerDto.setId("1");

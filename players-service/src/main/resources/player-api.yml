@@ -7,7 +7,7 @@ servers:
   - url: http://localhost:9091
 
 paths:
-  /player/{id}:
+  /players/{id}:
     get:
       description: Get player identified by the id
 

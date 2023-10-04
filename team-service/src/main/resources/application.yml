@@ -1,7 +1,7 @@
 server:
   port: 9090
   servlet:
-    context-path: /rest/team
+    context-path: /rest
 
 spring:
   application:
@@ -18,11 +18,11 @@ spring:
 
 
 eureka:
+  instance:
+    prefer-ip-address: true
   client:
     serviceUrl:
       defaultZone: http://localhost:9080/eureka/
-    registerWithEureka: true
-    fetchRegistry: true
 
 management:
   endpoints:
