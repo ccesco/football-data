@@ -7,6 +7,7 @@ import fr.cyrilcesco.footballdata.teamservice.infrastructure.repository.PostgreS
 import fr.cyrilcesco.footballdata.teamservice.infrastructure.repository.entity.TeamDao;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
 import java.util.Optional;
 
 @Repository
@@ -25,4 +26,11 @@ public class TeamRepository implements TeamRepositoryPort {
         Optional<TeamDao> teamOptionnal = repository.findById(Long.valueOf(identifiant));
         return teamOptionnal.map(mapper::mapToDomain);
     }
+
+    @Override
+    public List<Team> getTeams() {
+        return repository.findAll().stream().map(mapper::mapToDomain).toList();
+    }
+
+
 }

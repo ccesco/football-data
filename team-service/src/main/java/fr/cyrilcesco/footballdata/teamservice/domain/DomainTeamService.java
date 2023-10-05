@@ -5,6 +5,8 @@ import fr.cyrilcesco.footballdata.teamservice.domain.exception.TeamNotFoundExcep
 import fr.cyrilcesco.footballdata.teamservice.domain.model.Team;
 import fr.cyrilcesco.footballdata.teamservice.domain.spi.TeamRepositoryPort;
 
+import java.util.List;
+
 public class DomainTeamService implements GetTeamUseCase {
 
     private final TeamRepositoryPort teamRepository;
@@ -17,5 +19,11 @@ public class DomainTeamService implements GetTeamUseCase {
     public Team getTeam(String identifiant) {
         return teamRepository.getTeam(identifiant).orElseThrow(() -> new TeamNotFoundException(identifiant));
     }
+
+    @Override
+    public List<Team> getTeams() {
+        return teamRepository.getTeams();
+    }
+
 
 }

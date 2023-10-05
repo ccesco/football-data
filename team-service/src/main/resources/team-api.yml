@@ -38,7 +38,28 @@ paths:
               schema:
                 $ref: '#/components/schemas/ErrorList'
           description: Internal error
-
+  /teams:
+    get:
+      description: Get all teams
+      responses:
+        200:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Teams'
+          description: Returns team
+        400:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+          description: Bad request
+        500:
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorList'
+          description: Internal error
 
 components:
   schemas:
@@ -53,7 +74,10 @@ components:
           type: string
         stadiumName:
           type: string
-
+    Teams:
+      type: array
+      items:
+        $ref: '#/components/schemas/Team'
     Error:
       properties:
         title:

@@ -7,6 +7,8 @@ import fr.cyrilcesco.footballdata.teamservice.model.TeamDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class TeamService implements TeamsApiDelegate {
 
@@ -24,5 +26,9 @@ public class TeamService implements TeamsApiDelegate {
         return ResponseEntity.ok(teamDto);
     }
 
+    @Override
+    public ResponseEntity<List<TeamDto>> teamsGet() {
+        return ResponseEntity.ok(getTeamUseCase.getTeams().stream().map(mapper::mapFromDomain).toList());
+    }
 }
 

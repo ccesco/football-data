@@ -12,6 +12,8 @@ import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
@@ -40,6 +42,21 @@ class TeamServiceTest {
         teamDto.setStadiumName("STADIUM NAME");
 
         assertEquals(teamDto, teamDtoResponseEntity.getBody());
+        assertEquals(HttpStatusCode.valueOf(200), teamDtoResponseEntity.getStatusCode());
+    }
+
+    @Test
+    void should_return_teams() {
+        when(getTeamUseCase.getTeams()).thenReturn(List.of(getTeam()));
+        ResponseEntity<List<TeamDto>> teamDtoResponseEntity = teamService.teamsGet();
+
+        TeamDto teamDto = new TeamDto();
+        teamDto.setId("123");
+        teamDto.setName("TEAM");
+        teamDto.setOfficialName("TEAM FC");
+        teamDto.setStadiumName("STADIUM NAME");
+
+        assertEquals(teamDto, teamDtoResponseEntity.getBody().get(0));
         assertEquals(HttpStatusCode.valueOf(200), teamDtoResponseEntity.getStatusCode());
     }
 
