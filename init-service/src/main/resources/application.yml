@@ -1,0 +1,53 @@
+server:
+  port: 9094
+
+spring:
+  application:
+    name: init-service
+  kafka:
+    producer:
+      bootstrap-servers: localhost:19092
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+    bootstrap-servers: localhost:19092
+    topic:
+      name: t.init.competitions
+
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:9080/eureka/
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - "*"
+
+springdoc:
+  api-docs:
+    path: /api-docs
+  swagger-ui:
+    path: /swagger-ui.html
+    enabled: true
+
+init:
+  competitions:
+    - FR1
+    - FR2
+    - FR3
+    - GB1
+    - GB2
+    - GB3
+    - L1
+    - L2
+    - L3
+    - IT1
+    - IT2
+    - ES1
+    - ES2
+    - PO1
+    - PO2
