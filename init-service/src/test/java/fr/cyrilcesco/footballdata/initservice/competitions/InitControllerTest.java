@@ -1,6 +1,6 @@
-package fr.cyrilcesco.footballdata.initservice;
+package fr.cyrilcesco.footballdata.initservice.competitions;
 
-import fr.cyrilcesco.footballdata.initservice.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
@@ -22,7 +22,7 @@ class InitControllerTest {
     private MockMvc mvc;
 
     @MockBean
-    private InitService initService;
+    private InitCompetitionService initService;
 
     @Test
     void should_get_empty_response_if_all_send_good() throws Exception {

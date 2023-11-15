@@ -1,23 +1,21 @@
 package fr.cyrilcesco.footballdata.client.transfermarkt;
 
+import fr.cyrilcesco.footballdata.client.transfermarkt.exception.TransfermarktErrorParsing;
 import fr.cyrilcesco.footballdata.client.transfermarkt.exception.TransfermarktSocketTimeOut;
 import fr.cyrilcesco.footballdata.client.transfermarkt.jsoup.JsoupClient;
 import fr.cyrilcesco.footballdata.client.transfermarkt.jsoup.PageCompetition;
 import fr.cyrilcesco.footballdata.client.transfermarkt.model.Team;
 import fr.cyrilcesco.footballdata.client.transfermarkt.model.TransfermarktCompetitionResponse;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
 import java.io.IOException;
 import java.net.SocketTimeoutException;
-import java.text.MessageFormat;
 import java.util.List;
 
 @Service("TransfermarktClientCompetitionService")
+@Slf4j
 public class CompetitionService {
-
-    private static final Logger LOGGER = LoggerFactory.getLogger(CompetitionService.class.getName());
 
     private static final String COMPETITION_URL = "https://www.transfermarkt.com/-/startseite/wettbewerb/{competition_id}";
     private static final String SUFFIX_SEASON_YEAR = "/plus/?saison_id={year}";
@@ -28,8 +26,8 @@ public class CompetitionService {
         this.jsoupClient = jsoupClient;
     }
 
-    public TransfermarktCompetitionResponse getTeamsOfCompetition(String competitionId, String year) {
-        LOGGER.info(MessageFormat.format("GET teams of competition {0} with year {1}", competitionId, year));
+    public TransfermarktCompetitionResponse getTeamsOfCompetition(String competitionId, String year) throws TransfermarktSocketTimeOut {
+        log.info("GET teams of competition {} with year {}", competitionId, year);
 
         String urlToConnect = COMPETITION_URL.replace("{competition_id}", competitionId);
         String urlToConnectSuffix = SUFFIX_SEASON_YEAR.replace("{year}", year);
@@ -44,7 +42,7 @@ public class CompetitionService {
         } catch (SocketTimeoutException e) {
             throw new TransfermarktSocketTimeOut(competitionId);
         } catch (IOException e) {
-            throw new RuntimeException(e);
+            throw new TransfermarktErrorParsing(competitionId);
         }
     }
 

@@ -1,4 +1,4 @@
-package fr.cyrilcesco.footballdata.initservice.config;
+package fr.cyrilcesco.footballdata.initservice.competitions.config;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Configuration;

@@ -1,6 +1,6 @@
-package fr.cyrilcesco.footballdata.initservice;
+package fr.cyrilcesco.footballdata.initservice.competitions;
 
-import fr.cyrilcesco.footballdata.initservice.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,9 +10,9 @@ import java.util.List;
 @RestController
 public class InitController {
 
-    private final InitService initService;
+    private final InitCompetitionService initService;
 
-    public InitController(InitService initService) {
+    public InitController(InitCompetitionService initService) {
         this.initService = initService;
     }
 

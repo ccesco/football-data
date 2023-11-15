@@ -1,6 +1,7 @@
 package fr.cyrilcesco.footballdata.client.transfermarkt;
 
 
+import fr.cyrilcesco.footballdata.client.transfermarkt.exception.TransfermarktSocketTimeOut;
 import fr.cyrilcesco.footballdata.client.transfermarkt.model.TransfermarktCompetitionResponse;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
@@ -14,7 +15,7 @@ public class TransfermarktClient {
         this.competitionService = competitionService;
     }
 
-    public TransfermarktCompetitionResponse getTeamsOfCompetition(String competitionId, String year) {
+    public TransfermarktCompetitionResponse getTeamsOfCompetition(String competitionId, String year) throws TransfermarktSocketTimeOut {
         return competitionService.getTeamsOfCompetition(competitionId, year);
     }
 }

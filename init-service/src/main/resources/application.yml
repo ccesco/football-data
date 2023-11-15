@@ -5,13 +5,14 @@ spring:
   application:
     name: init-service
   kafka:
+    streams:
+      application-id: init-service-stream
+      bootstrap-servers: localhost:19092
     producer:
       bootstrap-servers: localhost:19092
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
     bootstrap-servers: localhost:19092
-    topic:
-      name: t.init.competitions
 
 eureka:
   instance:

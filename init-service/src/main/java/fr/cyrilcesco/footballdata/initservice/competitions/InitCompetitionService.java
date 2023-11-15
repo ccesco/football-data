@@ -1,8 +1,8 @@
-package fr.cyrilcesco.footballdata.initservice;
+package fr.cyrilcesco.footballdata.initservice.competitions;
 
-import fr.cyrilcesco.footballdata.initservice.config.InitCompetitionList;
-import fr.cyrilcesco.footballdata.initservice.model.InitCompetitionRequest;
-import fr.cyrilcesco.footballdata.initservice.producer.CompetitionProducer;
+import fr.cyrilcesco.footballdata.initservice.competitions.config.InitCompetitionList;
+import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.competitions.producer.CompetitionProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -11,7 +11,7 @@ import java.util.Optional;
 
 @Service
 @Slf4j
-public class InitService {
+public class InitCompetitionService {
 
     private static final String SEARCH_YEAR = "2023";
 
@@ -19,7 +19,7 @@ public class InitService {
 
     private final CompetitionProducer producer;
 
-    public InitService(InitCompetitionList competitions, CompetitionProducer producer) {
+    public InitCompetitionService(InitCompetitionList competitions, CompetitionProducer producer) {
         this.competitions = competitions;
         this.producer = producer;
     }

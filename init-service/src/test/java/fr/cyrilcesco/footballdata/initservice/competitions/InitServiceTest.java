@@ -1,8 +1,8 @@
-package fr.cyrilcesco.footballdata.initservice;
+package fr.cyrilcesco.footballdata.initservice.competitions;
 
-import fr.cyrilcesco.footballdata.initservice.config.InitCompetitionList;
-import fr.cyrilcesco.footballdata.initservice.model.InitCompetitionRequest;
-import fr.cyrilcesco.footballdata.initservice.producer.CompetitionProducer;
+import fr.cyrilcesco.footballdata.initservice.competitions.config.InitCompetitionList;
+import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.competitions.producer.CompetitionProducer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -25,7 +25,7 @@ class InitServiceTest {
     private CompetitionProducer producer;
 
     @InjectMocks
-    private InitService initService;
+    private InitCompetitionService initService;
 
     @Test
     void should_get_empty_list_if_message_sended() {

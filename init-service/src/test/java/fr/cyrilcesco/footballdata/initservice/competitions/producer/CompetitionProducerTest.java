@@ -1,10 +1,11 @@
-package fr.cyrilcesco.footballdata.initservice.producer;
+package fr.cyrilcesco.footballdata.initservice.competitions.producer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.JsonMappingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import fr.cyrilcesco.footballdata.initservice.error.SendMessageError;
-import fr.cyrilcesco.footballdata.initservice.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.competitions.config.TopicsName;
+import fr.cyrilcesco.footballdata.initservice.competitions.error.SendMessageError;
+import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
 import org.apache.kafka.clients.producer.ProducerRecord;
 import org.apache.kafka.clients.producer.RecordMetadata;
 import org.apache.kafka.common.TopicPartition;
@@ -35,10 +36,11 @@ class CompetitionProducerTest {
 
     private CompetitionProducer producer;
 
+
     @Test
     void should_send_message_with_good_record_id() {
-        when(kafkaTemplate.send(eq("testTopic"), eq("FR1-2023"), any())).thenReturn(CompletableFuture.completedFuture(new SendResult<>(new ProducerRecord<>("", ""), new RecordMetadata(new TopicPartition("", 0), 0, 0, 0, 0, 0))));
-        producer = new CompetitionProducer("testTopic", objectMapper, kafkaTemplate);
+        when(kafkaTemplate.send(eq(TopicsName.INIT_COMPETITION), eq("FR1-2023"), any())).thenReturn(CompletableFuture.completedFuture(new SendResult<>(new ProducerRecord<>("", ""), new RecordMetadata(new TopicPartition("", 0), 0, 0, 0, 0, 0))));
+        producer = new CompetitionProducer(objectMapper, kafkaTemplate);
 
         boolean result = producer.sendMessage(InitCompetitionRequest.builder().competitionId("FR1").year("2023").build());
         assertTrue(result);
@@ -47,7 +49,7 @@ class CompetitionProducerTest {
     @Test
     void should_get_error_if_not_serializable() throws JsonProcessingException {
         when(objectMapper.writeValueAsString(any())).thenThrow(new JsonMappingException("ERROR", new Throwable()));
-        producer = new CompetitionProducer("testTopic", objectMapper, kafkaTemplate);
+        producer = new CompetitionProducer(objectMapper, kafkaTemplate);
 
         InitCompetitionRequest competitionRequest = InitCompetitionRequest.builder().competitionId("FR1").year("2023").build();
         assertThrows(SendMessageError.class, () -> producer.sendMessage(competitionRequest));
@@ -55,8 +57,8 @@ class CompetitionProducerTest {
 
     @Test
     void should_get_error_if_not_sended() {
-        when(kafkaTemplate.send(eq("testTopic"), eq("FR1-2023"), any())).thenReturn(CompletableFuture.failedFuture(new RuntimeException("Oops")));
-        producer = new CompetitionProducer("testTopic", objectMapper, kafkaTemplate);
+        when(kafkaTemplate.send(eq(TopicsName.INIT_COMPETITION), eq("FR1-2023"), any())).thenReturn(CompletableFuture.failedFuture(new RuntimeException("Oops")));
+        producer = new CompetitionProducer(objectMapper, kafkaTemplate);
 
         boolean result = producer.sendMessage(InitCompetitionRequest.builder().competitionId("FR1").year("2023").build());
         assertFalse(result);
@@ -64,8 +66,8 @@ class CompetitionProducerTest {
 
     @Test
     void should_get_error_timeout() {
-        when(kafkaTemplate.send(eq("testTopic"), eq("FR1-2023"), any())).thenReturn(new CompletableFuture<>());
-        producer = new CompetitionProducer("testTopic", objectMapper, kafkaTemplate);
+        when(kafkaTemplate.send(eq(TopicsName.INIT_COMPETITION), eq("FR1-2023"), any())).thenReturn(new CompletableFuture<>());
+        producer = new CompetitionProducer(objectMapper, kafkaTemplate);
 
         boolean result = producer.sendMessage(InitCompetitionRequest.builder().competitionId("FR1").year("2023").build());
         assertFalse(result);

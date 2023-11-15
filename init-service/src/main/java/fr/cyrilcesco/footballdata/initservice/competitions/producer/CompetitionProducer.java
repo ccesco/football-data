@@ -1,11 +1,11 @@
-package fr.cyrilcesco.footballdata.initservice.producer;
+package fr.cyrilcesco.footballdata.initservice.competitions.producer;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import fr.cyrilcesco.footballdata.initservice.error.SendMessageError;
-import fr.cyrilcesco.footballdata.initservice.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.competitions.config.TopicsName;
+import fr.cyrilcesco.footballdata.initservice.competitions.error.SendMessageError;
+import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;
 import org.springframework.stereotype.Service;
@@ -18,14 +18,11 @@ import java.util.concurrent.TimeoutException;
 @Slf4j
 public class CompetitionProducer {
 
-    private final String competitionTopic;
-
     private final ObjectMapper objectMapper;
 
     private final KafkaTemplate<String, String> kafkaTemplate;
 
-    public CompetitionProducer(@Value("${spring.kafka.topic.name}") String competitionTopic, ObjectMapper objectMapper, KafkaTemplate<String, String> kafkaTemplate) {
-        this.competitionTopic = competitionTopic;
+    public CompetitionProducer(ObjectMapper objectMapper, KafkaTemplate<String, String> kafkaTemplate) {
         this.objectMapper = objectMapper;
         this.kafkaTemplate = kafkaTemplate;
     }
@@ -36,12 +33,13 @@ public class CompetitionProducer {
         String recordId = competitionRequest.getCompetitionId() + "-" + competitionRequest.getYear();
         try {
             SendResult<String, String> result = kafkaTemplate
-                    .send(competitionTopic, recordId, dataToSend)
+                    .send(TopicsName.INIT_COMPETITION, recordId, dataToSend)
                     .get(5, TimeUnit.SECONDS);
             onSuccess(result);
             return true;
         } catch (ExecutionException | InterruptedException | TimeoutException e) {
             onFailure(recordId, e);
+            Thread.currentThread().interrupt();
             return false;
         }
     }
@@ -65,7 +63,7 @@ public class CompetitionProducer {
     }
 
     private void onFailure(String recordId, final Throwable t) {
-        log.warn("Unable to write Competition {} to topic {}.", recordId, competitionTopic, t);
+        log.warn("Unable to write Competition {} to topic {}.", recordId, TopicsName.INIT_COMPETITION, t);
     }
 
 }
