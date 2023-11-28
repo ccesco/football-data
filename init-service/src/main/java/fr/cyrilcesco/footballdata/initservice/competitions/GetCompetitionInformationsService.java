@@ -27,7 +27,7 @@ public class GetCompetitionInformationsService {
             return competition;
         } catch (TransfermarktSocketTimeOut exception) {
             log.info("TransfermarktSocketTimeOut for request {}}", request);
-            return null;
+            return Competition.builder().id(request.getCompetitionId()).seasonYear(request.getYear()).build();
         }
     }
 }

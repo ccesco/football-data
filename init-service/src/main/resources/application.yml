@@ -6,13 +6,19 @@ spring:
     name: init-service
   kafka:
     streams:
-      application-id: init-service-stream
+      application-id: competitions-enriched-stream
       bootstrap-servers: localhost:19092
     producer:
       bootstrap-servers: localhost:19092
       value-serializer: org.apache.kafka.common.serialization.StringSerializer
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
     bootstrap-servers: localhost:19092
+    consumer:
+      bootstrap-servers: localhost:19092
+      group-id: CompetitionErrorReplyGroupId
+      max-poll-records: 1
+      enable-auto-commit: false
+      auto-offset-reset: earliest
 
 eureka:
   instance:

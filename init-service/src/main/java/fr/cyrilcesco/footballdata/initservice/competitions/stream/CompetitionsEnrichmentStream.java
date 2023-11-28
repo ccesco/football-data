@@ -37,7 +37,7 @@ public class CompetitionsEnrichmentStream {
         Map<String, KStream<String, Competition>> streamEnriched = streamsBuilder.stream(TopicsName.INIT_COMPETITION, Consumed.with(Serdes.String(), INIT_COMPETITION_SERDES))
                 .mapValues((readOnlyKey, request) -> getCompetitionInformationsService.callClient(request))
                 .split(Named.as(BRANCHES)) // split the stream
-                .branch((key, competition) -> Objects.nonNull(competition), Branched.as(TopicsName.COMPETITION_ENRICHED))
+                .branch((key, competition) -> isCompetitionEnriched(competition), Branched.as(TopicsName.COMPETITION_ENRICHED))
                 .defaultBranch(Branched.as(TopicsName.COMPETITION_ENRICHED_ERROR));
 
         streamEnriched.get(BRANCHES + TopicsName.COMPETITION_ENRICHED_ERROR)
@@ -47,5 +47,9 @@ public class CompetitionsEnrichmentStream {
                 .to(TopicsName.COMPETITION_ENRICHED, Produced.with(STRING_SERDES, COMPETITION_SERDES));
 
         return streamEnriched;
+    }
+
+    private static boolean isCompetitionEnriched(Competition competition) {
+        return Objects.nonNull(competition) && Objects.nonNull(competition.getName());
     }
 }
