@@ -12,3 +12,8 @@ CREATE TABLE IF NOT EXISTS teamsInformation (
     stadiumName varchar(250) NOT NULL,
     PRIMARY KEY (id)
 );
+
+CREATE TABLE IF NOT EXISTS competitionsInformation (
+    id varchar(5) NOT NULL PRIMARY KEY,
+    name varchar(250) NOT NULL
+);
