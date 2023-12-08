@@ -2,26 +2,25 @@ package fr.cyrilcesco.footballdata.client.transfermarkt.jsoup;
 
 import fr.cyrilcesco.footballdata.client.transfermarkt.exception.TransfermarktErrorParsing;
 import fr.cyrilcesco.footballdata.client.transfermarkt.model.Team;
-import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
 import org.jsoup.select.Elements;
 
+import java.io.IOException;
 import java.util.List;
 
-public class PageCompetition {
+public class PageCompetition extends PageDocument {
 
-    private final Document page;
 
-    public PageCompetition(Document page) {
-        this.page = page;
+    public PageCompetition(JsoupClient jsoupClient, String urlToConnect, String urlToConnectSuffix) throws IOException {
+        super(jsoupClient, urlToConnect, urlToConnectSuffix);
     }
 
     public String getCompetitionName() {
-        return this.page.selectXpath("//div[@class='data-header__headline-container']//h1").text();
+        return getPage().selectXpath("//div[@class='data-header__headline-container']//h1").text();
     }
 
     public List<Team> getTeams() {
-        Elements teams = this.page.selectXpath("//td[@class='hauptlink no-border-links']//a");
+        Elements teams = getPage().selectXpath("//td[@class='hauptlink no-border-links']//a");
 
         return teams
                 .stream()
@@ -35,9 +34,8 @@ public class PageCompetition {
     }
 
     private String getIdFromHref(String href) {
-        // TODO add check format href
         String[] hrefSplitted = href.split("/");
-        if(hrefSplitted.length > 5) {
+        if (hrefSplitted.length > 5) {
             return hrefSplitted[4];
         }
         throw new TransfermarktErrorParsing(href);

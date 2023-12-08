@@ -1,0 +1,1522 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script type="text/javascript" data-description="sourcepoint stub code">
+        !function () { var e = function () { var e, t = "__tcfapiLocator", a = [], n = window; for (; n;) { try { if (n.frames[t]) { e = n; break } } catch (e) { } if (n === window.top) break; n = n.parent } e || (!function e() { var a = n.document, r = !!n.frames[t]; if (!r) if (a.body) { var i = a.createElement("iframe"); i.style.cssText = "display:none", i.name = t, a.body.appendChild(i) } else setTimeout(e, 5); return !r }(), n.__tcfapi = function () { for (var e, t = arguments.length, n = new Array(t), r = 0; r < t; r++)n[r] = arguments[r]; if (!n.length) return a; if ("setGdprApplies" === n[0]) n.length > 3 && 2 === parseInt(n[1], 10) && "boolean" == typeof n[3] && (e = n[3], "function" == typeof n[2] && n[2]("set", !0)); else if ("ping" === n[0]) { var i = { gdprApplies: e, cmpLoaded: !1, cmpStatus: "stub" }; "function" == typeof n[2] && n[2](i) } else a.push(n) }, n.addEventListener("message", (function (e) { var t = "string" == typeof e.data, a = {}; try { a = t ? JSON.parse(e.data) : e.data } catch (e) { } var n = a.__tcfapiCall; n && window.__tcfapi(n.command, n.version, (function (a, r) { var i = { __tcfapiReturn: { returnValue: a, success: r, callId: n.callId } }; t && (i = JSON.stringify(i)), e.source.postMessage(i, "*") }), n.parameter) }), !1)) }; "undefined" != typeof module ? module.exports = e : e() }();
+    </script>
+    <script data-description="sourcepoint configuration">
+        window._sp_ = {
+            config: {"accountId":1254,"propertyId":7427,"gdpr":{"consentLanguage":"en","targetingParams":{"acps":"false"}},"baseEndpoint":"https://cdn.privacy-mgmt.com","isSPA":true,"cpPropertyId":"7a84b340"}}
+    </script>
+    <script src="https://cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js" async></script>
+
+    <script type="text/javascript" data-description="contentpass integration">
+        (function() {
+            var cpBaseUrl = 'https://cp.transfermarkt.com';
+            var cpController = cpBaseUrl + '/now.js';
+            var cpPropertyId = '7a84b340';
+
+            !function(C,o,n,t,P,a,s){C['CPObject']=n;C[n]||(C[n]=function(){
+                (C[n].q=C[n].q||[]).push(arguments)});C[n].l=+new Date;a=o.createElement(t);
+                s=o.getElementsByTagName(t)[0];a.src=P;s.parentNode.insertBefore(a,s)}
+            (window,document,'cp','script',cpController);
+
+            !function(C,o,n,t,P){if(!C[n].patched){cp('extension','authenticate');P=C[n].q.push;
+                C[n].q.push=function(a){if(a[0]==='authenticate'){if((o['cookie']||'').indexOf('_cpauthhint=')===-1&&
+                    !(C['localStorage']||{})['_cpuser']&&C.location.href.toLowerCase().indexOf('cpauthenticated')===-1){
+                    t={isLoggedIn:function(){return false;},hasValidSubscription:function(){return false;}};
+                    (typeof a[1]==='function'&&a[1](null,t));C[n].afp=true;P.apply(C[n].q,[['authenticate',null]]);
+                    return t;}}P.apply(C[n].q,[a]);}}}
+            (window,document,'cp',false);
+
+            cp('create', cpPropertyId, {
+                baseUrl: cpBaseUrl
+            });
+
+            cp('render', {
+                onFullConsent: function() {
+                    console.log('[DEMO] onFullConsent');
+                }
+            })
+        })()
+    </script>
+
+    <script type="text/javascript" data-description="contentpass sourcepoint fast path">
+        (function () {
+            cp('authenticate', function(err, user) {
+                if (err || (!user.isLoggedIn() && !user.hasValidSubscription())) {
+                    console.log('[SPCP] Taking fast path');
+                    (function spExecMsg() {
+                        if (window._sp_ && window._sp_.executeMessaging) {
+                            if (!window._sp_.config.isSPA) {
+                                console.warn('[SPCP] Sourcepoint not in SPA mode!');
+                            } else if (window._sp_.version) {
+                                console.log('[SPCP] Sourcepoint already running');
+                            } else {
+                                console.log('[SPCP] Starting Sourcepoint');
+                                window._sp_.executeMessaging();
+                            }
+                        } else {
+                            console.log('[SPCP] Sourcepoint not loaded yet. Retrying.');
+                            setTimeout(spExecMsg, 10);
+                        }
+                    })();
+                }
+            });
+        })();
+    </script>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" sizes="192x192" href="/android-chrome-192x192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no" />
+    <meta name="keywords" content="Paris Saint-Germain,France" />
+    <meta name="description" content="Paris SG at a glance: The detailed squad overview with all players and data in the season 23/24. " />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://tmssl.akamaized.net/images/tm_logo.png" />
+    <meta property="og:description" content="" />
+    <meta property="og:title" content="Paris Saint-Germain - Detailed squad 23/24 (Detailed view)" />
+    <meta property="og:url" content="https://www.transfermarkt.com/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="de" rel="alternate" href="https://www.transfermarkt.de/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="de-LU" rel="alternate" href="https://www.transfermarkt.de/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="de-AT" rel="alternate" href="https://www.transfermarkt.at/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="de-CH" rel="alternate" href="https://www.transfermarkt.ch/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="tr" rel="alternate" href="https://www.transfermarkt.com.tr/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="it-CH" rel="alternate" href="https://www.transfermarkt.it/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="it" rel="alternate" href="https://www.transfermarkt.it/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="pl" rel="alternate" href="https://www.transfermarkt.pl/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="en-GB" rel="alternate" href="https://www.transfermarkt.co.uk/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="en-IE" rel="alternate" href="https://www.transfermarkt.co.uk/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="es" rel="alternate" href="https://www.transfermarkt.es/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="es-ES" rel="alternate" href="https://www.transfermarkt.es/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="es-CL" rel="alternate" href="https://www.transfermarkt.es/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="es-VE" rel="alternate" href="https://www.transfermarkt.es/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="es-EC" rel="alternate" href="https://www.transfermarkt.es/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="es-CU" rel="alternate" href="https://www.transfermarkt.es/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="nl" rel="alternate" href="https://www.transfermarkt.nl/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="pt" rel="alternate" href="https://www.transfermarkt.pt/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="ru" rel="alternate" href="https://www.transfermarkt.world/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="world" rel="alternate" href="https://www.transfermarkt.world/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="fr-CH" rel="alternate" href="https://www.transfermarkt.fr/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="fr" rel="alternate" href="https://www.transfermarkt.fr/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="fr-CA" rel="alternate" href="https://www.transfermarkt.fr/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="fr-CI" rel="alternate" href="https://www.transfermarkt.fr/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="fr-LU" rel="alternate" href="https://www.transfermarkt.fr/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="fr-BE" rel="alternate" href="https://www.transfermarkt.fr/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="pt-BR" rel="alternate" href="https://www.transfermarkt.com.br/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="en-US" rel="alternate" href="https://www.transfermarkt.us/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="en-CA" rel="alternate" href="https://www.transfermarkt.us/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="en-IN" rel="alternate" href="https://www.transfermarkt.co.in/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="en-ZA" rel="alternate" href="https://www.transfermarkt.co.za/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="x-default" rel="alternate" href="https://www.transfermarkt.com/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="en" rel="alternate" href="https://www.transfermarkt.com/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="nl-BE" rel="alternate" href="https://www.transfermarkt.be/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="ro" rel="alternate" href="https://www.transfermarkt.ro/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="el-GR" rel="alternate" href="https://www.transfermarkt.gr/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="ko-KR" rel="alternate" href="https://www.transfermarkt.co.kr/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="es-AR" rel="alternate" href="https://www.transfermarkt.com.ar/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="es-MX" rel="alternate" href="https://www.transfermarkt.mx/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="es-CO" rel="alternate" href="https://www.transfermarkt.co/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="es-PE" rel="alternate" href="https://www.transfermarkt.pe/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="ms" rel="alternate" href="https://www.transfermarkt.my/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="ja" rel="alternate" href="https://www.transfermarkt.jp/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link hreflang="id" rel="alternate" href="https://www.transfermarkt.co.id/-/kader/verein/583/saison_id/2023/plus/1" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/menue.css?lm=1702030184" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-main.min.css?lm=1702030136" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/main_desktop.css?lm=1702030184" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/print.css?_sn=1?lm=1702030184" media="print" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/vereinsseite.css?lm=1702030184" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/spielbericht.css?lm=1702030184" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/statistiken.css?lm=1702030184" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/chosen.css?lm=1702030184" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/main.css?lm=1702030184" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-club-profile.min.css?lm=1702030136" />
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/vendor/jquery.min.js?lm=1702030165"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/assets/b7c5571cf8957553f95f6d9069eaed67/jquery.ba-bbq.min.js?lm=1702030166"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/custom-elements/ce-competition-intersection-observer.js?lm=1702030165"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/main.js?lm=1702030165"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/chosen.ajaxaddition.jquery.js?lm=1702030165"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/functions.js?lm=1702030165"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/main_desktop.js?lm=1702030165"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/chosen.jquery.js?lm=1702030165"></script>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        var oddsServe = function(placement,competition,match,node) {
+            if (!node){
+                var s=document.readyState==='loading'?document.getElementsByTagName('script'):[];
+                node=s.length?s[s.length-1].parentNode:null;
+            }
+            oddsServe.queue.push({contentUnitId:placement,competition:competition,match:match,node:node});
+        }
+
+        oddsServe.onInit=function(callbacks){
+            if (typeof window.__tcfapi === 'function') {
+                __tcfapi('addEventListener', 2, function(tcdata, success) {
+                    let tcf20compatibleString;
+                    if(success) {
+                        if (tcdata.eventStatus === 'useractioncomplete') {
+                            tcf20compatibleString = tcdata.tcString;
+                        } else if (tcdata.eventStatus === 'tcloaded') {
+                            tcf20compatibleString = tcdata.tcString;
+                        }
+                        callbacks.setGdprOptions({
+                            gdpr:1,
+                            gdpr_pd:1,
+                            gdpr_consent:tcf20compatibleString,
+                        });
+                    }
+                });
+            } else {
+                console.warn('E2: __tcfapi not found');
+            }
+        };
+        oddsServe.options={gdpr_wait:true};
+        oddsServe.queue=[];
+        /*]]>*/
+    </script>
+    <title>Paris Saint-Germain - Detailed squad 23/24 (Detailed view) | Transfermarkt</title>
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-152x152.png">
+    <link rel="preload" href="//data-84a0f3455d.transfermarkt.com/iomm/latest/manager/base/es6/bundle.js" as="script" id="IOMmBundle">
+    <link rel="preload" href="//data-84a0f3455d.transfermarkt.com/iomm/latest/bootstrap/loader.js" as="script">
+    <script type="text/javascript" src="//data-84a0f3455d.transfermarkt.com/iomm/latest/bootstrap/loader.js"></script>
+
+    <script type="text/javascript">
+        tmData = {
+            loggedIn : "0",
+            tmTraffic: "0",
+        };
+    </script>
+    <script>// Set to the same value as the web property used on the site
+    var gaProperty = 'UA-3816204-13';
+
+    // Disable tracking if the opt-out cookie exists.
+    var disableStr = 'ga-disable-' + gaProperty;
+    if (document.cookie.indexOf(disableStr + '=true') > -1) {
+        window[disableStr] = true;
+    }
+
+    // Opt-out function
+    function gaOptout() {
+        document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+        window[disableStr] = true;
+    }</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('set', 'linker', { 'domains': [/^transfermarkt\.(com|de|nl|it|at|ch|es|fr|com\.tr|pt|tv|pl|co\.uk)$/]});
+        gtag('js', new Date());
+        gtag('set',
+            {
+                'custom_map': {
+                    'dimension1': 'loggedIn',
+                    'dimension2': 'tmTraffic'
+                }
+            });
+        gtag('config', 'UA-3816204-13', {
+            'anonymize_ip': true,
+            'transport_type': 'beacon',
+            'content_group1': 'statistik',
+            'content_group2': 'verein',
+            'content_group3': 'kader',
+            'content_group4': '583',
+            'loggedIn': tmData.loggedIn,
+            'tmTraffic': tmData.tmTraffic
+        });
+        function tmEvent(category, action, label) {
+            if (typeof gtag !== 'function') {
+                return;
+            }
+            gtag('event',
+                action,
+                {
+                    'event_category': category,
+                    'event_label': label
+                }
+            );
+        }
+
+        function tmTiming(value, name, event_category, event_label) {
+            if (typeof gtag !== 'function') {
+                return;
+            }
+            gtag('event', 'timing_complete', {
+                name,
+                value,
+                event_category,
+                event_label
+            });
+        }
+
+    </script>    <script type="text/javascript" src="https://tmssl.akamaized.net//ads/ads.js"></script>
+    <script type="text/javascript">
+        window.tmGaId = "UA-3816204-13";
+    </script>
+
+    <link rel="canonical" href="https://www.transfermarkt.com/fc-paris-saint-germain/kader/verein/583">
+    <!-- no Tisoomi -->
+    <tm-consent type="pubmatic" no-checkbox embed="PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnPgogICAgICAgICAgICB2YXIgUFdUPXt9OyAvL0luaXRpYWxpemUgTmFtZXNwYWNlCiAgICAgICAgICAgIHZhciBnb29nbGV0YWcgPSBnb29nbGV0YWcgfHwge307CiAgICAgICAgICAgIGdvb2dsZXRhZy5jbWQgPSBnb29nbGV0YWcuY21kIHx8IFtdOwogICAgICAgICAgICB2YXIgZ3B0UmFuID0gZmFsc2U7CiAgICAgICAgICAgIFBXVC5qc0xvYWRlZCA9IGZ1bmN0aW9uKCl7IC8vUHViTWF0aWMgcHd0LmpzIG9uIGxvYWQgY2FsbGJhY2sgaXMgdXNlZCB0byBsb2FkIEdQVAogICAgICAgICAgICAgICAgbG9hZEdQVCgpOwogICAgICAgICAgICB9OwogICAgICAgICAgICB2YXIgbG9hZEdQVCA9IGZ1bmN0aW9uKCkgewogICAgICAgICAgICAgICAgLy8gQ2hlY2sgdGhlIGdwdFJhbiBmbGFnCiAgICAgICAgICAgICAgICBpZiAoIWdwdFJhbikgewogICAgICAgICAgICAgICAgICAgIGdwdFJhbiA9IHRydWU7CiAgICAgICAgICAgICAgICAgICAgdmFyIGdhZHMgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICAgICAgICAgICAgICB2YXIgdXNlU1NMID0gJ2h0dHBzOicgPT0gZG9jdW1lbnQubG9jYXRpb24ucHJvdG9jb2w7CiAgICAgICAgICAgICAgICAgICAgZ2Fkcy5zcmMgPSAodXNlU1NMID8gJ2h0dHBzOicgOiAnaHR0cDonKSArICcvL3NlY3VyZXB1YmFkcy5nLmRvdWJsZWNsaWNrLm5ldC90YWcvanMvZ3B0LmpzJzsKICAgICAgICAgICAgICAgICAgICB2YXIgbm9kZSA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgICAgICAgICAgICAgICAgICBub2RlLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGdhZHMsIG5vZGUpOwogICAgICAgICAgICAgICAgfQogICAgICAgICAgICB9OwogICAgICAgICAgICAvLyBGYWlsc2FmZSB0byBjYWxsIGdwdAogICAgICAgICAgICBzZXRUaW1lb3V0KGxvYWRHUFQsIDUwMCk7CiAgICAgICAgPC9zY3JpcHQ+CiAgICAgICAgPHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnPgogICAgICAgICAgICAoZnVuY3Rpb24oKSB7CiAgICAgICAgICAgICAgICB2YXIgcHVybCA9IHdpbmRvdy5sb2NhdGlvbi5ocmVmOwogICAgICAgICAgICAgICAgdmFyIHVybCA9ICcvL2Fkcy5wdWJtYXRpYy5jb20vQWRTZXJ2ZXIvanMvcHd0LzE2MzIyOS8xMDEwMyc7CiAgICAgICAgICAgICAgICB2YXIgcHJvZmlsZVZlcnNpb25JZCA9ICcnOwogICAgICAgICAgICAgICAgaWYocHVybC5pbmRleE9mKCdwd3R2PScpPjApewogICAgICAgICAgICAgICAgICAgIHZhciByZWdleHAgPSAvcHd0dj0oLio/KSgmfCQpL2c7CiAgICAgICAgICAgICAgICB2YXIgbWF0Y2hlcyA9IHJlZ2V4cC5leGVjKHB1cmwpOwogICAgICAgICAgICAgICAgaWYobWF0Y2hlcy5sZW5ndGggPj0gMiAmJiBtYXRjaGVzWzFdLmxlbmd0aCA+IDApewogICAgICAgICAgICAgICAgICAgIHByb2ZpbGVWZXJzaW9uSWQgPSAnLycrbWF0Y2hlc1sxXTsKICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgfQogICAgICAgICAgICAgICAgdmFyIHd0YWRzID0gZG9jdW1lbnQuY3JlYXRlRWxlbWVudCgnc2NyaXB0Jyk7CiAgICAgICAgICAgICAgICB3dGFkcy5hc3luYyA9IHRydWU7CiAgICAgICAgICAgICAgICB3dGFkcy50eXBlID0gJ3RleHQvamF2YXNjcmlwdCc7CiAgICAgICAgICAgICAgICB3dGFkcy5zcmMgPSB1cmwrcHJvZmlsZVZlcnNpb25JZCsnL3B3dC5qcyc7CiAgICAgICAgICAgICAgICB2YXIgbm9kZSA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgICAgICAgICAgICAgIG5vZGUucGFyZW50Tm9kZS5pbnNlcnRCZWZvcmUod3RhZHMsIG5vZGUpOwogICAgICAgICAgICB9KSgpOwogICAgICAgIDwvc2NyaXB0PgogICAgICAgIA=="></tm-consent><tm-consent no-checkbox type="googleadvertising" embed="PHNjcmlwdCBhc3luYyBzcmM9Imh0dHBzOi8vc2VjdXJlcHViYWRzLmcuZG91YmxlY2xpY2submV0L3RhZy9qcy9ncHQuanMiPjwvc2NyaXB0Pg=="></tm-consent><tm-consent type="amazonadvertising" no-checkbox embed="PHNjcmlwdD4hZnVuY3Rpb24odCwkLGUscyxpLGEsbyl7JFt0XXx8KCRbdF09e2luaXQ6ZnVuY3Rpb24oKXtfKCJpIixhcmd1bWVudHMpfSxmZXRjaEJpZHM6ZnVuY3Rpb24oKXtfKCJmIixhcmd1bWVudHMpfSxzZXREaXNwbGF5QmlkczpmdW5jdGlvbigpe30sdGFyZ2V0aW5nS2V5czpmdW5jdGlvbigpe3JldHVybltdfSxfUTpbXX0sKGE9ZS5jcmVhdGVFbGVtZW50KHMpKS5hc3luYz0hMCxhLnNyYz1pLChvPWUuZ2V0RWxlbWVudHNCeVRhZ05hbWUocylbMF0pLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGEsbykpO2Z1bmN0aW9uIF8oZSxzKXskW3RdLl9RLnB1c2goW2Usc10pfX0oImFwc3RhZyIsd2luZG93LGRvY3VtZW50LCJzY3JpcHQiLCIvL2MuYW1hem9uLWFkc3lzdGVtLmNvbS9hYXgyL2Fwc3RhZy5qcyIpLGFwc3RhZy5pbml0KHtwdWJJRDoiNTEzNCIsYWRTZXJ2ZXI6Imdvb2dsZXRhZyJ9KTtjb25zdCBpbml0QW1hem9uQWRCaWRzPSh0LCQpPT57KCQmJiJ0Y2xvYWRlZCI9PT10LmV2ZW50U3RhdHVzfHwidXNlcmFjdGlvbmNvbXBsZXRlIj09PXQuZXZlbnRTdGF0dXMpJiZhcHN0YWcuZmV0Y2hCaWRzKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzbG90czpbCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzbG90SUQ6ImRpdi1ncHQtYWQtMTYyMTUyNDkwMzk1Ni0wIixzbG90TmFtZToiNTg3NzgxNjQvRGVza3RvcC1CaWxsYm9hcmQtMSIsc2l6ZXM6W1s5NjAsOTBdLFs5NzAsMjUwXSxbOTUwLDkwXSxbNzI4LDkwXSxbOTcwLDkwXSxdfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3Nsb3RJRDoiZGl2LWdwdC1hZC0xNjIxNTI2NDYzNTExLTAiLHNsb3ROYW1lOiI1ODc3ODE2NC9EZXNrdG9wLU1lZGl1bVJlY3RhbmdsZS0xIixzaXplczpbWzMwMCwyNTBdLFszMzYsMjgwXSxdfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3Nsb3RJRDoiZGl2LWdwdC1hZC0xNjIxNTI3NTIxOTM5LTAiLHNsb3ROYW1lOiI1ODc3ODE2NC9EZXNrdG9wLVNreXNjcmFwZXItMSIsc2l6ZXM6W1sxNjAsNjAwXSxbMzM2LDI4MF0sWzMwMCwyNTBdLFszMDAsNjAwXSxbMTIwLCA2MDBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MjgwMTg5MzAtMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L0Rlc2t0b3AtTWVkaXVtUmVjdGFuZ2xlLTIiLHNpemVzOltbMzM2LDI4MF0sWzMwMCwyNTBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MjgxMjMzOTgtMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L0Rlc2t0b3AtU2t5c2NyYXBlci0yIixzaXplczpbWzMwMCwyNTBdLFszMzYsMjgwXSxbMTYwLDYwMF0sWzMwMCw2MDBdLCBbMTIwLCA2MDBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MjgxNzM1MjQtMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L0Rlc2t0b3AtQmlsbGJvYXJkLTIiLHNpemVzOltbOTUwLDkwXSxbOTcwLDI1MF0sWzcyOCw5MF0sWzk3MCw5MF0sWzk2MCw5MF0sIFszMDAsIDI1MF0sXX0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzbG90SUQ6ImRpdi1ncHQtYWQtMTYyMTUzNDI4OTI5Ni0wIixzbG90TmFtZToiNTg3NzgxNjQvTW9iaWxlLU1lZGl1bVJlY3RhbmdsZS0xIixzaXplczpbWzMwMCwxMDBdLFszMDAsMjUwXSxdfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3Nsb3RJRDoiZGl2LWdwdC1hZC0xNjc5MzQxNDY4MTkzLTAiLHNsb3ROYW1lOiI1ODc3ODE2NC9Nb2JpbGUtTWVkaXVtUmVjdGFuZ2xlLTIiLHNpemVzOltbMzAwLCAyNTBdLCBbMzIwLCA1MF0sIFsyNTAsIDI1MF0sIFszMDAsIDEwMF0sIFszMzYsIDI4MF0sXX0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzbG90SUQ6ImRpdi1ncHQtYWQtMTYyMTUzNDM2OTI5NC0wIixzbG90TmFtZToiNTg3NzgxNjQvTW9iaWxlLUhhbGZwYWdlLTEiLHNpemVzOltbMzAwLDYwMF0sWzMwMCwyNTBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MzQ0MzI4MjktMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L01vYmlsZS1TdGlja3kiLHNpemVzOltbMzAwLDUwXSxbMzIwLDUwXSxdfSxdLHRpbWVvdXQ6MmUzfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZnVuY3Rpb24odCl7Z29vZ2xldGFnLmNtZC5wdXNoKGZ1bmN0aW9uKCl7YXBzdGFnLnNldERpc3BsYXlCaWRzKCksZ29vZ2xldGFnLnB1YmFkcygpLnJlZnJlc2goKX0pfSl9OyJmdW5jdGlvbiI9PXR5cGVvZiB3aW5kb3cuX190Y2ZhcGkmJndpbmRvdy5fX3RjZmFwaSgiYWRkRXZlbnRMaXN0ZW5lciIsMixpbml0QW1hem9uQWRCaWRzKTs8L3NjcmlwdD4="></tm-consent><div class="werbung werbung-header">
+    <!-- Start GPT Tag -->
+    <script>
+        window.googletag = window.googletag || {cmd: []};
+        googletag.cmd.push(function() {
+            googletag.defineSlot("/58778164/Desktop-Billboard-1", [[960, 90], [970, 250], [950, 90], [728, 90], [970, 90]], "div-gpt-ad-1621524903956-0")
+                .addService(googletag.pubads());
+            googletag.defineSlot("/58778164/Desktop-MediumRectangle-1", [[300, 250], [336, 280]], "div-gpt-ad-1621526463511-0")
+                .addService(googletag.pubads());
+            googletag.defineSlot("/58778164/Desktop-Skyscraper-1", [[160, 600], [336, 280], [300, 250], [300, 600], [120, 600]], "div-gpt-ad-1621527521939-0")
+                .addService(googletag.pubads());
+            googletag.defineSlot("/58778164/Desktop-MediumRectangle-2", [[336, 280], [300, 250]], "div-gpt-ad-1621528018930-0")
+                .addService(googletag.pubads());
+            googletag.defineSlot("/58778164/Desktop-Skyscraper-2",  [[300, 250], [336, 280], [160, 600], [300, 600], [120, 600]], "div-gpt-ad-1621528123398-0")
+                .addService(googletag.pubads());
+            googletag.defineSlot("/58778164/Desktop-Billboard-2",  [[950, 90], [970, 250], [728, 90], [970, 90], [960, 90], [300, 250]], "div-gpt-ad-1621528173524-0")
+                .addService(googletag.pubads());
+            googletag.defineSlot("/58778164/Desktop-Gallerie-1", [[300, 250], [336, 280]], "div-gpt-ad-1692265974586-0")
+                .addService(googletag.pubads());
+            googletag.pubads().enableLazyLoad({
+                fetchMarginPercent: 500,
+                renderMarginPercent: 200,
+                mobileScaling: 2.0});
+            googletag.pubads().setCentering(true);
+            googletag.pubads().disableInitialLoad();
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().setTargeting("cg1", ["verein"]);
+            googletag.pubads().setTargeting("URL", "www.transfermarkt.com");
+            googletag.enableServices();
+        });
+    </script>
+    <!-- End GPT Tag -->
+</div></head>
+
+<body class="" itemscope itemtype="http://schema.org/WebPage" data-tm-tld="com" data-cmp-layer-id="910164">
+
+<tm-language-hint></tm-language-hint>
+<div id="main">
+    <div class="werbung-skyscraper-container">
+        <div class="werbung werbung-skyscraper"><div id="div-gpt-ad-1621527521939-0"style="min-width: 160px; min-height: 250px;"></div>
+            <script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-1621527521939-0"); });</script>
+        </div>        </div>
+
+    <div class="werbung-skyscraperbtf-container">
+        <div class="werbung werbung-skyscraperbtf"><div id="div-gpt-ad-1621528123398-0"style="min-width: 160px; min-height: 250px;"></div>
+            <script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-1621528123398-0"); });</script>
+        </div>        </div>
+
+    <header class="tm-header">
+        <div class="tm-header__box ">
+            <a href="/">
+                <img class="icon-logo" src="https://tmsi.akamaized.net/head/transfermarkt_logo.svg" height="62" width="156" title="Transfermarkt" alt="Transfermarkt">
+            </a>
+            <tm-domainswitcher open-list="false" tld="com"></tm-domainswitcher>
+            <div class="tm-header__social-box">
+                <a href="https://www.facebook.com/Transfermarkt.global" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','Facebook');
+">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/fb_icon_hover.svg" width="20" height="20" class="header__icon">
+                </a>
+                <a href="https://twitter.com/TMuk_news" target="_blank" class="header__social-link header__social-link--twitter" onclick="tmEvent('SM-Icons_Header','click','Twitter');
+">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/twitter.svg" width="20" height="20" class="header__icon header__icon--twitter">
+                </a>
+                <a href="http://instagram.com/transfermarkt_official" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','Instagram');
+">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/instagram_icon_hover.svg" width="20" height="20" class="header__icon">
+                </a>
+                <a href="/intern/rssguide" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','RSS');
+">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/rss_icon_hover.svg" width="20" height="20" class="header__icon">
+                </a>
+                <a href="https://www.tiktok.com/@transfermarkt" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','Tiktok');
+">
+                    <img src="https://tmsi.akamaized.net/icons/tiktokRebrush.svg" width="20" height="20" class="header__icon">
+                </a>
+            </div>
+            <div class="tm-header__input-wrapper " id="schnellsuche-platz">
+                <form name="schnellsuche" id="schnellsuche" class="tm-header__form" action="/schnellsuche/ergebnis/schnellsuche">
+                    <input type="text" name="query" class="tm-header__input--search-field" onClick="" placeholder="Enter your search term" autocorrect="off" spellcheck="false" value="" />
+                    <input type="submit" value="" class="tm-header__input--search-send" alt="search" />
+                </form>
+                <a href="/detailsuche/spielerdetail/suche" title="Zur Spieler-Detailsuche" id="detailsuche-head" class="tm-header__search-detail">
+                    <img src="https://tmsi.akamaized.net/icons/search_icon_plus_blue_white.svg" alt="search" class="tm-header__icon-detail-search" height="26" width="26">
+                </a>
+            </div>
+        </div>
+
+        <nav class="main-navbar navihalter">
+            <ul class="main-navbar__container megamenu_dark_bar megamenu_dark" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="/" class="sticky-logo hide-for-small">
+                    <span title="Transfermarkt" class="tm_svg"></span>
+                </a>
+
+                <li class="main-navbar__list" data-nav-group="news">
+                <span
+                        class="main-navbar__list-title tm-main-nav-el"
+                        onClick="tmEvent('News','click','menu');
+"
+                >
+            News        </span>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list" data-nav-group="transfers">
+                <span
+                        class="main-navbar__list-title tm-main-nav-el"
+                        onClick="tmEvent('Transfers & Gerüchte','click','menu');
+"
+                >
+            Transfers & rumours        </span>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list" data-nav-group="marktwerte">
+                <span
+                        class="main-navbar__list-title tm-main-nav-el"
+                        onClick="tmEvent('Marktwerte','click','menu');
+"
+                >
+            Market values        </span>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list aktiv" data-nav-group="wettbewerbe">
+                <span
+                        class="main-navbar__list-title tm-main-nav-el"
+                        onClick="tmEvent('Wettbewerbe','click','menu');
+"
+                >
+            Competitions        </span>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list" data-nav-group="foren">
+                    <a
+                            class="main-navbar__list-title tm-main-nav-el"
+                            href="/uebersicht/index/forum/com"
+                            onClick="tmEvent('Foren','click','menu');
+"
+                    >
+                        Forums                    </a>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list" data-nav-group="meintm">
+                <span
+                        class="main-navbar__list-title tm-main-nav-el"
+                        onClick="tmEvent('MeinTM','click','menu');
+"
+                >
+            My TM        </span>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list" >
+                    <a
+                            class="main-navbar__list-title tm-main-nav-el live-navilink"
+                            href="/ticker/index/live"
+                            onClick="tmEvent('Live','click','menu');
+"
+                    >
+                        Live                            <tm-live-match-counter auto-request="true" content='["Live maches", "Live matches"]'></tm-live-match-counter>
+                    </a>
+                </li>
+            </ul>
+
+
+            <form name="schnellsuche" id="schnellsuche-sticky" class="noclose sticky-suche" action="/schnellsuche/ergebnis/schnellsuche">
+                <input type="text" name="query" class="header-suche" onClick="" placeholder="Enter your search term" />
+                <input type="image" class="header-suche-abschicken" src="https://tmssl.akamaized.net//images/suchicon.png" alt="search" />
+            </form>
+            <a href="/detailsuche/spielerdetail/suche" title="Zur Spieler-Detailsuche" id="detailsuche-head" class="header-suche-detailsuche">
+                <span class="icon-detailsuche"></span>
+            </a>
+            <a id="arrow-up-xy" href="#">
+                <svg style="fill: white; width: 20px; height: 20px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                            <g>
+                                <path d="M78.016,49.132L51.961,12.714c-0.471-0.66-1.233-1.049-2.043-1.051c-0.006,0-0.006,0-0.006,0
+                                c-0.815,0.002-1.575,0.396-2.048,1.059L21.977,49.14c-0.546,0.767-0.616,1.776-0.183,2.612c0.426,0.835,1.292,1.361,2.236,1.361
+                                h12.183l-0.001,32.709c0,1.39,1.125,2.515,2.516,2.515l22.541-0.001c1.389,0.001,2.515-1.124,2.516-2.517l0-32.705h12.187
+                                c0.94,0,1.803-0.53,2.237-1.367C78.641,50.911,78.566,49.9,78.016,49.132z" />
+                            </g>
+                        </svg>
+            </a>
+            <div class="tm-login " id="login" onClick="tmEvent('login','click','sign_in_button');
+">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     fill="#FFF" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" class="tm-login__image">
+        <g>
+            <path d="M80.161,60.441l-15.66-7.47l-6.622-3.159c2.892-1.822,5.241-4.634,6.778-8.022c1.22-2.69,1.946-5.734,1.946-8.99
+                c0-1.827-0.29-3.562-0.694-5.236C63.94,19.453,57.605,13.477,50,13.477c-7.461,0-13.701,5.763-15.792,13.645
+                c-0.482,1.808-0.815,3.688-0.815,5.68c0,3.459,0.808,6.684,2.181,9.489c1.587,3.254,3.94,5.937,6.804,7.662l-6.342,2.953
+                l-16.168,7.53c-1.404,0.658-2.327,2.242-2.327,4.011v15.062v2.703c0,2.381,1.659,4.312,3.708,4.312h57.505
+                c2.048,0,3.708-1.93,3.708-4.312v-2.703V64.446C82.46,62.683,81.552,61.114,80.161,60.441z"/>
+        </g>
+    </svg>
+                <span class="tm-login__cta">
+        Log in    </span>
+            </div>
+        </nav>
+
+
+        <div class="quick-select-wrapper">
+            <div id="quickselect-skeleton" class="ssc" style="height: 40px;">
+                <div class="ssc-wrapper flex" style="height: 100%; padding: 0">
+                    <div class="ssc-square quickselect-element" style="width: 40px;"></div>
+                    <div class="ssc-square quickselect-element quickselect-selector" style="width: 171.06px;"></div>
+                    <div class="ssc-square quickselect-element quickselect-selector" style="width: 170.84px;"></div>
+                    <div class="ssc-square quickselect-element quickselect-selector" style="width: 138.03px;"></div>
+                    <div class="ssc-square quickselect-element quickselect-selector" style="width: 141.5px;"></div>
+                </div>
+            </div>
+
+            <tm-quick-select-bar
+                    default-country="50"
+                    default-competition="FR1"
+                    default-club="583"
+                    default-player=""
+                    dropdown-visible=""
+                    translations='{&quot;home&quot;:&quot;Home&quot;,&quot;country&quot;:&quot;Country&quot;,&quot;competition&quot;:&quot;Competition&quot;,&quot;club&quot;:&quot;Club&quot;,&quot;player&quot;:&quot;Player&quot;,&quot;attack&quot;:&quot;Striker&quot;,&quot;midfield&quot;:&quot;Mittelfeld&quot;,&quot;defense&quot;:&quot;Defender&quot;,&quot;goalkeeper&quot;:&quot;Goalkeeper&quot;}'
+            >
+            </tm-quick-select-bar>
+        </div>
+
+
+        <div class="werbung werbung-billboard"><div id="div-gpt-ad-1621524903956-0"style="min-width: 728px; min-height: 90px;"></div>
+            <script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-1621524903956-0"); });</script>
+        </div>        </header>
+    <main>
+
+
+
+        <header class="data-header">
+            <div class="data-header__headline-container">
+                <h1 class="data-header__headline-wrapper data-header__headline-wrapper--oswald">
+                    Paris Saint-Germain        </h1>
+            </div>
+            <div class="data-header__badge-container">
+                <a href="/paris-saint-germain/erfolge/verein/583" title="French Champion" class="data-header__success-data">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/erfolge/header/14.png?lm=1520606997" title="French Champion" alt="French Champion" class="data-header__success-image lazy lazy" />
+                    <span class="data-header__success-number">
+                        11                    </span>
+                </a>
+                <a href="/paris-saint-germain/erfolge/verein/583" title="Cup Winners Cup Winner" class="data-header__success-data">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/erfolge/header/53.png?lm=1647507697" title="Cup Winners Cup Winner" alt="Cup Winners Cup Winner" class="data-header__success-image lazy lazy" />
+                    <span class="data-header__success-number">
+                        1                    </span>
+                </a>
+                <a href="/paris-saint-germain/erfolge/verein/583" title="French Cup winner " class="data-header__success-data">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/erfolge/header/35.png?lm=1520606999" title="French Cup winner " alt="French Cup winner " class="data-header__success-image lazy lazy" />
+                    <span class="data-header__success-number">
+                        14                    </span>
+                </a>
+                <a href="/paris-saint-germain/erfolge/verein/583" title="French league cup winner" class="data-header__success-data">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/erfolge/header/37.png?lm=1520606999" title="French league cup winner" alt="French league cup winner" class="data-header__success-image lazy lazy" />
+                    <span class="data-header__success-number">
+                        9                    </span>
+                </a>
+                <a href="/paris-saint-germain/erfolge/verein/583" title="French Supercup Winner" class="data-header__success-data">
+                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/erfolge/header/321.png?lm=1520606999" title="French Supercup Winner" alt="French Supercup Winner" class="data-header__success-image lazy lazy" />
+                    <span class="data-header__success-number">
+                        11                    </span>
+                </a>
+            </div>
+            <div class="data-header__box--big">
+                <a class="data-header__box__club-link" href="/ligue-1/startseite/wettbewerb/FR1">
+                    <img srcset="
+                                    https://tmssl.akamaized.net/images/logo/homepageNewsLogo80x80/fr1.png?lm=1648360140 1x,
+                                    https://tmssl.akamaized.net/images/logo/homepageWappen150x150/fr1.png?lm=1648360140 2x
+                                " alt="Ligue 1" height="80" width="80" />
+                </a>
+                <div class="data-header__club-info">
+                <span class="data-header__club" itemprop="affiliation">
+                    <a href="/ligue-1/startseite/wettbewerb/FR1">
+                        Ligue 1                    </a>
+                </span>
+                    <span class="data-header__label">
+                            <strong>League level:</strong>                            <span class="data-header__content">
+                                <a href="/ligue-1/startseite/wettbewerb/FR1">
+                                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/flagge/tiny/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen vm lazy lazy" />First Tier
+                                </a>
+                            </span>
+                        </span>
+                    <span class="data-header__label">
+                            Table position:
+                            <span class="data-header__content">
+                                <a href="/ligue-1/tabelle/wettbewerb/FR1" title="League table">1</a>                                </a>
+                            </span>
+                        </span>
+                    <span class="data-header__label">
+                            In league since:
+                            <span class="data-header__content">
+                                <a href="/paris-saint-germain/platzierungen/verein/583" title="">50 years</a>
+                            </span>
+                        </span>
+                </div>
+            </div>
+            <div class="data-header__profile-container">
+                <img src="https://tmssl.akamaized.net/images/wappen/head/583.png?lm=1522312728" title="Paris Saint-Germain" alt="Paris Saint-Germain" class="" />
+            </div>
+            <div class="data-header__box--small">
+
+                <a href="/paris-saint-germain/kader/verein/583" class="data-header__market-value-wrapper"><span class="waehrung">€</span>1.07<span class="waehrung">bn</span>            <p class="data-header__last-update">
+                    Total market value            </p>
+                </a>
+            </div>
+            <div class="data-header__info-box ">
+                <div class="data-header__details">
+                    <ul class="data-header__items">
+                        <li class="data-header__label">
+                            Squad size:
+                            <span itemprop="dataItem" class="data-header__content">
+                        29                    </span>
+                        </li>
+                        <li class="data-header__label">
+                            Average age:
+                            <span itemprop="dataItem" class="data-header__content">
+                        25.7                    </span>
+                        </li>
+                        <li class="data-header__label">
+                            Foreigners:
+                            <span itemprop="dataItem" class="data-header__content">
+                        <a href="/paris-saint-germain/legionaere/verein/583">17</a>&nbsp;&nbsp;<span class="tabellenplatz">58.6 %</span>                    </span>
+                        </li>
+                    </ul>
+                    <ul class="data-header__items">
+                        <li class="data-header__label">
+                            National team players:
+                            <span itemprop="dataItem" class="data-header__content">
+                            <a href="/paris-saint-germain/nationalspieler/verein/583">18</a>                        </span>
+                        </li>
+                        <li class="data-header__label">
+                            Stadium:
+                            <span itemprop="dataItem" class="data-header__content">
+                            <a title="Paris Saint-Germain" href="/fc-paris-saint-germain/stadion/verein/583">Parc des Princes</a>&nbsp;&nbsp;<span class="tabellenplatz">49.691 Seats</span>                        </span>
+                        </li>
+                        <li class="data-header__label">
+                            Current transfer record:
+                            <span itemprop="dataItem" class="data-header__content">
+                                                        <span class="redtext">
+                                <a class="redtext" href="/paris-saint-germain/transfers/verein/583/saison_id/2023">€-146.50m</a>                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="data-header__toggle">
+                <div class="data-header__toggle-icon">+</div>
+                <ul class="data-header__list-clubs">
+                    <li>
+                        <img src="https://tmssl.akamaized.net/images/wappen/tiny/583.png?lm=1522312728" title="Paris Saint-Germain" alt="Paris Saint-Germain" class="tiny_wappen" /><span><a title="Paris Saint-Germain" href="/fc-paris-saint-germain/startseite/verein/583">Paris Saint-Germain</a></span>                    </li><li>
+                    <img src="https://tmssl.akamaized.net/images/wappen/tiny/8512.png?lm=1464899851" title="Paris Saint-Germain B" alt="Paris Saint-Germain B" class="tiny_wappen" /><span><a title="Paris Saint-Germain B" href="/fc-paris-saint-germain-b/startseite/verein/8512">Paris Saint-Germain B</a></span>                    </li><li>
+                    <img src="https://tmssl.akamaized.net/images/wappen/tiny/6326.png?lm=1464899851" title="Paris Saint-Germain U19" alt="Paris Saint-Germain U19" class="tiny_wappen" /><span><a title="Paris Saint-Germain U19" href="/fc-paris-saint-germain-u19/startseite/verein/6326">Paris Saint-Germain U19</a></span>                    </li><li>
+                    <img src="https://tmssl.akamaized.net/images/wappen/tiny/54295.png?lm=1464899851" title="FC Paris Saint-Germain U17" alt="FC Paris Saint-Germain U17" class="tiny_wappen" /><span><a title="FC Paris Saint-Germain U17" href="/fc-paris-saint-germain-u17/startseite/verein/54295">FC Paris Saint-Germain U17</a></span>                    </li><li>
+                    <img src="https://tmssl.akamaized.net/images/wappen/tiny/43570.png?lm=1464899851" title="FC Paris Saint-Germain C" alt="FC Paris Saint-Germain C" class="tiny_wappen" /><span><a title="FC Paris Saint-Germain C" href="/fc-paris-saint-germain-c/startseite/verein/43570">FC Paris Saint-Germain C</a></span>                    </li><li>
+                    <img src="https://tmssl.akamaized.net/images/wappen/tiny/41587.png?lm=1464899851" title="Paris Saint-Germain UEFA U19" alt="Paris Saint-Germain UEFA U19" class="tiny_wappen" /><span><a title="Paris Saint-Germain UEFA U19" href="/fc-paris-saint-germain-uefa-u19/startseite/verein/41587">Paris Saint-Germain UEFA U19</a></span>                    </li><li>
+                    <img src="https://tmssl.akamaized.net/images/wappen/tiny/82891.png?lm=1592938078" title="FC Paris Saint-Germain Youth" alt="FC Paris Saint-Germain Youth" class="tiny_wappen" /><span><a title="FC Paris Saint-Germain Youth" href="/fc-paris-saint-germain-jugend/startseite/verein/82891">FC Paris Saint-Germain Youth</a></span>                    </li>            </ul>
+            </div>
+        </header>
+        <script type="text/javascript">
+            const headerLinkList = document.querySelector('.data-header__toggle');
+            if (headerLinkList) {
+                headerLinkList.addEventListener('click', () => {
+                    headerLinkList.classList.toggle('data-header__toggle--active');
+                })
+            };
+        </script>
+        <a href="https://www.transfermarkt.com/scottish-premiership-market-values-oriley-hits-new-heights-cifuentes-falls-after-poor-start/view/news/430782"
+           target="_blank"
+           class="db mt10"
+           onclick="tmEvent('banner', 'https://www.transfermarkt.com/scottish-premiership-market-values-oriley-hits-new-heights-cifuentes-falls-after-poor-start/view/news/430782', 'd-day-banner');">
+            <img
+                    src="https://dzjovqk3zamsg.cloudfront.net/Bannerdesktop.jpg"
+                    width="1034"
+                    height="99"
+                    alt="deadline-day banner">
+        </a>
+        <div class="row hide-on-print" id="subnavi" data-season="2023" data-controller="verein" data-action="kader" data-path="-/kader/verein/583/saison_id/2023/plus/1" data-id="583">
+            <div class="page_wrapper subnavi">
+                <div class="large-12 columns">
+                    <div class="subnavi_box" id="subnavigation">
+                        <div class="submenu-text show-for-small">
+                            <a name="SubNavi" title="Navigation">
+                                <span>≡ Sub navigation</span>
+                            </a>
+                        </div>
+                        <nav>
+                            <ul id="submenu">
+                                <li id="close_submenu" class="show-for-small">
+                                    <div id="submenu-icon">
+                                        <span class="clicked"></span>
+                                        <span class="clicked"></span>
+                                    </div>
+                                    <a>Close subnavigation</a>
+                                </li>
+                                <li id="overview" class="first-button  " data-nav-group="overview">
+                                    <a name="SubNavi" href="/fc-paris-saint-germain/startseite/verein/583/saison_id/2023" class="tm-subnav-item megamenu" onClick="tmEvent('subnavigation_verein','click','uebersicht');
+">Overview</a>
+                                </li>
+                                <li id="squad" class="  " data-nav-group="squad">
+                                    <a name="SubNavi" href="#subnavi" class="tm-subnav-item megamenu_drop" onClick="tmEvent('subnavigation_verein','click','kader');
+">Squad</a>
+                                    <div class="dropdown_fullwidth " title=""><div><img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/></div></div>                            </li>
+                                <li id="fixtures" class="  " data-nav-group="fixtures">
+                                    <a name="SubNavi" href="#subnavi" class="tm-subnav-item megamenu_drop" onClick="tmEvent('subnavigation_verein','click','spielplan');
+">Fixtures</a>
+                                    <div class="dropdown_fullwidth " title=""><div><img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/></div></div>                            </li>
+                                <li id="transfers-amp-rumours" class="  " data-nav-group="transfers-amp-rumours">
+                                    <a name="SubNavi" href="#subnavi" class="tm-subnav-item megamenu_drop" onClick="tmEvent('subnavigation_verein','click','transfers-amp-geruchte');
+">Transfers & rumours</a>
+                                    <div class="dropdown_fullwidth " title=""><div><img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/></div></div>                            </li>
+                                <li id="information-amp-facts" class="  " data-nav-group="information-amp-facts">
+                                    <a name="SubNavi" href="#subnavi" class="tm-subnav-item megamenu_drop" onClick="tmEvent('subnavigation_verein','click','daten_und_fakten');
+">Information & facts</a>
+                                    <div class="dropdown_fullwidth " title=""><div><img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/></div></div>                            </li>
+                                <li id="stadium" class="  " data-nav-group="stadium">
+                                    <a name="SubNavi" href="#subnavi" class="tm-subnav-item megamenu_drop" onClick="tmEvent('subnavigation_verein','click','stadion');
+">Stadium</a>
+                                    <div class="dropdown_fullwidth " title=""><div><img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/></div></div>                            </li>
+                                <li id="history" class="  " data-nav-group="history">
+                                    <a name="SubNavi" href="#subnavi" class="tm-subnav-item megamenu_drop" onClick="tmEvent('subnavigation_verein','click','historie');
+">History</a>
+                                    <div class="dropdown_fullwidth " title=""><div><img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/></div></div>                            </li>
+                                <li id="news" class="  " data-nav-group="news">
+                                    <a name="SubNavi" href="/fc-paris-saint-germain/news/verein/583" class="tm-subnav-item megamenu" onClick="tmEvent('subnavigation_verein','click','news');
+">News</a>
+                                </li>
+                                <li id="forum" class="  " data-nav-group="forum">
+                                    <a name="SubNavi" href="/fc-paris-saint-germain/detail/forum/789" class="tm-subnav-item megamenu" onClick="tmEvent('subnavigation_verein','click','forum');
+">Forum</a>
+                                </li>
+                                <li id="subnavi-edit" class="  subnavi-edit" data-nav-group="subnavi-edit">
+                                    <a name="SubNavi" href="#subnavi" class="tm-subnav-item megamenu_drop" onClick="tmEvent('subnavigation_verein','click','edit');
+"></a>
+                                    <div class="dropdown_fullwidth gasthinweis" title="Log in or register now"><div><img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/></div></div>                            </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var stickySubTop = $('#subnavigation').offset().top;
+            stickySubTop = stickySubTop - 60;
+            var main = $("#main");
+            $(document).ready(function() {
+                $(window).on('scroll load', function() {
+                    if (!main.hasClass("stickySubnavigation")) {
+                        stickySubTop = $('#subnavigation').offset().top;
+                    }
+                    if ($(window).scrollTop() > stickySubTop) {
+                        main.addClass("stickySubnavigation");
+                    } else {
+                        main.removeClass("stickySubnavigation");
+                    }
+                });
+            });
+        </script>
+        <style>
+            .forum-anchor {
+                margin-top: -80px;
+            }
+        </style>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="box">
+                    <h2 class="content-box-headline">
+                        Squad Paris Saint-Germain
+                    </h2>
+                    <div id="statistik-infoblock">
+                        <p class="info-content">
+                            This page displays a detailed overview of the club's current squad. It shows all personal information about the players, including age, nationality, contract duration and market value. It also contains a table with average age, cumulative market value and average market value for each player position and overall.                      </p>
+                        <div class="content">
+
+                            <form action="/paris-saint-germain/kader/verein/583/plus/1/galerie/0" method="get">                                <div class="row">
+                                <div class="large-12 columns">
+                                    <table class="auflistung">
+                                        <tbody>
+                                        <tr>
+                                            <td>
+                                                Filter by season                                                    </td>
+                                            <td>
+                                                <div class="inline-select">
+                                                    <select name="saison_id" data-placeholder="Filter by season" class="chzn-select" tabindex="0">
+                                                        <option  selected="selected"value="2023">23/24                                                                    </option>
+                                                        <option value="2022">22/23                                                                    </option>
+                                                        <option value="2021">21/22                                                                    </option>
+                                                        <option value="2020">20/21                                                                    </option>
+                                                        <option value="2019">19/20                                                                    </option>
+                                                        <option value="2018">18/19                                                                    </option>
+                                                        <option value="2017">17/18                                                                    </option>
+                                                        <option value="2016">16/17                                                                    </option>
+                                                        <option value="2015">15/16                                                                    </option>
+                                                        <option value="2014">14/15                                                                    </option>
+                                                        <option value="2013">13/14                                                                    </option>
+                                                        <option value="2012">12/13                                                                    </option>
+                                                        <option value="2011">11/12                                                                    </option>
+                                                        <option value="2010">10/11                                                                    </option>
+                                                        <option value="2009">09/10                                                                    </option>
+                                                        <option value="2008">08/09                                                                    </option>
+                                                        <option value="2007">07/08                                                                    </option>
+                                                        <option value="2006">06/07                                                                    </option>
+                                                        <option value="2005">05/06                                                                    </option>
+                                                        <option value="2004">04/05                                                                    </option>
+                                                        <option value="2003">03/04                                                                    </option>
+                                                        <option value="2002">02/03                                                                    </option>
+                                                        <option value="2001">01/02                                                                    </option>
+                                                        <option value="2000">00/01                                                                    </option>
+                                                        <option value="1999">99/00                                                                    </option>
+                                                        <option value="1998">98/99                                                                    </option>
+                                                        <option value="1997">97/98                                                                    </option>
+                                                        <option value="1996">96/97                                                                    </option>
+                                                        <option value="1995">95/96                                                                    </option>
+                                                        <option value="1994">94/95                                                                    </option>
+                                                        <option value="1993">93/94                                                                    </option>
+                                                        <option value="1992">92/93                                                                    </option>
+                                                        <option value="1991">91/92                                                                    </option>
+                                                        <option value="1990">90/91                                                                    </option>
+                                                        <option value="1989">89/90                                                                    </option>
+                                                        <option value="1988">88/89                                                                    </option>
+                                                        <option value="1987">87/88                                                                    </option>
+                                                        <option value="1986">86/87                                                                    </option>
+                                                        <option value="1985">85/86                                                                    </option>
+                                                        <option value="1984">84/85                                                                    </option>
+                                                        <option value="1983">83/84                                                                    </option>
+                                                        <option value="1982">82/83                                                                    </option>
+                                                        <option value="1981">81/82                                                                    </option>
+                                                        <option value="1980">80/81                                                                    </option>
+                                                        <option value="1979">79/80                                                                    </option>
+                                                        <option value="1978">78/79                                                                    </option>
+                                                        <option value="1977">77/78                                                                    </option>
+                                                        <option value="1976">76/77                                                                    </option>
+                                                        <option value="1975">75/76                                                                    </option>
+                                                        <option value="1974">74/75                                                                    </option>
+                                                        <option value="1973">73/74                                                                    </option>
+                                                        <option value="1971">71/72                                                                    </option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <input type="submit" class="small button" value="Show">
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="tm-tabs">
+                        <a class="tm-tab" href="/paris-saint-germain/kader/verein/583/saison_id/2023"><div class=""><span>Compact</span></div></a><a class="tm-tab tm-tab__active--parent" href="/paris-saint-germain/kader/verein/583/saison_id/2023/plus/1"><div class=" tm-tab__active"><span>Detailed</span></div></a><a class="tm-tab" href="/paris-saint-germain/kader/verein/583/saison_id/2023/galerie/1"><div class=""><span>Gallery</span></div></a></div>
+                    <div class="responsive-table">
+                        <div id="yw1" class="grid-view">
+                            <div class="summary"></div>
+                            <table class="items">
+                                <thead>
+                                <tr>
+                                    <th class="zentriert" id="yw1_c0"><a class="sort-link asc" href="/-/kader/verein/583/saison_id/2023/plus/1/sort/trikotNumber.desc">#</a></th><th id="yw1_c1"><a class="sort-link" href="/-/kader/verein/583/saison_id/2023/plus/1/sort/name">Player</a></th><th class="zentriert" id="yw1_c2"><a class="sort-link" href="/-/kader/verein/583/saison_id/2023/plus/1/sort/dateOfBirthTimestamp">Date of birth/Age</a></th><th class="zentriert" id="yw1_c3">Nat.</th><th class="zentriert" id="yw1_c4"><a class="sort-link" href="/-/kader/verein/583/saison_id/2023/plus/1/sort/size.desc">Height</a></th><th class="zentriert" id="yw1_c5"><a class="sort-link" href="/-/kader/verein/583/saison_id/2023/plus/1/sort/foot.desc">Foot</a></th><th class="zentriert" id="yw1_c6"><a class="sort-link" href="/-/kader/verein/583/saison_id/2023/plus/1/sort/teamMemberSinceTimestamp">Joined</a></th><th class="zentriert" id="yw1_c7">Signed from</th><th class="zentriert" id="yw1_c8"><a class="sort-link" href="/-/kader/verein/583/saison_id/2023/plus/1/sort/contractEndTimestamp">Contract</a></th><th class="rechts" id="yw1_c9"><a class="sort-link desc" href="/-/kader/verein/583/saison_id/2023/plus/1/sort/marketValueRaw">Marketvalues</a></th></tr>
+                                </thead>
+                                <tbody>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Torwart"><div class=rn_nummer>99</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/315858-1672304477.jpg?lm=1" title="Gianluigi Donnarumma" alt="Gianluigi Donnarumma" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/gianluigi-donnarumma/profil/spieler/315858">
+                                                    Gianluigi Donnarumma            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Goalkeeper        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Feb 25, 1999 (24)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen" /></td><td class="zentriert">1,96m</td><td class="zentriert">right</td><td class="zentriert">Jul 14, 2021</td><td class="zentriert"><a title="AC Milan: Ablöse free transfer" href="/ac-mailand/startseite/verein/5/saison_id/2021"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/5.png?lm=1605166627" title="AC Milan" alt="AC Milan" class="" /></a></td><td class="zentriert">Jun 30, 2026</td><td class="rechts hauptlink"><a href="/gianluigi-donnarumma/marktwertverlauf/spieler/315858">€45.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Torwart"><div class=rn_nummer>80</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Joined from FC Barcelona Atlètic; date: Jul 30, 2023; fee: free transfer" href="/fc-barcelona-atletic/startseite/verein/2464/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/2464.png?lm=1406739548" title="FC Barcelona Atlètic" alt="FC Barcelona Atlètic" class="" /></a></span><a title="Joined from FC Barcelona Atlètic; date: Jul 30, 2023; fee: free transfer" class="hide-for-small" href="/fc-barcelona-atletic/startseite/verein/2464/saison_id/2023"><img src="/images/icons/zugang_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/466783-1701444229.jpg?lm=1" title="Arnau Tenas" alt="Arnau Tenas" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/arnau-tenas/profil/spieler/466783">
+                                                    Arnau Tenas            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Goalkeeper        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">May 30, 2001 (22)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/157.png?lm=1520611569" title="Spain" alt="Spain" class="flaggenrahmen" /></td><td class="zentriert">1,85m</td><td class="zentriert">right</td><td class="zentriert">Jul 30, 2023</td><td class="zentriert"><a title="FC Barcelona Atlètic: Ablöse free transfer" href="/fc-barcelona-b/startseite/verein/2464/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/2464.png?lm=1406739548" title="FC Barcelona Atlètic" alt="FC Barcelona Atlètic" class="" /></a></td><td class="zentriert">Jun 30, 2026</td><td class="rechts hauptlink"><a href="/arnau-tenas/marktwertverlauf/spieler/466783">€5.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Torwart"><div class=rn_nummer>1</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Returned after loan spell with Nottingham Forest; date: Jun 30, 2023; fee: End of loan" href="/nottingham-forest/startseite/verein/703/saison_id/2022"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/703.png?lm=1598890289" title="Nottingham Forest" alt="Nottingham Forest" class="" /></a></span><a title="Returned after loan spell with Nottingham Forest; date: Jun 30, 2023; fee: End of loan" class="hide-for-small" href="/nottingham-forest/startseite/verein/703/saison_id/2022"><img src="/images/icons/rueckkehr_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/79422-1672304953.jpg?lm=1" title="Keylor Navas" alt="Keylor Navas" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/keylor-navas/profil/spieler/79422">
+                                                    Keylor Navas<span title="Hairline crack in the lumbar region - Return unknown" class="verletzt-table icons_sprite">&nbsp;</span>            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Goalkeeper        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Dec 15, 1986 (36)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/36.png?lm=1520611569" title="Costa Rica" alt="Costa Rica" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/157.png?lm=1520611569" title="Spain" alt="Spain" class="flaggenrahmen" /></td><td class="zentriert">1,85m</td><td class="zentriert">right</td><td class="zentriert">Sep 2, 2019</td><td class="zentriert"><a title="Real Madrid: Ablöse €15.00m" href="/real-madrid/startseite/verein/418/saison_id/2019"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/418.png?lm=1697726166" title="Real Madrid" alt="Real Madrid" class="" /></a></td><td class="zentriert">Jun 30, 2024</td><td class="rechts hauptlink"><a href="/keylor-navas/marktwertverlauf/spieler/79422">€3.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Torwart"><div class=rn_nummer>16</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/207302-1672304131.jpg?lm=1" title="Sergio Rico" alt="Sergio Rico" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/sergio-rico/profil/spieler/207302">
+                                                    Sergio Rico<span title="Cerebral hemorrhage - Return unknown" class="verletzt-table icons_sprite">&nbsp;</span>            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Goalkeeper        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Sep 1, 1993 (30)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/157.png?lm=1520611569" title="Spain" alt="Spain" class="flaggenrahmen" /></td><td class="zentriert">1,96m</td><td class="zentriert">right</td><td class="zentriert">Sep 5, 2020</td><td class="zentriert"><a title="Sevilla FC: Ablöse €6.00m" href="/fc-sevilla/startseite/verein/368/saison_id/2020"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/368.png?lm=1408655455" title="Sevilla FC" alt="Sevilla FC" class="" /></a></td><td class="zentriert">Jun 30, 2024</td><td class="rechts hauptlink"><a href="/sergio-rico/marktwertverlauf/spieler/207302">€3.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Torwart"><div class=rn_nummer>30</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/93730-1672303875.jpg?lm=1" title="Alexandre Letellier" alt="Alexandre Letellier" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/alexandre-letellier/profil/spieler/93730">
+                                                    Alexandre Letellier<span title="Adductor pain - Return unknown" class="verletzt-table icons_sprite">&nbsp;</span>            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Goalkeeper        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Dec 11, 1990 (32)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /></td><td class="zentriert">1,93m</td><td class="zentriert">right</td><td class="zentriert">Sep 25, 2020</td><td class="zentriert"><a title="US Orléans: Ablöse free transfer" href="/us-orleans/startseite/verein/10868/saison_id/2020"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/10868.png?lm=1459609692" title="US Orléans" alt="US Orléans" class="" /></a></td><td class="zentriert">Jun 30, 2024</td><td class="rechts hauptlink"><a href="/alexandre-letellier/marktwertverlauf/spieler/93730">€300k</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Abwehr"><div class=rn_nummer>5</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/181767-1672303747.jpg?lm=1" title="Marquinhos" alt="Marquinhos" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/marquinhos/profil/spieler/181767">
+                                                    Marquinhos<span title="Team captain" class="kapitaenicon-table icons_sprite">&nbsp;</span>            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Centre-Back        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">May 14, 1994 (29)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/26.png?lm=1520611569" title="Brazil" alt="Brazil" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/136.png?lm=1520611569" title="Portugal" alt="Portugal" class="flaggenrahmen" /></td><td class="zentriert">1,83m</td><td class="zentriert">right</td><td class="zentriert">Jul 19, 2013</td><td class="zentriert"><a title="AS Roma: Ablöse €31.40m" href="/as-rom/startseite/verein/12/saison_id/2013"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/12_1501244733.png?lm=1501244733" title=": Ablöse €31.40m" alt="AS Roma" class="" /></a></td><td class="zentriert">Jun 30, 2028</td><td class="rechts hauptlink"><a href="/marquinhos/marktwertverlauf/spieler/181767">€65.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Abwehr"><div class=rn_nummer>37</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Joined from Inter Milan; date: Jul 6, 2023; fee: free transfer" href="/inter-milan/startseite/verein/46/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/46.png?lm=1618900989" title="Inter Milan" alt="Inter Milan" class="" /></a></span><a title="Joined from Inter Milan; date: Jul 6, 2023; fee: free transfer" class="hide-for-small" href="/inter-milan/startseite/verein/46/saison_id/2023"><img src="/images/icons/zugang_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/204069-1598256813.jpg?lm=1" title="Milan Skriniar" alt="Milan Skriniar" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/milan-skriniar/profil/spieler/204069">
+                                                    Milan Skriniar            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Centre-Back        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Feb 11, 1995 (28)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/154.png?lm=1520611569" title="Slovakia" alt="Slovakia" class="flaggenrahmen" /></td><td class="zentriert">1,88m</td><td class="zentriert">right</td><td class="zentriert">Jul 6, 2023</td><td class="zentriert"><a title="Inter Milan: Ablöse free transfer" href="/inter-mailand/startseite/verein/46/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/46.png?lm=1618900989" title="Inter Milan" alt="Inter Milan" class="" /></a></td><td class="zentriert">Jun 30, 2028</td><td class="rechts hauptlink"><a href="/milan-skriniar/marktwertverlauf/spieler/204069">€50.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Abwehr"><div class=rn_nummer>21</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Joined from Bayern Munich; date: Jul 9, 2023; fee: €45.00m" href="/bayern-munich/startseite/verein/27/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/27.png?lm=1498251238" title="Bayern Munich" alt="Bayern Munich" class="" /></a></span><a title="Joined from Bayern Munich; date: Jul 9, 2023; fee: €45.00m" class="hide-for-small" href="/bayern-munich/startseite/verein/27/saison_id/2023"><img src="/images/icons/zugang_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/281963-1667830435.jpg?lm=1" title="Lucas Hernández" alt="Lucas Hernández" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/lucas-hernandez/profil/spieler/281963">
+                                                    Lucas Hernández            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Centre-Back        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Feb 14, 1996 (27)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/157.png?lm=1520611569" title="Spain" alt="Spain" class="flaggenrahmen" /></td><td class="zentriert">1,84m</td><td class="zentriert">left</td><td class="zentriert">Jul 9, 2023</td><td class="zentriert"><a title="Bayern Munich: Ablöse €45.00m" href="/fc-bayern-munchen/startseite/verein/27/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/27.png?lm=1498251238" title="Bayern Munich" alt="Bayern Munich" class="" /></a></td><td class="zentriert">Jun 30, 2028</td><td class="rechts hauptlink"><a href="/lucas-hernandez/marktwertverlauf/spieler/281963">€45.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Abwehr"><div class=rn_nummer>3</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/282041-1672304083.jpg?lm=1" title="Presnel Kimpembe" alt="Presnel Kimpembe" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/presnel-kimpembe/profil/spieler/282041">
+                                                    Presnel Kimpembe<span title="Achilles tendon rupture - Return unknown" class="verletzt-table icons_sprite">&nbsp;</span>            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Centre-Back        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Aug 13, 1995 (28)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/193.png?lm=1520611569" title="DR Congo" alt="DR Congo" class="flaggenrahmen" /></td><td class="zentriert">1,83m</td><td class="zentriert">left</td><td class="zentriert">Jul 1, 2015</td><td class="zentriert"><a title="Paris Saint-Germain B: Ablöse -" href="/fc-paris-saint-germain-b/startseite/verein/8512/saison_id/2015"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/8512.png?lm=1464899851" title="Paris Saint-Germain B" alt="Paris Saint-Germain B" class="" /></a></td><td class="zentriert">Jun 30, 2024</td><td class="rechts hauptlink"><a href="/presnel-kimpembe/marktwertverlauf/spieler/282041">€22.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Abwehr"><div class=rn_nummer>25</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/616341-1672304855.jpg?lm=1" title="Nuno Mendes" alt="Nuno Mendes" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/nuno-mendes/profil/spieler/616341">
+                                                    Nuno Mendes<span title="Hamstring injury - Return expected on Feb 1, 2024" class="verletzt-table icons_sprite">&nbsp;</span>            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Left-Back        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Jun 19, 2002 (21)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/136.png?lm=1520611569" title="Portugal" alt="Portugal" class="flaggenrahmen" /></td><td class="zentriert">1,83m</td><td class="zentriert">left</td><td class="zentriert">Jul 1, 2022</td><td class="zentriert"><a title="Sporting CP: Ablöse €38.00m" href="/sporting-lissabon/startseite/verein/336/saison_id/2022"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/336.png?lm=1621513752" title="Sporting CP" alt="Sporting CP" class="" /></a></td><td class="zentriert">Jun 30, 2026</td><td class="rechts hauptlink"><a href="/nuno-mendes/marktwertverlauf/spieler/616341">€65.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Abwehr"><div class=rn_nummer>97</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Returned after loan spell with Fulham FC; date: Jun 30, 2023; fee: End of loan" href="/fulham-fc/startseite/verein/931/saison_id/2022"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/931.png?lm=1556831687" title="Fulham FC" alt="Fulham FC" class="" /></a></span><a title="Returned after loan spell with Fulham FC; date: Jun 30, 2023; fee: End of loan" class="hide-for-small" href="/fulham-fc/startseite/verein/931/saison_id/2022"><img src="/images/icons/rueckkehr_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/126710-1598302846.jpg?lm=1" title="Layvin Kurzawa" alt="Layvin Kurzawa" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/layvin-kurzawa/profil/spieler/126710">
+                                                    Layvin Kurzawa            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Left-Back        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Sep 4, 1992 (31)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/251.png?lm=1520611569" title="Guadeloupe" alt="Guadeloupe" class="flaggenrahmen" /></td><td class="zentriert">1,82m</td><td class="zentriert">left</td><td class="zentriert">Aug 27, 2015</td><td class="zentriert"><a title="AS Monaco: Ablöse €25.00m" href="/as-monaco/startseite/verein/162/saison_id/2015"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/162.png?lm=1654781919" title="AS Monaco" alt="AS Monaco" class="" /></a></td><td class="zentriert">Jun 30, 2024</td><td class="rechts hauptlink"><a href="/layvin-kurzawa/marktwertverlauf/spieler/126710">€3.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Abwehr"><div class=rn_nummer>2</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/398073-1672304327.jpg?lm=1" title="Achraf Hakimi" alt="Achraf Hakimi" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/achraf-hakimi/profil/spieler/398073">
+                                                    Achraf Hakimi            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Right-Back        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Nov 4, 1998 (25)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/107.png?lm=1520611569" title="Morocco" alt="Morocco" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/157.png?lm=1520611569" title="Spain" alt="Spain" class="flaggenrahmen" /></td><td class="zentriert">1,81m</td><td class="zentriert">right</td><td class="zentriert">Jul 6, 2021</td><td class="zentriert"><a title="Inter Milan: Ablöse €68.00m" href="/inter-mailand/startseite/verein/46/saison_id/2021"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/46.png?lm=1618900989" title="Inter Milan" alt="Inter Milan" class="" /></a></td><td class="zentriert">Jun 30, 2026</td><td class="rechts hauptlink"><a href="/achraf-hakimi/marktwertverlauf/spieler/398073">€65.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Abwehr"><div class=rn_nummer>26</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/348026-1672303364.jpg?lm=1" title="Nordi Mukiele" alt="Nordi Mukiele" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/nordi-mukiele/profil/spieler/348026">
+                                                    Nordi Mukiele            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Right-Back        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Nov 1, 1997 (26)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/193.png?lm=1520611569" title="DR Congo" alt="DR Congo" class="flaggenrahmen" /></td><td class="zentriert">1,87m</td><td class="zentriert">right</td><td class="zentriert">Jul 26, 2022</td><td class="zentriert"><a title="RB Leipzig: Ablöse €12.00m" href="/rasenballsport-leipzig/startseite/verein/23826/saison_id/2022"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/23826.png?lm=1619431624" title="RB Leipzig" alt="RB Leipzig" class="" /></a></td><td class="zentriert">Jun 30, 2027</td><td class="rechts hauptlink"><a href="/nordi-mukiele/marktwertverlauf/spieler/348026">€14.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Mittelfeld"><div class=rn_nummer>4</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Joined from Sporting CP; date: Jul 7, 2023; fee: €60.00m" href="/sporting-cp/startseite/verein/336/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/336.png?lm=1621513752" title="Sporting CP" alt="Sporting CP" class="" /></a></span><a title="Joined from Sporting CP; date: Jul 7, 2023; fee: €60.00m" class="hide-for-small" href="/sporting-cp/startseite/verein/336/saison_id/2023"><img src="/images/icons/zugang_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/476701-1666099923.jpg?lm=1" title="Manuel Ugarte" alt="Manuel Ugarte" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/manuel-ugarte/profil/spieler/476701">
+                                                    Manuel Ugarte            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Defensive Midfield        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Apr 11, 2001 (22)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/179.png?lm=1520611569" title="Uruguay" alt="Uruguay" class="flaggenrahmen" /></td><td class="zentriert">1,82m</td><td class="zentriert">right</td><td class="zentriert">Jul 7, 2023</td><td class="zentriert"><a title="Sporting CP: Ablöse €60.00m" href="/sporting-lissabon/startseite/verein/336/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/336.png?lm=1621513752" title="Sporting CP" alt="Sporting CP" class="" /></a></td><td class="zentriert">Jun 30, 2028</td><td class="rechts hauptlink"><a href="/manuel-ugarte/marktwertverlauf/spieler/476701">€55.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Mittelfeld"><div class=rn_nummer>15</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/141050-1668697507.jpg?lm=1" title="Danilo Pereira" alt="Danilo Pereira" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/danilo-pereira/profil/spieler/141050">
+                                                    Danilo Pereira            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Defensive Midfield        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Sep 9, 1991 (32)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/136.png?lm=1520611569" title="Portugal" alt="Portugal" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/60.png?lm=1520611569" title="Guinea-Bissau" alt="Guinea-Bissau" class="flaggenrahmen" /></td><td class="zentriert">1,88m</td><td class="zentriert">right</td><td class="zentriert">Jul 1, 2021</td><td class="zentriert"><a title="FC Porto: Ablöse €16.00m" href="/fc-porto/startseite/verein/720/saison_id/2021"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/720.png?lm=1486310161" title="FC Porto" alt="FC Porto" class="" /></a></td><td class="zentriert">Jun 30, 2025</td><td class="rechts hauptlink"><a href="/danilo-pereira/marktwertverlauf/spieler/141050">€10.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Mittelfeld"><div class=rn_nummer>33</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/810092-1672303575.jpg?lm=1" title="Warren Zaïre-Emery" alt="Warren Zaïre-Emery" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/warren-zaire-emery/profil/spieler/810092">
+                                                    Warren Zaïre-Emery            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Central Midfield        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Mar 8, 2006 (17)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/207.png?lm=1699285669" title="Martinique" alt="Martinique" class="flaggenrahmen" /></td><td class="zentriert">1,78m</td><td class="zentriert">right</td><td class="zentriert">Jul 1, 2022</td><td class="zentriert"><a title="Paris Saint-Germain U19: Ablöse -" href="/fc-paris-saint-germain-u19/startseite/verein/6326/saison_id/2022"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/6326.png?lm=1464899851" title="Paris Saint-Germain U19" alt="Paris Saint-Germain U19" class="" /></a></td><td class="zentriert">Jun 30, 2025</td><td class="rechts hauptlink"><a href="/warren-zaire-emery/marktwertverlauf/spieler/810092">€50.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Mittelfeld"><div class=rn_nummer>17</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/487469-1672303629.jpg?lm=1" title="Vitinha" alt="Vitinha" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/vitinha/profil/spieler/487469">
+                                                    Vitinha            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Central Midfield        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Feb 13, 2000 (23)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/136.png?lm=1520611569" title="Portugal" alt="Portugal" class="flaggenrahmen" /></td><td class="zentriert">1,72m</td><td class="zentriert">right</td><td class="zentriert">Jul 1, 2022</td><td class="zentriert"><a title="FC Porto: Ablöse €41.50m" href="/fc-porto/startseite/verein/720/saison_id/2022"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/720.png?lm=1486310161" title="FC Porto" alt="FC Porto" class="" /></a></td><td class="zentriert">Jun 30, 2027</td><td class="rechts hauptlink"><a href="/vitinha/marktwertverlauf/spieler/487469">€45.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Mittelfeld"><div class=rn_nummer>8</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/350219-1672303440.jpg?lm=1" title="Fabián Ruiz" alt="Fabián Ruiz" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/fabian-ruiz/profil/spieler/350219">
+                                                    Fabián Ruiz            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Central Midfield        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Apr 3, 1996 (27)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/157.png?lm=1520611569" title="Spain" alt="Spain" class="flaggenrahmen" /></td><td class="zentriert">1,89m</td><td class="zentriert">left</td><td class="zentriert">Aug 30, 2022</td><td class="zentriert"><a title="SSC Napoli: Ablöse €23.00m" href="/ssc-neapel/startseite/verein/6195/saison_id/2022"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/6195.png?lm=1688982522" title="SSC Napoli" alt="SSC Napoli" class="" /></a></td><td class="zentriert">Jun 30, 2027</td><td class="rechts hauptlink"><a href="/fabian-ruiz/marktwertverlauf/spieler/350219">€30.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Mittelfeld"><div class=rn_nummer>28</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/372246-1662059930.jpg?lm=1" title="Carlos Soler" alt="Carlos Soler" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/carlos-soler/profil/spieler/372246">
+                                                    Carlos Soler            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Central Midfield        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Jan 2, 1997 (26)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/157.png?lm=1520611569" title="Spain" alt="Spain" class="flaggenrahmen" /></td><td class="zentriert">1,80m</td><td class="zentriert">right</td><td class="zentriert">Sep 1, 2022</td><td class="zentriert"><a title="Valencia CF: Ablöse €18.00m" href="/fc-valencia/startseite/verein/1049/saison_id/2022"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/1049.png?lm=1406966320" title="Valencia CF" alt="Valencia CF" class="" /></a></td><td class="zentriert">Jun 30, 2027</td><td class="rechts hauptlink"><a href="/carlos-soler/marktwertverlauf/spieler/372246">€20.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Mittelfeld"><div class=rn_nummer>27</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Joined from SL Benfica B; date: Jul 12, 2023; fee: free transfer" href="/sl-benfica-b/startseite/verein/10330/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/10330.png?lm=1535908439" title="SL Benfica B" alt="SL Benfica B" class="" /></a></span><a title="Joined from SL Benfica B; date: Jul 12, 2023; fee: free transfer" class="hide-for-small" href="/sl-benfica-b/startseite/verein/10330/saison_id/2023"><img src="/images/icons/zugang_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/651005-1655898772.jpg?lm=1" title="Cher Ndour" alt="Cher Ndour" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/cher-ndour/profil/spieler/651005">
+                                                    Cher Ndour            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Central Midfield        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Jul 27, 2004 (19)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/149.png?lm=1520611569" title="Senegal" alt="Senegal" class="flaggenrahmen" /></td><td class="zentriert">1,90m</td><td class="zentriert">both</td><td class="zentriert">Jul 12, 2023</td><td class="zentriert"><a title="SL Benfica B: Ablöse free transfer" href="/benfica-lissabon-b/startseite/verein/10330/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/10330.png?lm=1535908439" title="SL Benfica B" alt="SL Benfica B" class="" /></a></td><td class="zentriert">Jun 30, 2028</td><td class="rechts hauptlink"><a href="/cher-ndour/marktwertverlauf/spieler/651005">€4.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Mittelfeld"><div class=rn_nummer>38</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/903666-1628749613.jpg?lm=1" title="Ethan Mbappé" alt="Ethan Mbappé" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/ethan-mbappe/profil/spieler/903666">
+                                                    Ethan Mbappé            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Central Midfield        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Dec 29, 2006 (16)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/31.png?lm=1520611569" title="Cameroon" alt="Cameroon" class="flaggenrahmen" /></td><td class="zentriert">1,76m</td><td class="zentriert">left</td><td class="zentriert">-</td><td class="zentriert">&nbsp;</td><td class="zentriert">Jun 30, 2024</td><td class="rechts hauptlink"><a href="/ethan-mbappe/marktwertverlauf/spieler/903666">€500k</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Mittelfeld"><div class=rn_nummer>19</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Joined from RCD Mallorca; date: Jul 8, 2023; fee: €22.00m" href="/rcd-mallorca/startseite/verein/237/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/237.png?lm=1407484750" title="RCD Mallorca" alt="RCD Mallorca" class="" /></a></span><a title="Joined from RCD Mallorca; date: Jul 8, 2023; fee: €22.00m" class="hide-for-small" href="/rcd-mallorca/startseite/verein/237/saison_id/2023"><img src="/images/icons/zugang_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/557149-1682694618.jpg?lm=1" title="Kang-in Lee" alt="Kang-in Lee" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/kang-in-lee/profil/spieler/557149">
+                                                    Kang-in Lee            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Attacking Midfield        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Feb 19, 2001 (22)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/87.png?lm=1520611569" title="Korea, South" alt="Korea, South" class="flaggenrahmen" /></td><td class="zentriert">1,73m</td><td class="zentriert">left</td><td class="zentriert">Jul 8, 2023</td><td class="zentriert"><a title="RCD Mallorca: Ablöse €22.00m" href="/rcd-mallorca/startseite/verein/237/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/237.png?lm=1407484750" title="RCD Mallorca" alt="RCD Mallorca" class="" /></a></td><td class="zentriert">Jun 30, 2028</td><td class="rechts hauptlink"><a href="/kang-in-lee/marktwertverlauf/spieler/557149">€22.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Sturm"><div class=rn_nummer>7</div></td><td class="posrela">
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/342229-1682683695.jpg?lm=1" title="Kylian Mbappé" alt="Kylian Mbappé" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/kylian-mbappe/profil/spieler/342229">
+                                                    Kylian Mbappé            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Left Winger        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Dec 20, 1998 (24)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/31.png?lm=1520611569" title="Cameroon" alt="Cameroon" class="flaggenrahmen" /></td><td class="zentriert">1,78m</td><td class="zentriert">right</td><td class="zentriert">Jul 1, 2018</td><td class="zentriert"><a title="AS Monaco: Ablöse €180.00m" href="/as-monaco/startseite/verein/162/saison_id/2018"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/162.png?lm=1654781919" title="AS Monaco" alt="AS Monaco" class="" /></a></td><td class="zentriert">Jun 30, 2024</td><td class="rechts hauptlink"><a href="/kylian-mbappe/marktwertverlauf/spieler/342229">€180.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Sturm"><div class=rn_nummer>11</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Joined from Real Madrid; date: Jul 6, 2023; fee: free transfer" href="/real-madrid/startseite/verein/418/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/418.png?lm=1697726166" title="Real Madrid" alt="Real Madrid" class="" /></a></span><a title="Joined from Real Madrid; date: Jul 6, 2023; fee: free transfer" class="hide-for-small" href="/real-madrid/startseite/verein/418/saison_id/2023"><img src="/images/icons/zugang_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/296622-1664970818.jpg?lm=1" title="Marco Asensio" alt="Marco Asensio" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/marco-asensio/profil/spieler/296622">
+                                                    Marco Asensio            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Left Winger        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Jan 21, 1996 (27)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/157.png?lm=1520611569" title="Spain" alt="Spain" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/122.png?lm=1520611569" title="Netherlands" alt="Netherlands" class="flaggenrahmen" /></td><td class="zentriert">1,82m</td><td class="zentriert">left</td><td class="zentriert">Jul 6, 2023</td><td class="zentriert"><a title="Real Madrid: Ablöse free transfer" href="/real-madrid/startseite/verein/418/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/418.png?lm=1697726166" title="Real Madrid" alt="Real Madrid" class="" /></a></td><td class="zentriert">Jun 30, 2026</td><td class="rechts hauptlink"><a href="/marco-asensio/marktwertverlauf/spieler/296622">€25.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Sturm"><div class=rn_nummer>10</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Joined from FC Barcelona; date: Aug 12, 2023; fee: €50.00m" href="/fc-barcelona/startseite/verein/131/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/131.png?lm=1406739548" title="FC Barcelona" alt="FC Barcelona" class="" /></a></span><a title="Joined from FC Barcelona; date: Aug 12, 2023; fee: €50.00m" class="hide-for-small" href="/fc-barcelona/startseite/verein/131/saison_id/2023"><img src="/images/icons/zugang_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/288230-1684148641.jpg?lm=1" title="Ousmane Dembélé" alt="Ousmane Dembélé" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/ousmane-dembele/profil/spieler/288230">
+                                                    Ousmane Dembélé            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Right Winger        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">May 15, 1997 (26)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /></td><td class="zentriert">1,78m</td><td class="zentriert">both</td><td class="zentriert">Aug 12, 2023</td><td class="zentriert"><a title="FC Barcelona: Ablöse €50.00m" href="/fc-barcelona/startseite/verein/131/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/131.png?lm=1406739548" title="FC Barcelona" alt="FC Barcelona" class="" /></a></td><td class="zentriert">Jun 30, 2028</td><td class="rechts hauptlink"><a href="/ousmane-dembele/marktwertverlauf/spieler/288230">€60.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Sturm"><div class=rn_nummer>29</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Joined from Olympique Lyon; date: Aug 31, 2023; fee: €45.00m" href="/olympique-lyon/startseite/verein/1041/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/1041.png?lm=1656668172" title="Olympique Lyon" alt="Olympique Lyon" class="" /></a></span><a title="Joined from Olympique Lyon; date: Aug 31, 2023; fee: €45.00m" class="hide-for-small" href="/olympique-lyon/startseite/verein/1041/saison_id/2023"><img src="/images/icons/zugang_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/708265-1653406915.jpg?lm=1" title="Bradley Barcola" alt="Bradley Barcola" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/bradley-barcola/profil/spieler/708265">
+                                                    Bradley Barcola            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Right Winger        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Sep 2, 2002 (21)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/168.png?lm=1520611569" title="Togo" alt="Togo" class="flaggenrahmen" /></td><td class="zentriert">1,86m</td><td class="zentriert">right</td><td class="zentriert">Aug 31, 2023</td><td class="zentriert"><a title="Olympique Lyon: Ablöse €45.00m" href="/olympique-lyon/startseite/verein/1041/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/1041.png?lm=1656668172" title="Olympique Lyon" alt="Olympique Lyon" class="" /></a></td><td class="zentriert">Jun 30, 2028</td><td class="rechts hauptlink"><a href="/bradley-barcola/marktwertverlauf/spieler/708265">€35.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Sturm"><div class=rn_nummer>23</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Joined from Eintracht Frankfurt; date: Sep 1, 2023; fee: €95.00m" href="/eintracht-frankfurt/startseite/verein/24/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/24.png?lm=1700074979" title="Eintracht Frankfurt" alt="Eintracht Frankfurt" class="" /></a></span><a title="Joined from Eintracht Frankfurt; date: Sep 1, 2023; fee: €95.00m" class="hide-for-small" href="/eintracht-frankfurt/startseite/verein/24/saison_id/2023"><img src="/images/icons/zugang_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/487969-1663064953.jpg?lm=1" title="Randal Kolo Muani" alt="Randal Kolo Muani" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/randal-kolo-muani/profil/spieler/487969">
+                                                    Randal Kolo Muani            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Centre-Forward        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Dec 5, 1998 (25)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/193.png?lm=1520611569" title="DR Congo" alt="DR Congo" class="flaggenrahmen" /></td><td class="zentriert">1,87m</td><td class="zentriert">right</td><td class="zentriert">Sep 1, 2023</td><td class="zentriert"><a title="Eintracht Frankfurt: Ablöse €95.00m" href="/eintracht-frankfurt/startseite/verein/24/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/24.png?lm=1700074979" title="Eintracht Frankfurt" alt="Eintracht Frankfurt" class="" /></a></td><td class="zentriert">Jun 30, 2028</td><td class="rechts hauptlink"><a href="/randal-kolo-muani/marktwertverlauf/spieler/487969">€80.00m</a></td></tr>
+                                <tr class="even">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Sturm"><div class=rn_nummer>9</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="On loan from SL Benfica; committed until: Jul 1, 2024; fee: €65.00m" href="/sl-benfica/startseite/verein/294/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/294.png?lm=1535908439" title="SL Benfica" alt="SL Benfica" class="" /></a></span><a title="On loan from SL Benfica; committed until: Jul 1, 2024; fee: €65.00m" class="hide-for-small" href="/sl-benfica/startseite/verein/294/saison_id/2023"><img src="/images/icons/leihe_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/550550-1681906158.jpg?lm=1" title="Gonçalo Ramos" alt="Gonçalo Ramos" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/goncalo-ramos/profil/spieler/550550">
+                                                    Gonçalo Ramos            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Centre-Forward        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Jun 20, 2001 (22)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/136.png?lm=1520611569" title="Portugal" alt="Portugal" class="flaggenrahmen" /></td><td class="zentriert">1,85m</td><td class="zentriert">right</td><td class="zentriert">Aug 7, 2023</td><td class="zentriert"><a title="SL Benfica: Ablöse free transfer" href="/benfica-lissabon/startseite/verein/294/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/294.png?lm=1535908439" title="SL Benfica" alt="SL Benfica" class="" /></a></td><td class="zentriert">Jun 30, 2024</td><td class="rechts hauptlink"><a href="/goncalo-ramos/marktwertverlauf/spieler/550550">€50.00m</a></td></tr>
+                                <tr class="odd">
+                                    <td title="$data-&gt;getPositionDisplay()" class="zentriert rueckennummer bg_Sturm"><div class=rn_nummer>44</div></td><td class="posrela"><span class="wechsel-kader-wappen hide-for-small"><a title="Joined from Stade Reims; date: Jul 1, 2023; fee: €28.50m" href="/stade-reims/startseite/verein/1421/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/kaderquad/1421.png?lm=1592601839" title="Stade Reims" alt="Stade Reims" class="" /></a></span><a title="Joined from Stade Reims; date: Jul 1, 2023; fee: €28.50m" class="hide-for-small" href="/stade-reims/startseite/verein/1421/saison_id/2023"><img src="/images/icons/zugang_beta_kader.png" class="wechsel-symbol" width="19px" height="19px" /></a>
+                                    <table class="inline-table">
+                                        <tr>
+                                            <td rowspan="2">
+                                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://img.a.transfermarkt.technology/portrait/medium/709726-1672304545.jpg?lm=1" title="Hugo Ekitiké" alt="Hugo Ekitiké" class="bilderrahmen-fixed lazy lazy" />        </td>
+                                            <td class="hauptlink">
+                                                <a href="/hugo-ekitike/profil/spieler/709726">
+                                                    Hugo Ekitiké            </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                Centre-Forward        </td>
+                                        </tr>
+                                    </table>
+                                </td><td class="zentriert">Jun 20, 2002 (21)</td><td class="zentriert"><img src="https://tmssl.akamaized.net/images/flagge/verysmall/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" /><br /><img src="https://tmssl.akamaized.net/images/flagge/verysmall/31.png?lm=1520611569" title="Cameroon" alt="Cameroon" class="flaggenrahmen" /></td><td class="zentriert">1,89m</td><td class="zentriert">right</td><td class="zentriert">Jul 1, 2023</td><td class="zentriert"><a title="Stade Reims: Ablöse €28.50m" href="/stade-reims/startseite/verein/1421/saison_id/2023"><img src="https://tmssl.akamaized.net/images/wappen/verysmall/1421.png?lm=1592601839" title="Stade Reims" alt="Stade Reims" class="" /></a></td><td class="zentriert">Jun 30, 2027</td><td class="rechts hauptlink"><a href="/hugo-ekitike/marktwertverlauf/spieler/709726">€15.00m</a></td></tr>
+                                </tbody>
+                            </table>
+                            <div class="keys" style="display:none" title="/-/kader/verein/583/saison_id/2023/plus/1"><span>99</span><span>80</span><span>1</span><span>16</span><span>30</span><span>5</span><span>37</span><span>21</span><span>3</span><span>25</span><span>97</span><span>2</span><span>26</span><span>4</span><span>15</span><span>33</span><span>17</span><span>8</span><span>28</span><span>27</span><span>38</span><span>19</span><span>7</span><span>11</span><span>10</span><span>29</span><span>23</span><span>9</span><span>44</span></div>
+                        </div>                </div>
+                </div>
+            </div>
+        </div>
+
+        <script async src="/js/custom/tm-track-links.min.js" type="module"></script>
+        <div class="werbung werbung-fullsize_contentad"><div id="div-gpt-ad-1621528173524-0"style="min-width: 728px; min-height: 90px;"></div>
+            <script>googletag.cmd.push(function() { googletag.display("div-gpt-ad-1621528173524-0"); });</script>
+        </div>        </main>
+
+    <footer>
+        <div class="tm-footer">
+            <a href="/"
+               class="tm-footer__logo">
+                <img src="https://tmsi.akamaized.net/head/transfermarkt_logo.svg" alt="Transfermarkt" height="33" width="80"/>
+            </a>
+            <ul class="tm-footer__links">
+                <li class="tm-footer__links-item">
+                    <a href="/intern/impressum">
+                        Legal notice      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="/intern/web/datenschutz">
+                        Data protection      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="javascript:void(0)" class="cmp-link">
+                        Privacy      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="/intern/anb">
+                        General conditions of use      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="/intern/tmteam">
+                        TM-Team      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="/intern/faq">
+                        FAQ      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="/intern/fehlermelden">
+                        Found a mistake?      </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div id="menue_overlay"></div>
+</div>
+<script type="text/javascript">
+    var iam_data = {
+        "st":"transfer",
+        "cp":"ausland_co.uk_r",
+        "co":""
+    }
+</script>
+<script type="module">
+    var defaultOptions = {
+        tracking: !0,
+        refreshAds: !0
+    };
+    export var refreshAd = function() {
+        var e, n;
+        [ASCDP.hasOwnProperty("adS"), null === (e = ASCDP.adS) || void 0 === e ? void 0 : e.hasOwnProperty("reloadAds"), "function" == typeof(null === (n = ASCDP.adS) || void 0 === n ? void 0 : n.reloadAds)].every(function(e) {
+            return e
+        }) && ASCDP.adS.reloadAds()
+    };
+    export var TmTrackingAndAds = function(e, n) {
+        void 0 === n && (n = defaultOptions);
+        var r = ["tabelle", "reiter", "forum"].includes(e) ? e : "";
+        n.tracking && (gtag("event", "page_view", {
+            page_path: "/jsContent" + window.location.pathname
+        }), sendIvwData(r)), n.refreshAds && "undefined" != typeof ASCDP && refreshAd()
+    };
+    window.tmTrackingAndAds = function(e, n) {
+        return TmTrackingAndAds(e, n)
+    };
+</script>
+<script type="text/javascript">
+    const iommInterval = setInterval(() => {
+        if (typeof IOMm === 'function') {
+            IOMm('configure', {
+                st: iam_data.st,
+                dn: 'data-84a0f3455d.transfermarkt.com',
+                mh: 5
+            });
+            IOMm('pageview', {
+                cp: iam_data.cp,
+                co: iam_data.co
+            });
+            clearInterval(iommInterval);
+        }
+    }, 250);
+</script>
+<script type="text/javascript">
+    if(typeof(adet) == "boolean" && adet == false){
+        img_src="/static/singlepictures/jk99hhfsdh209nbnkjldgh90sghfsdlk";
+    } else {
+        img_src="/static/singlepictures/jku90whjlkjbwbta1g4b8h89fh8sgh8d";
+    }
+    var elem = document.createElement("img");
+    document.body.appendChild(elem);
+    elem.src = img_src;
+</script>
+
+<script>
+    $(function() {
+        var cnt = $('div.large-4.columns').length;
+        if (cnt == 1) {
+            var sidebarDiv = document.querySelector('div.large-4.columns');
+            if (sidebarDiv !== null) {
+                $('#werbung_recommender_sidebar_wrapper').appendTo(sidebarDiv);
+                $('#werbung_recommender_sidebar_wrapper').show();
+            }
+        }
+    });
+</script>
+<div id="werbung_recommender_sidebar_wrapper" style="display: none;">
+    <div
+            id="recommender_sidebar"
+            class="box"
+    >
+        <div class="OUTBRAIN" data-widget-id="SL_DT_SB"></div>
+        <tm-consent
+                no-checkbox
+                type="outbrain"
+                embed="PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIGFzeW5jPSJhc3luYyIgc3JjPSIvL3dpZGdldHMub3V0YnJhaW4uY29tL291dGJyYWluLmpzIj48L3NjcmlwdD4=">
+        </tm-consent>
+    </div>
+</div>
+<script type="module" src="https://tmsi.akamaized.net/js/custom-element-globals/tm-global-elements.esm.js" defer></script><script nomodule="" src="https://tmsi.akamaized.net/js/custom-element-globals/tm-global-elements.js" defer></script><tm-consent type="adition" no-checkbox embed="PHNjcmlwdCBzcmM9Imh0dHBzOi8vY3JlYXRpdmUtY2RuLm9kZHNzZXJ2ZS5jb20vbG9hZGVyLmpzP3B1Ymxpc2hlcj10bSIgYXN5bmM9ImFzeW5jIj48L3NjcmlwdD4="></tm-consent><tm-consent type="googleanalytics" no-checkbox embed="PHNjcmlwdCBhc3luYyBzcmM9Imh0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0YWcvanM/aWQ9VUEtMzgxNjIwNC0xMyI+PC9zY3JpcHQ+"></tm-consent><script type="text/javascript" src="https://tmssl.akamaized.net/assets/aa69c6e9c51f1e811847082c63633956/gridview/jquery.yiigridview.js?lm=1702030166"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/custom/tm-menu.min.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/custom/vendors.min.js?lm=1702030165"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/consent/bundle.js"></script>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    function skyscraperSwitch() {
+        const firstAd = document.getElementsByClassName("werbung-skyscraper");
+        const secondAd = document.getElementsByClassName("werbung-skyscraperbtf")
+        if (this.scrollY > 699) {
+            firstAd[0].style.visibility = "hidden";
+            secondAd[0].style.position = "fixed";
+            secondAd[0].style.top = "40px";
+        } else {
+            firstAd[0].style.visibility = "visible";
+            secondAd[0].style.position = "relative";
+            secondAd[0].style.top = "unset";
+        }
+    }
+    window.addEventListener("scroll", skyscraperSwitch, false);
+    var loginUrl='/profil/login';
+    var onlyDE = '';
+    var onlyMobile = '';
+    var onlyTablet = '';
+    var getUserID = '';
+
+    function sendIvwData(typ) {
+        if(typ == 'tabelle') {
+            var iam_data = {
+                "st":"transfer",
+                "cp":"ausland_co.uk_r_t",
+                "co":""
+            }
+
+        }else if(typ == 'reiter') {
+            var iam_data = {
+                "st":"transfer",
+                "cp":"ausland_co.uk_r_r",
+                "co":""
+            }
+
+        }else if(typ == 'forum') {
+            var iam_data = {
+                "st":"transfer",
+                "cp":"ausland_co.uk_r_forum",
+                "co":""
+            }
+
+        }else {
+            var iam_data = {
+                "st":"transfer",
+                "cp":"ausland_co.uk_r_s",
+                "co":""
+            }
+
+        }
+        if(typeof IOMm === 'function') {
+            IOMm('pageview', { cp: iam_data.cp, co: iam_data.co });
+        }
+    }
+    jQuery(function($) {
+        jQuery('#yw1').yiiGridView({'ajaxUpdate':['yw1'],'ajaxVar':'ajax','pagerClass':'pager','loadingClass':'grid\x2Dview\x2Dloading','filterClass':'filters','tableClass':'items','selectableRows':1,'enableHistory':false,'updateSelector':'\x7Bpage\x7D,\x20\x7Bsort\x7D','filterSelector':'\x7Bfilter\x7D','afterAjaxUpdate':function() {window.LazyLoadInstance.update(); tmTrackingAndAds(); trackLinks(); document.dispatchEvent(new CustomEvent("tmInitTooltip"));}});
+    });
+    /*]]>*/
+</script>
+</body>
+
+</html>

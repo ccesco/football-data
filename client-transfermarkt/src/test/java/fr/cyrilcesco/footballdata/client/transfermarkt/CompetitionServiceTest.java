@@ -2,7 +2,6 @@ package fr.cyrilcesco.footballdata.client.transfermarkt;
 
 import fr.cyrilcesco.footballdata.client.transfermarkt.exception.TransfermarktSocketTimeOut;
 import fr.cyrilcesco.footballdata.client.transfermarkt.jsoup.JsoupClient;
-import fr.cyrilcesco.footballdata.client.transfermarkt.jsoup.PageCompetition;
 import fr.cyrilcesco.footballdata.client.transfermarkt.model.Team;
 import fr.cyrilcesco.footballdata.client.transfermarkt.model.TransfermarktCompetitionResponse;
 import org.jsoup.Jsoup;
@@ -16,21 +15,26 @@ import java.io.File;
 import java.io.IOException;
 import java.net.SocketTimeoutException;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
 class CompetitionServiceTest {
 
+    public static final String URL_TO_CONNECT = "https://www.transfermarkt.com/-/startseite/wettbewerb/FR1";
+    public static final String CONNECT_SUFFIX = "/plus/?saison_id=2023";
+
     @Mock
     private JsoupClient jsoupClient;
 
     @Test
     void should_return_time_out_exception_when_too_long() throws IOException {
-        when(jsoupClient.getDocument(any(), any())).thenThrow(new SocketTimeoutException());
+        when(jsoupClient.getDocument(any())).thenThrow(new SocketTimeoutException());
 
-        TransfermarktSocketTimeOut socketTimeOut = assertThrows(TransfermarktSocketTimeOut.class, () -> new CompetitionService(jsoupClient).getTeamsOfCompetition("FR1", "2023"));
+        CompetitionService competitionService = new CompetitionService(jsoupClient);
+        TransfermarktSocketTimeOut socketTimeOut = assertThrows(TransfermarktSocketTimeOut.class, () -> competitionService.getTeamsOfCompetition("FR1", "2023"));
         assertEquals("Socket Time Out for id FR1", socketTimeOut.getMessage());
     }
 
@@ -39,7 +43,7 @@ class CompetitionServiceTest {
         File input = new File("src/test/resources/pageFR1.html");
         Document doc = Jsoup.parse(input, "UTF-8", "https://www.transfermarkt.com/-/startseite/wettbewerb/FR1");
 
-        when(jsoupClient.getDocument(any(), any())).thenReturn(new PageCompetition(doc));
+        when(jsoupClient.getDocument(URL_TO_CONNECT + CONNECT_SUFFIX)).thenReturn(doc);
 
         TransfermarktCompetitionResponse response = new CompetitionService(jsoupClient).getTeamsOfCompetition("FR1", "2023");
 

@@ -33,7 +33,7 @@ public class CompetitionService {
         String urlToConnectSuffix = SUFFIX_SEASON_YEAR.replace("{year}", year);
 
         try {
-            PageCompetition page = jsoupClient.getDocument(urlToConnect, urlToConnectSuffix);
+            PageCompetition page = new PageCompetition(jsoupClient, urlToConnect, urlToConnectSuffix);
 
             List<Team> teams = page.getTeams();
             String competitionName = page.getCompetitionName();

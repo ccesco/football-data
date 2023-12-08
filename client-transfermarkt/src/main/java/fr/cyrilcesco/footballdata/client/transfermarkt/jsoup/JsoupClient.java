@@ -9,12 +9,9 @@ import java.io.IOException;
 @Service
 public class JsoupClient {
 
-    public PageCompetition getDocument(String urlToConnect, String urlToConnectSuffix) throws IOException {
-        Document document = Jsoup.connect(urlToConnect + urlToConnectSuffix)
+    public Document getDocument(String urlToConnect) throws IOException {
+        return Jsoup.connect(urlToConnect)
                 .timeout(7000)
                 .get();
-        return new PageCompetition(document);
     }
-
-
 }
