@@ -16,6 +16,7 @@ import java.util.List;
 public class TransfermarktTeamResponse {
 
     private final String id;
+    private final String name;
     private final String seasonYear;
     private final List<Player> players;
 }

@@ -24,6 +24,10 @@ public class PageTeamPlayers extends PageDocument{
                 .toList();
     }
 
+    public String getTeamName() {
+         return getPage().selectXpath("//header//h1").text();
+    }
+
     private Player mapToPlayer(Element element) {
         String href = element.attr("href");
         return Player.builder().name(element.text()).link(href).id(getIdFromHref(href)).build();

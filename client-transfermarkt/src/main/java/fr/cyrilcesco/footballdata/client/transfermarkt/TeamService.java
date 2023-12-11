@@ -33,8 +33,9 @@ public class TeamService {
 
         try {
             List<Player> players = new PageTeamPlayers(jsoupClient, urlToConnect).getPlayers();
+            String teamName = new PageTeamPlayers(jsoupClient, urlToConnect).getTeamName();
 
-            return getResponse(teamId, seasonYear, players);
+            return getResponse(teamId, teamName, seasonYear, players);
         } catch (SocketTimeoutException e) {
             throw new TransfermarktSocketTimeOut(teamId);
         } catch (IOException e) {
@@ -42,9 +43,10 @@ public class TeamService {
         }
     }
 
-    private TransfermarktTeamResponse getResponse(String teamId, String seasonYear, List<Player> players) {
+    private TransfermarktTeamResponse getResponse(String teamId, String name, String seasonYear, List<Player> players) {
         return TransfermarktTeamResponse.builder()
                 .id(teamId)
+                .name(name)
                 .seasonYear(seasonYear)
                 .players(players)
                 .build();

@@ -32,6 +32,7 @@ class PageTeamPlayersTest {
         PageTeamPlayers pageTeamPlayers = new PageTeamPlayers(jsoupClient, URL_TO_CONNECT);
 
         assertEquals(29, pageTeamPlayers.getPlayers().size());
+        assertEquals("Paris Saint-Germain", pageTeamPlayers.getTeamName());
 
         Player player1 = pageTeamPlayers.getPlayers().get(0);
         assertEquals(Player.builder().name("Gianluigi Donnarumma").id("315858").link("/gianluigi-donnarumma/profil/spieler/315858").build(), player1);

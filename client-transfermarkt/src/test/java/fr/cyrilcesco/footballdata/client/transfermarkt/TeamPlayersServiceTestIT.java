@@ -25,6 +25,7 @@ class TeamPlayersServiceTestIT {
 
         assertEquals("583", team.getId());
         assertEquals("2023", team.getSeasonYear());
+        assertEquals("Paris Saint-Germain", team.getName());
         assertEquals(Player.builder().name("Gianluigi Donnarumma").id("315858").link("/gianluigi-donnarumma/profil/spieler/315858").build(), team.getPlayers().get(0));
         assertEquals(Player.builder().name("Arnau Tenas").id("466783").link("/arnau-tenas/profil/spieler/466783").build(), team.getPlayers().get(1));
         assertEquals(Player.builder().name("Keylor Navas").id("79422").link("/keylor-navas/profil/spieler/79422").build(), team.getPlayers().get(2));
