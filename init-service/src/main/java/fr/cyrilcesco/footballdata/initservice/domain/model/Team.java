@@ -1,4 +1,4 @@
-package fr.cyrilcesco.footballdata.initservice.competitions.model;
+package fr.cyrilcesco.footballdata.initservice.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -15,11 +15,12 @@ import java.util.List;
 @Builder
 @EqualsAndHashCode
 @NoArgsConstructor
-public class Competition {
+public class Team {
 
     private String id;
     private String name;
     private String seasonYear;
-    private List<Team> teams;
+    private String informationsLink;
+    private List<Player> players;
 
 }

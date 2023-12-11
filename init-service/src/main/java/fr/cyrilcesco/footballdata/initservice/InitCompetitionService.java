@@ -1,8 +1,8 @@
-package fr.cyrilcesco.footballdata.initservice.competitions;
+package fr.cyrilcesco.footballdata.initservice;
 
 import fr.cyrilcesco.footballdata.initservice.competitions.config.InitCompetitionList;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
-import fr.cyrilcesco.footballdata.initservice.competitions.producer.CompetitionProducer;
+import fr.cyrilcesco.footballdata.initservice.domain.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.competitions.CompetitionProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

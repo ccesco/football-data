@@ -1,8 +1,8 @@
-package fr.cyrilcesco.footballdata.initservice.competitions;
+package fr.cyrilcesco.footballdata.initservice;
 
 import fr.cyrilcesco.footballdata.initservice.competitions.config.InitCompetitionList;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
-import fr.cyrilcesco.footballdata.initservice.competitions.producer.CompetitionProducer;
+import fr.cyrilcesco.footballdata.initservice.domain.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.competitions.CompetitionProducer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -16,7 +16,7 @@ import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
-class InitServiceTest {
+class InitCompetitionServiceTest {
 
     @Mock
     private InitCompetitionList competitions;

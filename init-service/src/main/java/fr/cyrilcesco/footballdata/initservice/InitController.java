@@ -1,6 +1,6 @@
-package fr.cyrilcesco.footballdata.initservice.competitions;
+package fr.cyrilcesco.footballdata.initservice;
 
-import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.domain.model.InitCompetitionRequest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;

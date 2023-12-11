@@ -1,7 +1,7 @@
 package fr.cyrilcesco.footballdata.initservice.competitions.common;
 
-import fr.cyrilcesco.footballdata.initservice.competitions.model.Competition;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.domain.model.Competition;
+import fr.cyrilcesco.footballdata.initservice.domain.model.InitCompetitionRequest;
 import org.apache.kafka.common.serialization.Serde;
 import org.apache.kafka.common.serialization.Serdes;
 import org.springframework.kafka.support.serializer.JsonSerde;

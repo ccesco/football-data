@@ -1,4 +1,4 @@
-package fr.cyrilcesco.footballdata.initservice.competitions.model;
+package fr.cyrilcesco.footballdata.initservice.domain.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;
@@ -8,14 +8,13 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Getter
-@Builder
 @ToString
+@AllArgsConstructor
+@Builder
 @EqualsAndHashCode
 @NoArgsConstructor
-@AllArgsConstructor
-public class InitCompetitionRequest {
+public class Player {
 
-    private String competitionId;
-    private String year;
-
+    private String name;
+    private String id;
 }

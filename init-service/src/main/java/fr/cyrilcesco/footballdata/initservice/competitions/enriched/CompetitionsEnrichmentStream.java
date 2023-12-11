@@ -1,8 +1,8 @@
-package fr.cyrilcesco.footballdata.initservice.competitions.stream;
+package fr.cyrilcesco.footballdata.initservice.competitions.enriched;
 
 import fr.cyrilcesco.footballdata.initservice.competitions.GetCompetitionInformationsService;
-import fr.cyrilcesco.footballdata.initservice.competitions.config.TopicsName;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.Competition;
+import fr.cyrilcesco.footballdata.initservice.config.TopicsName;
+import fr.cyrilcesco.footballdata.initservice.domain.model.Competition;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.common.serialization.Serdes;
 import org.apache.kafka.streams.StreamsBuilder;
@@ -11,6 +11,7 @@ import org.apache.kafka.streams.kstream.Consumed;
 import org.apache.kafka.streams.kstream.KStream;
 import org.apache.kafka.streams.kstream.Named;
 import org.apache.kafka.streams.kstream.Produced;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -20,6 +21,7 @@ import java.util.Objects;
 import static fr.cyrilcesco.footballdata.initservice.competitions.common.CommonSerdes.COMPETITION_SERDES;
 import static fr.cyrilcesco.footballdata.initservice.competitions.common.CommonSerdes.INIT_COMPETITION_SERDES;
 import static fr.cyrilcesco.footballdata.initservice.competitions.common.CommonSerdes.STRING_SERDES;
+import static fr.cyrilcesco.footballdata.initservice.competitions.config.InitCompetitionsConfig.STREAM_COMPETITION_NAME;
 
 @Configuration
 @Slf4j
@@ -33,7 +35,7 @@ public class CompetitionsEnrichmentStream {
     }
 
     @Bean
-    public Map<String, KStream<String, Competition>> createCompetitionsEnrichmentStream(StreamsBuilder streamsBuilder) {
+    public Map<String, KStream<String, Competition>> createCompetitionsEnrichmentStream(@Qualifier(STREAM_COMPETITION_NAME) StreamsBuilder streamsBuilder) {
         Map<String, KStream<String, Competition>> streamEnriched = streamsBuilder.stream(TopicsName.INIT_COMPETITION, Consumed.with(Serdes.String(), INIT_COMPETITION_SERDES))
                 .mapValues((readOnlyKey, request) -> getCompetitionInformationsService.callClient(request))
                 .split(Named.as(BRANCHES)) // split the stream

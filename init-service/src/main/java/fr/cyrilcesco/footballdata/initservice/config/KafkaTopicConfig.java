@@ -1,4 +1,4 @@
-package fr.cyrilcesco.footballdata.initservice.competitions.config;
+package fr.cyrilcesco.footballdata.initservice.config;
 
 import org.apache.kafka.clients.admin.NewTopic;
 import org.springframework.context.annotation.Bean;
@@ -32,4 +32,27 @@ public class KafkaTopicConfig {
                 .build();
     }
 
+    @Bean
+    public NewTopic createTeamTopic() {
+        return TopicBuilder.name(TopicsName.INIT_TEAM)
+                .partitions(5)
+                .compact()
+                .build();
+    }
+
+    @Bean
+    public NewTopic createTeamEnrichedTopic() {
+        return TopicBuilder.name(TopicsName.TEAM_ENRICHED)
+                .partitions(3)
+                .compact()
+                .build();
+    }
+
+    @Bean
+    public NewTopic createTeamEnrichedErrorTopic() {
+        return TopicBuilder.name(TopicsName.TEAM_ENRICHED_ERROR)
+                .partitions(1)
+                .compact()
+                .build();
+    }
 }

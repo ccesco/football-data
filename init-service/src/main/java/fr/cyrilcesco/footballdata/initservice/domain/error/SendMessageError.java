@@ -1,4 +1,4 @@
-package fr.cyrilcesco.footballdata.initservice.competitions.error;
+package fr.cyrilcesco.footballdata.initservice.domain.error;
 
 public class SendMessageError extends RuntimeException {
 

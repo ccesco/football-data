@@ -2,9 +2,9 @@ package fr.cyrilcesco.footballdata.initservice.competitions;
 
 import fr.cyrilcesco.footballdata.client.transfermarkt.TransfermarktClient;
 import fr.cyrilcesco.footballdata.client.transfermarkt.exception.TransfermarktSocketTimeOut;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.Competition;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.mapper.CompetitionMapper;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.domain.model.Competition;
+import fr.cyrilcesco.footballdata.initservice.domain.model.mapper.CompetitionMapper;
+import fr.cyrilcesco.footballdata.initservice.domain.model.InitCompetitionRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 

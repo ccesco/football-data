@@ -6,7 +6,8 @@ spring:
     name: init-service
   kafka:
     streams:
-      application-id: competitions-enriched-stream
+      competition-application-id: competitions-enriched-stream
+      team-application-id: team-enriched-stream
       bootstrap-servers: localhost:19092
     producer:
       bootstrap-servers: localhost:19092

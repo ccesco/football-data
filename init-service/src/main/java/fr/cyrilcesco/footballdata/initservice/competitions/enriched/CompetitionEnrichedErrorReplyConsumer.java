@@ -1,9 +1,9 @@
-package fr.cyrilcesco.footballdata.initservice.competitions.reply;
+package fr.cyrilcesco.footballdata.initservice.competitions.enriched;
 
-import fr.cyrilcesco.footballdata.initservice.competitions.config.TopicsName;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.Competition;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
-import fr.cyrilcesco.footballdata.initservice.competitions.producer.CompetitionProducer;
+import fr.cyrilcesco.footballdata.initservice.config.TopicsName;
+import fr.cyrilcesco.footballdata.initservice.domain.model.Competition;
+import fr.cyrilcesco.footballdata.initservice.domain.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.competitions.CompetitionProducer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;

@@ -1,14 +1,18 @@
-package fr.cyrilcesco.footballdata.initservice.competitions.model.mapper;
+package fr.cyrilcesco.footballdata.initservice.domain.mapper;
 
 import fr.cyrilcesco.footballdata.client.transfermarkt.model.Team;
 import fr.cyrilcesco.footballdata.client.transfermarkt.model.TransfermarktCompetitionResponse;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.Competition;
+import fr.cyrilcesco.footballdata.initservice.domain.model.Competition;
+import fr.cyrilcesco.footballdata.initservice.domain.model.mapper.CompetitionMapper;
+import fr.cyrilcesco.footballdata.initservice.domain.model.mapper.CompetitionMapperImpl;
 import org.junit.jupiter.api.Test;
 
 import java.util.Collections;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class CompetitionMapperTest {
 
@@ -38,7 +42,24 @@ class CompetitionMapperTest {
 
     @Test
     void should_return_competitions_with_team_when_response_have_teams() {
-        List<Team> teams = List.of(Team.builder().name("PSG").id("1").build(), Team.builder().id("2").name("Lens").build());
+        List<Team> teams = List.of(Team.builder().name("PSG").seasonYear("2023").id("1").build(), Team.builder().id("2").seasonYear("2023").name("Lens").build());
+        TransfermarktCompetitionResponse competitionResponse = TransfermarktCompetitionResponse.builder().id("FR1").seasonYear("2023").name("Ligue 1").teams(teams).build();
+        Competition competition = mapper.mapFromClient(competitionResponse);
+
+        assertEquals("FR1", competition.getId());
+        assertEquals("Ligue 1", competition.getName());
+        assertEquals("PSG", competition.getTeams().get(0).getName());
+        assertEquals("1", competition.getTeams().get(0).getId());
+        assertEquals("2023", competition.getTeams().get(0).getSeasonYear());
+        assertEquals("Lens", competition.getTeams().get(1).getName());
+        assertEquals("2", competition.getTeams().get(1).getId());
+        assertEquals("2023", competition.getTeams().get(1).getSeasonYear());
+        assertEquals("2023", competition.getSeasonYear());
+    }
+
+    @Test
+    void should_return_competitions_with_team_when_response_have_teams_with_links() {
+        List<Team> teams = List.of(Team.builder().name("PSG").id("1").link("LINK1").build(), Team.builder().id("2").name("Lens").link("LINK2").build());
         TransfermarktCompetitionResponse team = TransfermarktCompetitionResponse.builder().id("FR1").seasonYear("2023").name("Ligue 1").teams(teams).build();
         Competition competition = mapper.mapFromClient(team);
 
@@ -46,8 +67,10 @@ class CompetitionMapperTest {
         assertEquals("Ligue 1", competition.getName());
         assertEquals("PSG", competition.getTeams().get(0).getName());
         assertEquals("1", competition.getTeams().get(0).getId());
+        assertEquals("LINK1", competition.getTeams().get(0).getInformationsLink());
         assertEquals("Lens", competition.getTeams().get(1).getName());
         assertEquals("2", competition.getTeams().get(1).getId());
+        assertEquals("LINK2", competition.getTeams().get(1).getInformationsLink());
         assertEquals("2023", competition.getSeasonYear());
     }
 }

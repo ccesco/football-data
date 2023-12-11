@@ -1,10 +1,10 @@
-package fr.cyrilcesco.footballdata.initservice.competitions.producer;
+package fr.cyrilcesco.footballdata.initservice.competitions;
 
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import fr.cyrilcesco.footballdata.initservice.competitions.config.TopicsName;
-import fr.cyrilcesco.footballdata.initservice.competitions.error.SendMessageError;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.config.TopicsName;
+import fr.cyrilcesco.footballdata.initservice.domain.error.SendMessageError;
+import fr.cyrilcesco.footballdata.initservice.domain.model.InitCompetitionRequest;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.kafka.support.SendResult;

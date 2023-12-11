@@ -1,9 +1,11 @@
-package fr.cyrilcesco.footballdata.initservice.competitions.stream;
+package fr.cyrilcesco.footballdata.initservice.competitions.enriched;
 
 import fr.cyrilcesco.footballdata.initservice.competitions.GetCompetitionInformationsService;
-import fr.cyrilcesco.footballdata.initservice.competitions.config.TopicsName;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.Competition;
-import fr.cyrilcesco.footballdata.initservice.competitions.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.config.TopicsName;
+import fr.cyrilcesco.footballdata.initservice.domain.model.Competition;
+import fr.cyrilcesco.footballdata.initservice.domain.model.InitCompetitionRequest;
+import fr.cyrilcesco.footballdata.initservice.domain.model.Player;
+import fr.cyrilcesco.footballdata.initservice.domain.model.Team;
 import org.apache.kafka.streams.StreamsBuilder;
 import org.apache.kafka.streams.TestInputTopic;
 import org.apache.kafka.streams.TestOutputTopic;
@@ -15,11 +17,14 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
+import java.util.List;
+
 import static fr.cyrilcesco.footballdata.initservice.competitions.common.CommonSerdes.COMPETITION_SERDES;
 import static fr.cyrilcesco.footballdata.initservice.competitions.common.CommonSerdes.INIT_COMPETITION_SERDES;
 import static fr.cyrilcesco.footballdata.initservice.competitions.common.CommonSerdes.STRING_SERDES;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.assertNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.when;
@@ -74,8 +79,8 @@ class CompetitionsEnrichmentStreamTest {
 
 
     @Test
-    void givenInputMessagesEnrichedTopic_whenProcessed_then_client_call_ok() {
-        when(getCompetitionInformationsService.callClient(any())).thenReturn(Competition.builder().id("FR1").name("Ligue 1").seasonYear("2023").build());
+    void givenInputMessagesEnrichedTopic_whenProcessed_then_client_call_ok_with_teams_null() {
+        when(getCompetitionInformationsService.callClient(any())).thenReturn(Competition.builder().id("FR1").name("Ligue 1").teams(null).seasonYear("2023").build());
 
         initCompetitionTopic.pipeInput("FR1-2023", InitCompetitionRequest.builder().competitionId("FR1").competitionId("2023").build());
 
@@ -83,8 +88,26 @@ class CompetitionsEnrichmentStreamTest {
         assertEquals("Ligue 1", competition.getName());
         assertEquals("2023", competition.getSeasonYear());
         assertEquals("FR1", competition.getId());
+        assertNull(competition.getTeams());
         assertTrue(competitionEnrichedErrorTopic.readValuesToList().isEmpty());
     }
+
+    @Test
+    void givenInputMessagesEnrichedTopic_whenProcessed_then_client_call_ok_with_teams() {
+        Player player = Player.builder().id("1111").name("TOTO").build();
+        Team team = Team.builder().id("583").seasonYear("2023").players(List.of(player)).name("Paris Saint Germain").build();
+        when(getCompetitionInformationsService.callClient(any())).thenReturn(Competition.builder().id("FR1").name("Ligue 1").teams(List.of(team)).seasonYear("2023").build());
+
+        initCompetitionTopic.pipeInput("FR1-2023", InitCompetitionRequest.builder().competitionId("FR1").competitionId("2023").build());
+
+        Competition competition = competitionEnrichedTopic.readValuesToList().get(0);
+        assertEquals("Ligue 1", competition.getName());
+        assertEquals("2023", competition.getSeasonYear());
+        assertEquals("FR1", competition.getId());
+        assertEquals(team, competition.getTeams().get(0));
+        assertTrue(competitionEnrichedErrorTopic.readValuesToList().isEmpty());
+    }
+
 
     @Test
     void givenInputMessagesErrorTopic_whenProcessed_then_client_call_ko() {
