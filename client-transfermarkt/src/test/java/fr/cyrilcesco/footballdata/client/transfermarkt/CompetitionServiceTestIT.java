@@ -27,8 +27,8 @@ class CompetitionServiceTestIT {
         assertEquals("Ligue 1", ligue1.getName());
         assertEquals("2023", ligue1.getSeasonYear());
         assertEquals(18, ligue1.getTeams().size());
-        assertEquals(Team.builder().id("583").name("Paris Saint-Germain").link("/fc-paris-saint-germain/startseite/verein/583/saison_id/2023").build(), ligue1.getTeams().get(0));
-        assertEquals(Team.builder().id("162").name("AS Monaco").link("/as-monaco/startseite/verein/162/saison_id/2023").build(), ligue1.getTeams().get(1));
+        assertEquals(Team.builder().id("583").name("Paris Saint-Germain").seasonYear("2023").link("/fc-paris-saint-germain/startseite/verein/583/saison_id/2023").build(), ligue1.getTeams().get(0));
+        assertEquals(Team.builder().id("162").name("AS Monaco").seasonYear("2023").link("/as-monaco/startseite/verein/162/saison_id/2023").build(), ligue1.getTeams().get(1));
     }
 
 }

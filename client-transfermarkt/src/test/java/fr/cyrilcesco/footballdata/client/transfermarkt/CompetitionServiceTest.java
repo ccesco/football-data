@@ -54,11 +54,13 @@ class CompetitionServiceTest {
 
         Team team1 = response.getTeams().get(0);
         assertEquals("583", team1.getId());
+        assertEquals("2023", team1.getSeasonYear());
         assertEquals("Paris Saint-Germain", team1.getName());
         assertEquals("/fc-paris-saint-germain/startseite/verein/583/saison_id/2023", team1.getLink());
 
         Team team2 = response.getTeams().get(1);
         assertEquals("162", team2.getId());
+        assertEquals("2023", team2.getSeasonYear());
         assertEquals("AS Monaco", team2.getName());
         assertEquals("/as-monaco/startseite/verein/162/saison_id/2023", team2.getLink());
     }

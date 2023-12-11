@@ -16,4 +16,5 @@ public class Team {
     private final String id;
     private final String name;
     private final String link;
+    private final String seasonYear;
 }

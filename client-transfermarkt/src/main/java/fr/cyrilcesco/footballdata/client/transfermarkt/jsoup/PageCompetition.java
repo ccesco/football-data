@@ -30,13 +30,26 @@ public class PageCompetition extends PageDocument {
     }
 
     private Team mapToTeam(Element element) {
-        return Team.builder().name(element.text()).id(getIdFromHref(element.attr("href"))).link(element.attr("href")).build();
+        String href = element.attr("href");
+        return Team.builder()
+                .name(element.text())
+                .id(getIdFromHref(href))
+                .seasonYear(getSeasonYear(href))
+                .link(href).build();
     }
 
     private String getIdFromHref(String href) {
         String[] hrefSplitted = href.split("/");
         if (hrefSplitted.length > 5) {
             return hrefSplitted[4];
+        }
+        throw new TransfermarktErrorParsing(href);
+    }
+
+    private String getSeasonYear(String href) {
+        String[] hrefSplitted = href.split("/");
+        if (hrefSplitted.length >= 7) {
+            return hrefSplitted[6];
         }
         throw new TransfermarktErrorParsing(href);
     }

@@ -18,7 +18,7 @@ import java.util.List;
 public class CompetitionService {
 
     private static final String COMPETITION_URL = "https://www.transfermarkt.com/-/startseite/wettbewerb/{competition_id}";
-    private static final String SUFFIX_SEASON_YEAR = "/plus/?saison_id={year}";
+    private static final String SUFFIX_SEASON_YEAR = "/plus/?saison_id={seasonYear}";
 
     private final JsoupClient jsoupClient;
 
@@ -26,11 +26,11 @@ public class CompetitionService {
         this.jsoupClient = jsoupClient;
     }
 
-    public TransfermarktCompetitionResponse getTeamsOfCompetition(String competitionId, String year) throws TransfermarktSocketTimeOut {
-        log.info("GET teams of competition {} with year {}", competitionId, year);
+    public TransfermarktCompetitionResponse getTeamsOfCompetition(String competitionId, String seasonYear) throws TransfermarktSocketTimeOut {
+        log.info("GET teams of competition {} with seasonYear {}", competitionId, seasonYear);
 
         String urlToConnect = COMPETITION_URL.replace("{competition_id}", competitionId);
-        String urlToConnectSuffix = SUFFIX_SEASON_YEAR.replace("{year}", year);
+        String urlToConnectSuffix = SUFFIX_SEASON_YEAR.replace("{seasonYear}", seasonYear);
 
         try {
             PageCompetition page = new PageCompetition(jsoupClient, urlToConnect, urlToConnectSuffix);
@@ -38,7 +38,7 @@ public class CompetitionService {
             List<Team> teams = page.getTeams();
             String competitionName = page.getCompetitionName();
 
-            return getResponse(competitionId, year, teams, competitionName);
+            return getResponse(competitionId, seasonYear, teams, competitionName);
         } catch (SocketTimeoutException e) {
             throw new TransfermarktSocketTimeOut(competitionId);
         } catch (IOException e) {

@@ -10,6 +10,7 @@ import org.mockito.junit.jupiter.MockitoExtension;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
@@ -31,17 +32,20 @@ class PageCompetitionTest {
         when(jsoupClient.getDocument(URL_TO_CONNECT + CONNECT_SUFFIX)).thenReturn(doc);
 
         PageCompetition pageCompetition = new PageCompetition(jsoupClient, URL_TO_CONNECT, CONNECT_SUFFIX);
+        List<Team> teams = pageCompetition.getTeams();
 
         assertEquals("Ligue 1", pageCompetition.getCompetitionName());
-        assertEquals(18, pageCompetition.getTeams().size());
+        assertEquals(18, teams.size());
 
-        Team team1 = pageCompetition.getTeams().get(0);
+        Team team1 = teams.get(0);
         assertEquals("583", team1.getId());
+        assertEquals("2023", team1.getSeasonYear());
         assertEquals("Paris Saint-Germain", team1.getName());
         assertEquals("/fc-paris-saint-germain/startseite/verein/583/saison_id/2023", team1.getLink());
 
-        Team team2 = pageCompetition.getTeams().get(1);
+        Team team2 = teams.get(1);
         assertEquals("162", team2.getId());
+        assertEquals("2023", team2.getSeasonYear());
         assertEquals("AS Monaco", team2.getName());
         assertEquals("/as-monaco/startseite/verein/162/saison_id/2023", team2.getLink());
     }
