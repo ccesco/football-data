@@ -48,13 +48,21 @@ public class CompetitionsEnrichedReplyConfig {
         return new DefaultKafkaProducerFactory<>(producerProperties);
     }
 
-    @Bean
     public KafkaTemplate<String, InitCompetitionRequest> kafkaCompetitionReplyTemplate() {
         return new KafkaTemplate<>(producerCompetitionReplyFactory());
     }
 
     @Bean
     public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, Competition>> competitionErrorReplyKafkaListenerContainerFactory() {
+        ConcurrentKafkaListenerContainerFactory<String, Competition> factory =
+                new ConcurrentKafkaListenerContainerFactory<>();
+        factory.setConsumerFactory(createCompetitionReplyConsumerFactory());
+        factory.setReplyTemplate(kafkaCompetitionReplyTemplate());
+        return factory;
+    }
+
+    @Bean
+    public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, Competition>> competitionKafkaListenerContainerFactory() {
         ConcurrentKafkaListenerContainerFactory<String, Competition> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();
         factory.setConsumerFactory(createCompetitionReplyConsumerFactory());

@@ -1,5 +1,6 @@
 package fr.cyrilcesco.footballdata.initservice;
 
+import fr.cyrilcesco.footballdata.initservice.competitions.InitCompetitionService;
 import fr.cyrilcesco.footballdata.initservice.domain.model.InitCompetitionRequest;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

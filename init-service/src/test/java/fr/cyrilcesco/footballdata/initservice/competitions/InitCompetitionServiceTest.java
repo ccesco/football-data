@@ -1,8 +1,7 @@
-package fr.cyrilcesco.footballdata.initservice;
+package fr.cyrilcesco.footballdata.initservice.competitions;
 
 import fr.cyrilcesco.footballdata.initservice.competitions.config.InitCompetitionList;
 import fr.cyrilcesco.footballdata.initservice.domain.model.InitCompetitionRequest;
-import fr.cyrilcesco.footballdata.initservice.competitions.CompetitionProducer;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
