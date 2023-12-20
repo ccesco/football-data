@@ -67,7 +67,7 @@ public class KafkaTopicConfig {
     @Bean
     public NewTopic createPlayerEnrichedTopic() {
         return TopicBuilder.name(TopicsName.PLAYER_ENRICHED)
-                .partitions(3)
+                .partitions(10)
                 .compact()
                 .build();
     }

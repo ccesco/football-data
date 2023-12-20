@@ -20,6 +20,7 @@ import java.util.Map;
 
 import static org.apache.kafka.streams.StreamsConfig.APPLICATION_ID_CONFIG;
 import static org.apache.kafka.streams.StreamsConfig.BOOTSTRAP_SERVERS_CONFIG;
+import static org.apache.kafka.streams.StreamsConfig.NUM_STREAM_THREADS_CONFIG;
 
 @Configuration
 public class PlayerEnrichedConfig {
@@ -51,6 +52,7 @@ public class PlayerEnrichedConfig {
         Map<String, Object> props = new HashMap<>();
         props.put(APPLICATION_ID_CONFIG, applicationId);
         props.put(BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
+        props.put(NUM_STREAM_THREADS_CONFIG, 10);
         return new KafkaStreamsConfiguration(props);
     }
 
