@@ -1,6 +1,6 @@
-package fr.cyrilcesco.footballdata.initservice.team.config;
+package fr.cyrilcesco.footballdata.initservice.players.config;
 
-import fr.cyrilcesco.footballdata.initservice.domain.model.Team;
+import fr.cyrilcesco.footballdata.initservice.domain.model.Player;
 import org.apache.kafka.common.serialization.StringDeserializer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.autoconfigure.kafka.KafkaProperties;
@@ -22,41 +22,41 @@ import static org.apache.kafka.streams.StreamsConfig.APPLICATION_ID_CONFIG;
 import static org.apache.kafka.streams.StreamsConfig.BOOTSTRAP_SERVERS_CONFIG;
 
 @Configuration
-public class TeamEnrichedConfig {
+public class PlayerEnrichedConfig {
 
-    public static final String STREAM_TEAM_NAME = "STREAM_TEAM";
+    public static final String STREAM_PLAYER_NAME = "STREAM_PLAYER";
 
     private final KafkaProperties kafkaProperties;
 
 
-    public TeamEnrichedConfig(KafkaProperties kafkaProperties) {
+    public PlayerEnrichedConfig(KafkaProperties kafkaProperties) {
         this.kafkaProperties = kafkaProperties;
     }
 
-    private ConsumerFactory<String, Team> createTeamConsumerFactory() {
+    private ConsumerFactory<String, Player> createPlayerConsumerFactory() {
         Map<String, Object> consumerProperties = kafkaProperties.buildConsumerProperties();
-        return new DefaultKafkaConsumerFactory<>(consumerProperties, new StringDeserializer(), new JsonDeserializer<>(Team.class, false));
+        return new DefaultKafkaConsumerFactory<>(consumerProperties, new StringDeserializer(), new JsonDeserializer<>(Player.class, false));
     }
 
-    @Bean("teamKafkaListenerContainerFactory")
-    public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, Team>> teamKafkaListenerContainerFactory() {
-        ConcurrentKafkaListenerContainerFactory<String, Team> factory =
+    @Bean("playerKafkaListenerContainerFactory")
+    public KafkaListenerContainerFactory<ConcurrentMessageListenerContainer<String, Player>> playerKafkaListenerContainerFactory() {
+        ConcurrentKafkaListenerContainerFactory<String, Player> factory =
                 new ConcurrentKafkaListenerContainerFactory<>();
-        factory.setConsumerFactory(createTeamConsumerFactory());
+        factory.setConsumerFactory(createPlayerConsumerFactory());
         return factory;
     }
 
-    public KafkaStreamsConfiguration kafkaTeamEnrichedStreamConfig(final String bootstrapServers,
-                                                                   final String applicationId) {
+    public KafkaStreamsConfiguration kafkaPlayersEnrichedStreamConfig(final String bootstrapServers,
+                                                                      final String applicationId) {
         Map<String, Object> props = new HashMap<>();
         props.put(APPLICATION_ID_CONFIG, applicationId);
         props.put(BOOTSTRAP_SERVERS_CONFIG, bootstrapServers);
         return new KafkaStreamsConfiguration(props);
     }
 
-    @Bean(name = STREAM_TEAM_NAME)
-    public StreamsBuilderFactoryBean teamKafkaStreamsBuilder(@Value("${spring.kafka.streams.bootstrap-servers}") final String bootstrapServers,
-                                                             @Value("${spring.kafka.streams.team-application-id}") final String applicationId) {
-        return new StreamsBuilderFactoryBean(kafkaTeamEnrichedStreamConfig(bootstrapServers, applicationId));
+    @Bean(name = STREAM_PLAYER_NAME)
+    public StreamsBuilderFactoryBean playerKafkaStreamsBuilder(@Value("${spring.kafka.streams.bootstrap-servers}") final String bootstrapServers,
+                                                               @Value("${spring.kafka.streams.player-application-id}") final String applicationId) {
+        return new StreamsBuilderFactoryBean(kafkaPlayersEnrichedStreamConfig(bootstrapServers, applicationId));
     }
 }

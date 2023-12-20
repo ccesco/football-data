@@ -8,20 +8,14 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Getter
-@ToString
-@AllArgsConstructor
 @Builder
+@ToString
 @EqualsAndHashCode
 @NoArgsConstructor
-public class Player {
+@AllArgsConstructor
+public class InitPlayerRequest {
 
+    private String playerId;
     private String name;
-    private String id;
-    private String mainPosition;
-    private String mainFoot;
-    private String shirtNumber;
-    private String birthDate;
-    private String birthPlace;
-    private String nationality;
-    private String height;
+
 }

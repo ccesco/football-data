@@ -55,4 +55,28 @@ public class KafkaTopicConfig {
                 .compact()
                 .build();
     }
+
+    @Bean
+    public NewTopic createPlayerTopic() {
+        return TopicBuilder.name(TopicsName.INIT_PLAYER)
+                .partitions(5)
+                .compact()
+                .build();
+    }
+
+    @Bean
+    public NewTopic createPlayerEnrichedTopic() {
+        return TopicBuilder.name(TopicsName.PLAYER_ENRICHED)
+                .partitions(3)
+                .compact()
+                .build();
+    }
+
+    @Bean
+    public NewTopic createPlayerEnrichedErrorTopic() {
+        return TopicBuilder.name(TopicsName.PLAYER_ENRICHED_ERROR)
+                .partitions(1)
+                .compact()
+                .build();
+    }
 }
