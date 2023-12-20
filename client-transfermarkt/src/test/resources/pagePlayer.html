@@ -1,0 +1,1314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <script type="text/javascript" data-description="sourcepoint stub code">
+        !function () { var e = function () { var e, t = "__tcfapiLocator", a = [], n = window; for (; n;) { try { if (n.frames[t]) { e = n; break } } catch (e) { } if (n === window.top) break; n = n.parent } e || (!function e() { var a = n.document, r = !!n.frames[t]; if (!r) if (a.body) { var i = a.createElement("iframe"); i.style.cssText = "display:none", i.name = t, a.body.appendChild(i) } else setTimeout(e, 5); return !r }(), n.__tcfapi = function () { for (var e, t = arguments.length, n = new Array(t), r = 0; r < t; r++)n[r] = arguments[r]; if (!n.length) return a; if ("setGdprApplies" === n[0]) n.length > 3 && 2 === parseInt(n[1], 10) && "boolean" == typeof n[3] && (e = n[3], "function" == typeof n[2] && n[2]("set", !0)); else if ("ping" === n[0]) { var i = { gdprApplies: e, cmpLoaded: !1, cmpStatus: "stub" }; "function" == typeof n[2] && n[2](i) } else a.push(n) }, n.addEventListener("message", (function (e) { var t = "string" == typeof e.data, a = {}; try { a = t ? JSON.parse(e.data) : e.data } catch (e) { } var n = a.__tcfapiCall; n && window.__tcfapi(n.command, n.version, (function (a, r) { var i = { __tcfapiReturn: { returnValue: a, success: r, callId: n.callId } }; t && (i = JSON.stringify(i)), e.source.postMessage(i, "*") }), n.parameter) }), !1)) }; "undefined" != typeof module ? module.exports = e : e() }();
+    </script>
+    <script data-description="sourcepoint configuration">
+        window._sp_ = {
+            config: {"accountId":1254,"propertyId":7427,"gdpr":{"consentLanguage":"en","targetingParams":{"acps":"false"}},"baseEndpoint":"https://cdn.privacy-mgmt.com","isSPA":true,"cpPropertyId":"7a84b340"}}
+    </script>
+    <script src="https://cdn.privacy-mgmt.com/wrapperMessagingWithoutDetection.js" async></script>
+
+    <script type="text/javascript" data-description="contentpass integration">
+        (function() {
+            var cpBaseUrl = 'https://cp.transfermarkt.com';
+            var cpController = cpBaseUrl + '/now.js';
+            var cpPropertyId = '7a84b340';
+
+            !function(C,o,n,t,P,a,s){C['CPObject']=n;C[n]||(C[n]=function(){
+                (C[n].q=C[n].q||[]).push(arguments)});C[n].l=+new Date;a=o.createElement(t);
+                s=o.getElementsByTagName(t)[0];a.src=P;s.parentNode.insertBefore(a,s)}
+            (window,document,'cp','script',cpController);
+
+            !function(C,o,n,t,P){if(!C[n].patched){cp('extension','authenticate');P=C[n].q.push;
+                C[n].q.push=function(a){if(a[0]==='authenticate'){if((o['cookie']||'').indexOf('_cpauthhint=')===-1&&
+                    !(C['localStorage']||{})['_cpuser']&&C.location.href.toLowerCase().indexOf('cpauthenticated')===-1){
+                    t={isLoggedIn:function(){return false;},hasValidSubscription:function(){return false;}};
+                    (typeof a[1]==='function'&&a[1](null,t));C[n].afp=true;P.apply(C[n].q,[['authenticate',null]]);
+                    return t;}}P.apply(C[n].q,[a]);}}}
+            (window,document,'cp',false);
+
+            cp('create', cpPropertyId, {
+                baseUrl: cpBaseUrl
+            });
+
+            cp('render', {
+                onFullConsent: function() {
+                    console.log('[DEMO] onFullConsent');
+                }
+            })
+        })()
+    </script>
+
+    <script type="text/javascript" data-description="contentpass sourcepoint fast path">
+        (function () {
+            cp('authenticate', function(err, user) {
+                if (err || (!user.isLoggedIn() && !user.hasValidSubscription())) {
+                    console.log('[SPCP] Taking fast path');
+                    (function spExecMsg() {
+                        if (window._sp_ && window._sp_.executeMessaging) {
+                            if (!window._sp_.config.isSPA) {
+                                console.warn('[SPCP] Sourcepoint not in SPA mode!');
+                            } else if (window._sp_.version) {
+                                console.log('[SPCP] Sourcepoint already running');
+                            } else {
+                                console.log('[SPCP] Starting Sourcepoint');
+                                window._sp_.executeMessaging();
+                            }
+                        } else {
+                            console.log('[SPCP] Sourcepoint not loaded yet. Retrying.');
+                            setTimeout(spExecMsg, 10);
+                        }
+                    })();
+                }
+            });
+        })();
+    </script>
+    <meta charset="utf-8" />
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="shortcut icon" sizes="192x192" href="/android-chrome-192x192.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=no" />
+    <meta name="keywords" content="Gianluigi Donnarumma,FC Paris Saint-Germain,Ligue 1,Italy" />
+    <meta name="description" content="Gianluigi Donnarumma, 24, from Italy ➤ Paris Saint-Germain, since 2021 ➤ Goalkeeper ➤ Market value: €45.00m ➤ * Feb 25, 1999 in Castellammare di Stabia, Italy " />
+    <meta property="og:type" content="article" />
+    <meta property="og:image" content="https://img.a.transfermarkt.technology/portrait/big/315858-1672304477.jpg?lm=1" />
+    <meta property="og:description" content="" />
+    <meta property="og:title" content="Gianluigi Donnarumma - Player profile 23/24" />
+    <meta property="og:url" content="https://www.transfermarkt.com/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="de" rel="alternate" href="https://www.transfermarkt.de/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="de-LU" rel="alternate" href="https://www.transfermarkt.de/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="de-AT" rel="alternate" href="https://www.transfermarkt.at/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="de-CH" rel="alternate" href="https://www.transfermarkt.ch/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="tr" rel="alternate" href="https://www.transfermarkt.com.tr/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="it-CH" rel="alternate" href="https://www.transfermarkt.it/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="it" rel="alternate" href="https://www.transfermarkt.it/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="pl" rel="alternate" href="https://www.transfermarkt.pl/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="en-GB" rel="alternate" href="https://www.transfermarkt.co.uk/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="en-IE" rel="alternate" href="https://www.transfermarkt.co.uk/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="es" rel="alternate" href="https://www.transfermarkt.es/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="es-ES" rel="alternate" href="https://www.transfermarkt.es/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="es-CL" rel="alternate" href="https://www.transfermarkt.es/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="es-VE" rel="alternate" href="https://www.transfermarkt.es/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="es-EC" rel="alternate" href="https://www.transfermarkt.es/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="es-CU" rel="alternate" href="https://www.transfermarkt.es/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="nl" rel="alternate" href="https://www.transfermarkt.nl/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="pt" rel="alternate" href="https://www.transfermarkt.pt/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="ru" rel="alternate" href="https://www.transfermarkt.world/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="world" rel="alternate" href="https://www.transfermarkt.world/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="fr-CH" rel="alternate" href="https://www.transfermarkt.fr/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="fr" rel="alternate" href="https://www.transfermarkt.fr/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="fr-CA" rel="alternate" href="https://www.transfermarkt.fr/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="fr-CI" rel="alternate" href="https://www.transfermarkt.fr/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="fr-LU" rel="alternate" href="https://www.transfermarkt.fr/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="fr-BE" rel="alternate" href="https://www.transfermarkt.fr/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="pt-BR" rel="alternate" href="https://www.transfermarkt.com.br/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="en-US" rel="alternate" href="https://www.transfermarkt.us/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="en-CA" rel="alternate" href="https://www.transfermarkt.us/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="en-IN" rel="alternate" href="https://www.transfermarkt.co.in/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="en-ZA" rel="alternate" href="https://www.transfermarkt.co.za/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="x-default" rel="alternate" href="https://www.transfermarkt.com/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="en" rel="alternate" href="https://www.transfermarkt.com/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="nl-BE" rel="alternate" href="https://www.transfermarkt.be/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="ro" rel="alternate" href="https://www.transfermarkt.ro/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="el-GR" rel="alternate" href="https://www.transfermarkt.gr/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="ko-KR" rel="alternate" href="https://www.transfermarkt.co.kr/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="es-AR" rel="alternate" href="https://www.transfermarkt.com.ar/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="es-MX" rel="alternate" href="https://www.transfermarkt.mx/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="es-CO" rel="alternate" href="https://www.transfermarkt.co/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="es-PE" rel="alternate" href="https://www.transfermarkt.pe/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="ms" rel="alternate" href="https://www.transfermarkt.my/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="ja" rel="alternate" href="https://www.transfermarkt.jp/gianluigi-donnarumma/profil/spieler/315858" />
+    <link hreflang="id" rel="alternate" href="https://www.transfermarkt.co.id/gianluigi-donnarumma/profil/spieler/315858" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/menue.css?lm=1702638002" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-main.min.css?lm=1702637952" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/stylesheets/main_desktop.css?lm=1702638002" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/css/print.css?_sn=1?lm=1702638002" media="print" />
+    <link rel="stylesheet" type="text/css" href="https://tmssl.akamaized.net/styles/tm-player-profile.min.css?lm=1702637952" />
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/vendor/jquery.min.js?lm=1702637982"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/main.js?lm=1702637982"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/chosen.ajaxaddition.jquery.js?lm=1702637982"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/functions.js?lm=1702637982"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/main_desktop.js?lm=1702637982"></script>
+    <script type="text/javascript" src="https://tmssl.akamaized.net/js/chosen.jquery.js?lm=1702637982"></script>
+    <script type="text/javascript">
+        /*<![CDATA[*/
+        console.info("%c [TM-ADs] Initialize Ads on domain com (wettbewerbe_profile_spieler | spieler/profil)", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] No ad configuration found for ADTAG_CONTENT_BODY_1", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] No ad configuration found for inreadSpecial", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] No ad configuration found for ADTAG_CONTENT_BODY_2", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] No ad configuration found for PerformPlayer", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] Render rectangle1 (div-gpt-ad-1621526463511-0) for google", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] Render rectangle2 (div-gpt-ad-1621528018930-0) for google", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] Render skyscraper (div-gpt-ad-1621527521939-0) for google", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] Render skyscraperbtf (div-gpt-ad-1621528123398-0) for google", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] Render billboard (div-gpt-ad-1621524903956-0) for google", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] Render fullsize_contentad (div-gpt-ad-1621528173524-0) for google", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] No ad configuration found for richmedia", "background: #222; color: #bada55")
+        var oddsServe = function(placement,competition,match,node) {
+            if (!node){
+                var s=document.readyState==='loading'?document.getElementsByTagName('script'):[];
+                node=s.length?s[s.length-1].parentNode:null;
+            }
+            oddsServe.queue.push({contentUnitId:placement,competition:competition,match:match,node:node});
+        }
+
+        oddsServe.onInit=function(callbacks){
+            if (typeof window.__tcfapi === 'function') {
+                __tcfapi('addEventListener', 2, function(tcdata, success) {
+                    let tcf20compatibleString;
+                    if(success) {
+                        if (tcdata.eventStatus === 'useractioncomplete') {
+                            tcf20compatibleString = tcdata.tcString;
+                        } else if (tcdata.eventStatus === 'tcloaded') {
+                            tcf20compatibleString = tcdata.tcString;
+                        }
+                        callbacks.setGdprOptions({
+                            gdpr:1,
+                            gdpr_pd:1,
+                            gdpr_consent:tcf20compatibleString,
+                        });
+                    }
+                });
+            } else {
+                console.warn('E2: __tcfapi not found');
+            }
+        };
+        oddsServe.options={gdpr_wait:true};
+        oddsServe.queue=[];
+        console.info("%c [TM-ADs] Add initScript for slots: rectangle1 | rectangle2 | skyscraper | skyscraperbtf | billboard | fullsize_contentad", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] Register slots with JS vendor lib", "background: #222; color: #bada55")
+        console.info("%c [TM-ADs] Render ad slots js for google", "background: #222; color: #bada55")
+        PWT = {};
+        window.googletag = window.googletag || {cmd: []};
+        googletag.cmd.push(() => {
+            googletag.defineSlot(
+                "/58778164/Desktop-Billboard-1",
+                [[960,90],[970,250],[950,90],[728,90],[970,90]],
+                "div-gpt-ad-1621524903956-0"
+            )
+                .addService(googletag.pubads());
+            googletag.defineSlot(
+                "/58778164/Desktop-MediumRectangle-1",
+                [[300,250],[336,280]],
+                "div-gpt-ad-1621526463511-0"
+            )
+                .addService(googletag.pubads());
+            googletag.defineSlot(
+                "/58778164/Desktop-MediumRectangle-2",
+                [[300,250],[336,280]],
+                "div-gpt-ad-1621528018930-0"
+            )
+                .addService(googletag.pubads());
+            googletag.defineSlot(
+                "/58778164/Desktop-Skyscraper-1",
+                [[160,600],[336,280],[300,250],[300,600],[120, 600]],
+                "div-gpt-ad-1621527521939-0"
+            )
+                .addService(googletag.pubads());
+            googletag.defineSlot(
+                "/58778164/Desktop-Skyscraper-2",
+                [[300,250],[336,280],[160,600],[300,600],[120, 600]],
+                "div-gpt-ad-1621528123398-0"
+            )
+                .addService(googletag.pubads());
+            googletag.defineSlot(
+                "/58778164/Desktop-Billboard-2",
+                [[950,90],[970,250],[728,90],[970,90],[960,90],[300, 250]],
+                "div-gpt-ad-1621528173524-0"
+            )
+                .addService(googletag.pubads());
+            googletag.pubads().enableLazyLoad({
+                fetchMarginPercent: 500,
+                renderMarginPercent: 200,
+                mobileScaling: 2.0
+            });
+            googletag.pubads().setCentering(true);
+            googletag.pubads().disableInitialLoad();
+            googletag.pubads().enableSingleRequest();
+            googletag.pubads().setTargeting("cg1", ["spieler"]);
+            googletag.pubads().setTargeting("URL", "www.transfermarkt.com");
+            googletag.enableServices();
+        });
+
+        console.info("%c [TM-ADs] Added external ad script(s) for vendor google", "background: #222; color: #bada55")
+        /*]]>*/
+    </script>
+    <title>Gianluigi Donnarumma - Player profile 23/24 | Transfermarkt</title>
+    <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-152x152.png">
+    <link rel="preload" href="//data-84a0f3455d.transfermarkt.com/iomm/latest/manager/base/es6/bundle.js" as="script" id="IOMmBundle">
+    <link rel="preload" href="//data-84a0f3455d.transfermarkt.com/iomm/latest/bootstrap/loader.js" as="script">
+    <script type="text/javascript" src="//data-84a0f3455d.transfermarkt.com/iomm/latest/bootstrap/loader.js"></script>
+
+    <script type="text/javascript">
+        tmData = {
+            loggedIn : "0",
+            tmTraffic: "0",
+        };
+    </script>
+    <script>// Set to the same value as the web property used on the site
+    var gaProperty = 'UA-3816204-13';
+
+    // Disable tracking if the opt-out cookie exists.
+    var disableStr = 'ga-disable-' + gaProperty;
+    if (document.cookie.indexOf(disableStr + '=true') > -1) {
+        window[disableStr] = true;
+    }
+
+    // Opt-out function
+    function gaOptout() {
+        document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+        window[disableStr] = true;
+    }</script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('set', 'linker', { 'domains': [/^transfermarkt\.(com|de|nl|it|at|ch|es|fr|com\.tr|pt|tv|pl|co\.uk)$/]});
+        gtag('js', new Date());
+        gtag('set',
+            {
+                'custom_map': {
+                    'dimension1': 'loggedIn',
+                    'dimension2': 'tmTraffic'
+                }
+            });
+        gtag('config', 'UA-3816204-13', {
+            'anonymize_ip': true,
+            'transport_type': 'beacon',
+            'content_group1': 'statistik',
+            'content_group2': 'spieler',
+            'content_group3': 'profil',
+            'content_group4': '315858',
+            'loggedIn': tmData.loggedIn,
+            'tmTraffic': tmData.tmTraffic
+        });
+        function tmEvent(category, action, label) {
+            if (typeof gtag !== 'function') {
+                return;
+            }
+            gtag('event',
+                action,
+                {
+                    'event_category': category,
+                    'event_label': label
+                }
+            );
+        }
+
+        function tmTiming(value, name, event_category, event_label) {
+            if (typeof gtag !== 'function') {
+                return;
+            }
+            gtag('event', 'timing_complete', {
+                name,
+                value,
+                event_category,
+                event_label
+            });
+        }
+
+    </script>    <script type="text/javascript" src="https://tmssl.akamaized.net//ads/ads.js"></script>
+    <script type="text/javascript">
+        window.tmGaId = "UA-3816204-13";
+    </script>
+
+    <link rel="canonical" href="https://www.transfermarkt.com/gianluigi-donnarumma/profil/spieler/315858">
+    <!-- no Tisoomi -->
+</head>
+
+<body class="" itemscope itemtype="http://schema.org/WebPage" data-tm-tld="com" data-cmp-layer-id="910164">
+
+<tm-language-hint></tm-language-hint>
+<div id="main">
+    <div class="werbung-skyscraper-container">
+        <div class="werbung werbung-skyscraper">
+            <div id="div-gpt-ad-1621527521939-0" style="min-width: 160px; min-height: 250px;">
+                <script>googletag.cmd.push(() => { googletag.display("div-gpt-ad-1621527521939-0"); });</script>
+            </div>
+        </div>
+    </div>
+
+    <div class="werbung-skyscraperbtf-container">
+        <div class="werbung werbung-skyscraperbtf">
+            <div id="div-gpt-ad-1621528123398-0" style="min-width: 160px; min-height: 250px;">
+                <script>googletag.cmd.push(() => { googletag.display("div-gpt-ad-1621528123398-0"); });</script>
+            </div>
+        </div>
+    </div>
+
+    <header class="tm-header">
+        <div class="tm-header__box ">
+            <a href="/">
+                <img class="icon-logo" src="https://tmsi.akamaized.net/head/transfermarkt_logo.svg" height="62" width="156" title="Transfermarkt" alt="Transfermarkt">
+            </a>
+            <tm-domainswitcher open-list="false" tld="com"></tm-domainswitcher>
+            <div class="tm-header__social-box">
+                <a href="https://www.facebook.com/Transfermarkt.global" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','Facebook');
+">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/fb_icon_hover.svg" width="20" height="20" class="header__icon">
+                </a>
+                <a href="https://twitter.com/TMuk_news" target="_blank" class="header__social-link header__social-link--twitter" onclick="tmEvent('SM-Icons_Header','click','Twitter');
+">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/twitter.svg" width="20" height="20" class="header__icon header__icon--twitter">
+                </a>
+                <a href="http://instagram.com/transfermarkt_official" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','Instagram');
+">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/instagram_icon_hover.svg" width="20" height="20" class="header__icon">
+                </a>
+                <a href="/intern/rssguide" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','RSS');
+">
+                    <img src="https://tmsi.akamaized.net/icons/socialMedia/rss_icon_hover.svg" width="20" height="20" class="header__icon">
+                </a>
+                <a href="https://www.tiktok.com/@transfermarkt" target="_blank" class="header__social-link" onclick="tmEvent('SM-Icons_Header','click','Tiktok');
+">
+                    <img src="https://tmsi.akamaized.net/icons/tiktokRebrush.svg" width="20" height="20" class="header__icon">
+                </a>
+            </div>
+            <div class="tm-header__input-wrapper " id="schnellsuche-platz">
+                <form name="schnellsuche" id="schnellsuche" class="tm-header__form" action="/schnellsuche/ergebnis/schnellsuche">
+                    <input type="text" name="query" class="tm-header__input--search-field" onClick="" placeholder="Enter your search term" autocorrect="off" spellcheck="false" value="" />
+                    <input type="submit" value="" class="tm-header__input--search-send" alt="search" />
+                </form>
+                <a href="/detailsuche/spielerdetail/suche" title="Zur Spieler-Detailsuche" id="detailsuche-head" class="tm-header__search-detail">
+                    <img src="https://tmsi.akamaized.net/icons/search_icon_plus_blue_white.svg" alt="search" class="tm-header__icon-detail-search" height="26" width="26">
+                </a>
+            </div>
+        </div>
+
+        <nav class="main-navbar navihalter">
+            <ul class="main-navbar__container megamenu_dark_bar megamenu_dark" itemscope="itemscope" itemtype="http://www.schema.org/SiteNavigationElement">
+                <a href="/" class="sticky-logo hide-for-small">
+                    <span title="Transfermarkt" class="tm_svg"></span>
+                </a>
+
+                <li class="main-navbar__list" data-nav-group="news">
+                <span
+                        class="main-navbar__list-title tm-main-nav-el"
+                        onClick="tmEvent('News','click','menu');
+"
+                >
+            News        </span>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list" data-nav-group="transfers">
+                <span
+                        class="main-navbar__list-title tm-main-nav-el"
+                        onClick="tmEvent('Transfers & Gerüchte','click','menu');
+"
+                >
+            Transfers & rumours        </span>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list" data-nav-group="marktwerte">
+                <span
+                        class="main-navbar__list-title tm-main-nav-el"
+                        onClick="tmEvent('Marktwerte','click','menu');
+"
+                >
+            Market values        </span>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list aktiv" data-nav-group="wettbewerbe">
+                <span
+                        class="main-navbar__list-title tm-main-nav-el"
+                        onClick="tmEvent('Wettbewerbe','click','menu');
+"
+                >
+            Competitions        </span>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list" data-nav-group="foren">
+                    <a
+                            class="main-navbar__list-title tm-main-nav-el"
+                            href="/uebersicht/index/forum/com"
+                            onClick="tmEvent('Foren','click','menu');
+"
+                    >
+                        Forums                    </a>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list" data-nav-group="meintm">
+                <span
+                        class="main-navbar__list-title tm-main-nav-el"
+                        onClick="tmEvent('MeinTM','click','menu');
+"
+                >
+            My TM        </span>
+                    <div class="main-navbar__drop-down">
+                        <img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/>
+                    </div>
+
+                <li class="main-navbar__list" >
+                    <a
+                            class="main-navbar__list-title tm-main-nav-el live-navilink"
+                            href="/ticker/index/live"
+                            onClick="tmEvent('Live','click','menu');
+"
+                    >
+                        Live                            <tm-live-match-counter auto-request="true" content='["Live maches", "Live matches"]'></tm-live-match-counter>
+                    </a>
+                </li>
+            </ul>
+
+
+            <form name="schnellsuche" id="schnellsuche-sticky" class="noclose sticky-suche" action="/schnellsuche/ergebnis/schnellsuche">
+                <input type="text" name="query" class="header-suche" onClick="" placeholder="Enter your search term" />
+                <input type="image" class="header-suche-abschicken" src="https://tmssl.akamaized.net//images/suchicon.png" alt="search" />
+            </form>
+            <a href="/detailsuche/spielerdetail/suche" title="Zur Spieler-Detailsuche" id="detailsuche-head" class="header-suche-detailsuche">
+                <span class="icon-detailsuche"></span>
+            </a>
+            <a id="arrow-up-xy" href="#">
+                <svg style="fill: white; width: 20px; height: 20px;" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+                            <g>
+                                <path d="M78.016,49.132L51.961,12.714c-0.471-0.66-1.233-1.049-2.043-1.051c-0.006,0-0.006,0-0.006,0
+                                c-0.815,0.002-1.575,0.396-2.048,1.059L21.977,49.14c-0.546,0.767-0.616,1.776-0.183,2.612c0.426,0.835,1.292,1.361,2.236,1.361
+                                h12.183l-0.001,32.709c0,1.39,1.125,2.515,2.516,2.515l22.541-0.001c1.389,0.001,2.515-1.124,2.516-2.517l0-32.705h12.187
+                                c0.94,0,1.803-0.53,2.237-1.367C78.641,50.911,78.566,49.9,78.016,49.132z" />
+                            </g>
+                        </svg>
+            </a>
+            <div class="tm-login " id="login" onClick="tmEvent('login','click','sign_in_button');
+">
+                <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                     fill="#FFF" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" class="tm-login__image">
+        <g>
+            <path d="M80.161,60.441l-15.66-7.47l-6.622-3.159c2.892-1.822,5.241-4.634,6.778-8.022c1.22-2.69,1.946-5.734,1.946-8.99
+                c0-1.827-0.29-3.562-0.694-5.236C63.94,19.453,57.605,13.477,50,13.477c-7.461,0-13.701,5.763-15.792,13.645
+                c-0.482,1.808-0.815,3.688-0.815,5.68c0,3.459,0.808,6.684,2.181,9.489c1.587,3.254,3.94,5.937,6.804,7.662l-6.342,2.953
+                l-16.168,7.53c-1.404,0.658-2.327,2.242-2.327,4.011v15.062v2.703c0,2.381,1.659,4.312,3.708,4.312h57.505
+                c2.048,0,3.708-1.93,3.708-4.312v-2.703V64.446C82.46,62.683,81.552,61.114,80.161,60.441z"/>
+        </g>
+    </svg>
+                <span class="tm-login__cta">
+        Log in    </span>
+            </div>
+        </nav>
+
+
+        <div class="quick-select-wrapper">
+            <div id="quickselect-skeleton" class="ssc" style="height: 40px;">
+                <div class="ssc-wrapper flex" style="height: 100%; padding: 0">
+                    <div class="ssc-square quickselect-element" style="width: 40px;"></div>
+                    <div class="ssc-square quickselect-element quickselect-selector" style="width: 171.06px;"></div>
+                    <div class="ssc-square quickselect-element quickselect-selector" style="width: 170.84px;"></div>
+                    <div class="ssc-square quickselect-element quickselect-selector" style="width: 138.03px;"></div>
+                    <div class="ssc-square quickselect-element quickselect-selector" style="width: 141.5px;"></div>
+                </div>
+            </div>
+
+            <tm-quick-select-bar
+                    default-country="50"
+                    default-competition="FR1"
+                    default-club="583"
+                    default-player="315858"
+                    dropdown-visible=""
+                    translations='{&quot;home&quot;:&quot;Home&quot;,&quot;country&quot;:&quot;Country&quot;,&quot;competition&quot;:&quot;Competition&quot;,&quot;club&quot;:&quot;Club&quot;,&quot;player&quot;:&quot;Player&quot;,&quot;attack&quot;:&quot;Striker&quot;,&quot;midfield&quot;:&quot;Mittelfeld&quot;,&quot;defense&quot;:&quot;Defender&quot;,&quot;goalkeeper&quot;:&quot;Goalkeeper&quot;}'
+            >
+            </tm-quick-select-bar>
+        </div>
+
+
+        <div class="werbung werbung-billboard">
+            <div id="div-gpt-ad-1621524903956-0" style="min-width: 728px; min-height: 90px;">
+                <script>googletag.cmd.push(() => { googletag.display("div-gpt-ad-1621524903956-0"); });</script>
+            </div>
+        </div>
+    </header>
+    <main>
+
+
+        <tm-consent no-checkbox type="teads" embed="PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIGNsYXNzPSJ0ZWFkcyIgc3JjPSIvL2EudGVhZHMudHYvcGFnZS8xMzgzMDQvdGFnIiBhc3luYz0idHJ1ZSI+PC9zY3JpcHQ+"></tm-consent>
+        <div id="modal-1" class="modal micromodal-slide" aria-hidden="true" tabindex="1">
+            <div class="modal__overlay" tabindex="-1" data-custom-close>
+                <div
+                        class="modal__container"
+                        role="dialog"
+                        aria-modal="true"
+                        aria-labelledby="modal-1-title"
+                        data-custom-close
+                >
+                    <header class="modal__header">
+                        <button
+                                class="modal__close modal__close--profile-img"
+                                aria-label="Close modal"
+                                data-custom-close
+                        >
+                        </button>
+                    </header>
+                    <div id="modal-1-content" class="modal__content">
+                        <img src='https://img.a.transfermarkt.technology/portrait/big/315858-1672304477.jpg?lm=1' alt='Gianluigi Donnarumma' title='Gianluigi Donnarumma' data-custom-close loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <header class="data-header" itemscope itemtype="https://schema.org/Person">
+            <div class="data-header__headline-container">
+                <h1 class="data-header__headline-wrapper">
+                                    <span class="data-header__shirt-number">
+                        #99                    </span>
+                    Gianluigi <strong>Donnarumma</strong>            </h1>
+            </div>
+            <div class="data-header__badge-container">
+                <a href="/gianluigi-donnarumma/erfolge/spieler/315858" title="European champion" class="data-header__success-data">
+                    <img src="https://tmssl.akamaized.net/images/erfolge/header/102.png?lm=1520606997" title="European champion" alt="European champion" class="" />                                                <span class="data-header__success-number">1</span>
+                </a>
+                <a href="/gianluigi-donnarumma/erfolge/spieler/315858" title="French champion" class="data-header__success-data">
+                    <img src="https://tmssl.akamaized.net/images/erfolge/header/14.png?lm=1520606997" title="French champion" alt="French champion" class="" />                                                <span class="data-header__success-number">2</span>
+                </a>
+                <a href="/gianluigi-donnarumma/erfolge/spieler/315858" title="Italian Super Cup winner" class="data-header__success-data">
+                    <img src="https://tmssl.akamaized.net/images/erfolge/header/97.png?lm=1520606999" title="Italian Super Cup winner" alt="Italian Super Cup winner" class="" />                                                <span class="data-header__success-number">1</span>
+                </a>
+                <a href="/gianluigi-donnarumma/erfolge/spieler/315858" title="French Super Cup winner" class="data-header__success-data">
+                    <img src="https://tmssl.akamaized.net/images/erfolge/header/321.png?lm=1520606999" title="French Super Cup winner" alt="French Super Cup winner" class="" />                                                <span class="data-header__success-number">1</span>
+                </a>
+                <a href="/gianluigi-donnarumma/erfolge/spieler/315858" title="All titles & victories">
+                    <div class="data-header__success-data">
+                            <span class="data-header__success-more">
+                                <img src="/images/icons/mehr_erfolge.png" />
+                            </span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="data-header__box--big">
+                <a href="/paris-saint-germain/startseite/verein/583" class="data-header__box__club-link">
+                    <img srcset="
+                            https://tmssl.akamaized.net/images/wappen/normquad/583.png?lm=1522312728 1x,
+                            https://tmssl.akamaized.net/images/wappen/homepageWappen150x150/583.png?lm=1522312728 2x
+                            " alt="Paris Saint-Germain" height="100" width="100" />
+                </a>
+                <div class="data-header__club-info">
+                    <span class="data-header__club" itemprop="affiliation">
+                        <a title="Paris Saint-Germain" href="/fc-paris-saint-germain/startseite/verein/583">Paris SG</a>                    </span><br />
+                    <span class="data-header__league">
+                                    <a class="data-header__league-link" href="/ligue-1/startseite/wettbewerb/FR1">
+                                        <img src="https://tmssl.akamaized.net/images/logo/verytiny/fr1.png?lm=1702413832" title="Ligue 1" alt="Ligue 1" class="" />Ligue 1                                    </a>
+                                </span>
+                    <span class="data-header__label">League level:
+                                <span class="data-header__content">
+                                    <img src="https://tmssl.akamaized.net/images/flagge/tiny/50.png?lm=1520611569" title="France" alt="France" class="flaggenrahmen" />First Tier                                </span>
+                            </span>
+                    <span class="data-header__label">Joined: <span class="data-header__content">Jul 14, 2021</span></span>
+                    <span class="data-header__label">Contract expires: <span class="data-header__content">Jun 30, 2026</span></span>
+                </div>
+            </div>
+
+            <div class="data-header__profile-container">
+                <div class="modal-trigger" data-custom-open="modal-1" id="fotoauswahlOeffnen" style="cursor:pointer" onclick="tmEvent('spielerprofil','click','profilbild');">
+
+                    <img src="https://img.a.transfermarkt.technology/portrait/header/315858-1672304477.jpg?lm=1" title="Gianluigi Donnarumma" alt="Gianluigi Donnarumma" class="data-header__profile-image" height="181" width="139" /><div class="bildquelle"><span title="IMAGO">IMAGO</span></div>
+                    <span class="modal-trigger-icon">+</span>
+                </div>
+            </div>
+            <div class="data-header__info-box ">
+                <div class="data-header__details">
+                    <ul class="data-header__items">
+                        <li class="data-header__label">Date of birth/Age:
+                            <span itemprop="birthDate" class="data-header__content">
+                                Feb 25, 1999 (24)                            </span>
+                        </li>
+
+                        <li class="data-header__label">Place of birth:
+                            <img src="https://tmssl.akamaized.net/images/flagge/tiny/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen" />                                <span class="data-header__content" itemprop="birthPlace">
+                                    <span class="cp" title="Castellammare di Stabia">Castellammare di ...</span>                                </span>
+                        </li>
+
+                        <li class="data-header__label">Citizenship:
+                            <span itemprop="nationality" class="data-header__content">
+                                <img src="https://tmssl.akamaized.net/images/flagge/tiny/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen" />                                Italy                            </span>
+                        </li>
+                    </ul>
+                    <ul class="data-header__items">
+                        <li class="data-header__label">Height:
+                            <span itemprop="height" class="data-header__content">
+                                1,96 m                            </span>
+                        </li>
+
+                        <li class="data-header__label">Position:
+                            <span class="data-header__content">
+                            Goalkeeper                        </span>
+                        </li>
+
+                        <li class="data-header__label">Agent:
+                            <span class="data-header__content data-header__content--vertical-aligned">
+
+                                    <a onclick="tmEvent(&quot;spielerprofil&quot;, &quot;click&quot;, &quot;berater-header-premium&quot;)" href="/team-raiola/beraterfirma/berater/11115">Team Raiola</a>                                                                            <img class="data-header__verified-logo" src="https://tmsi.akamaized.net/berater/verified_premium_minified.png" alt="verified" title="verified" height="13" width="13">
+                                                                                                </span>
+                        </li>
+
+                    </ul>
+                    <ul class="data-header__items">
+                        <li for="" class="data-header__label">
+                            Current international:
+                            <span class="data-header__content">
+                                <img src="https://tmssl.akamaized.net/images/flagge/tiny/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen flagge" /><a title="Italy" href="/italien/startseite/verein/3376">Italy</a>                            </span>
+                        </li>
+                        <li class="data-header__label">Caps/Goals:
+                            <a class="data-header__content data-header__content--highlight" href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/3376">60                                </a>/
+                            <a class="data-header__content data-header__content--highlight" href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/3376">0                                </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+            <div class="data-header__box--small">
+                <a href="/gianluigi-donnarumma/marktwertverlauf/spieler/315858" class="data-header__market-value-wrapper"><span class="waehrung">€</span>45.00<span class="waehrung">m</span>                <p class="data-header__last-update">Last update: Jun 27, 2023</p></a>
+            </div>
+
+
+        </header>
+        <a href="https://www.transfermarkt.com/bundesliga-market-values-florian-wirtz-reaches-next-level-jamie-bynoe-gittens-stands-out/view/news/431200"
+           target="_blank"
+           class="db mt10"
+           onclick="tmEvent('banner', 'https://www.transfermarkt.com/bundesliga-market-values-florian-wirtz-reaches-next-level-jamie-bynoe-gittens-stands-out/view/news/431200', 'd-day-banner');">
+            <img
+                    src="https://dzjovqk3zamsg.cloudfront.net/MVU_Bundesliga-Desktop-Banner-EN.jpg"
+                    width="1034"
+                    height="99"
+                    alt="deadline-day banner">
+        </a>
+        <div class="row hide-on-print" id="subnavi" data-season="" data-controller="spieler" data-action="profil" data-path="gianluigi-donnarumma/profil/spieler/315858" data-id="315858">
+            <div class="page_wrapper subnavi">
+                <div class="large-12 columns">
+                    <div class="subnavi_box" id="subnavigation">
+                        <div class="submenu-text show-for-small">
+                            <a name="SubNavi" title="Navigation">
+                                <span>≡ Sub navigation</span>
+                            </a>
+                        </div>
+                        <nav>
+                            <ul id="submenu">
+                                <li id="close_submenu" class="show-for-small">
+                                    <div id="submenu-icon">
+                                        <span class="clicked"></span>
+                                        <span class="clicked"></span>
+                                    </div>
+                                    <a>Close subnavigation</a>
+                                </li>
+                                <li id="profile" class="first-button aktiv " data-nav-group="profile">
+                                    <a name="SubNavi" href="/gianluigi-donnarumma/profil/spieler/315858" class="tm-subnav-item megamenu" onClick="tmEvent('subnavigation_spieler','click','profil');
+">Profile</a>
+                                </li>
+                                <li id="stats" class="  " data-nav-group="stats">
+                                    <a name="SubNavi" href="#subnavi" class="tm-subnav-item megamenu_drop" onClick="tmEvent('subnavigation_spieler','click','leistungsdaten');
+">Stats</a>
+                                    <div class="dropdown_fullwidth " title=""><div><img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/></div></div>                            </li>
+                                <li id="market-values" class="  " data-nav-group="market-values">
+                                    <a name="SubNavi" href="/gianluigi-donnarumma/marktwertverlauf/spieler/315858" class="tm-subnav-item megamenu" onClick="tmEvent('subnavigation_spieler','click','marktwert');
+">Market values</a>
+                                </li>
+                                <li id="transfers" class="  " data-nav-group="transfers">
+                                    <a name="SubNavi" href="/gianluigi-donnarumma/transfers/spieler/315858" class="tm-subnav-item megamenu" onClick="tmEvent('subnavigation_spieler','click','transfers');
+">Transfers</a>
+                                </li>
+                                <li id="rumors" class="  " data-nav-group="rumors">
+                                    <a name="SubNavi" href="/gianluigi-donnarumma/geruechte/spieler/315858" class="tm-subnav-item megamenu" onClick="tmEvent('subnavigation_spieler','click','geruchte');
+">Rumors</a>
+                                </li>
+                                <li id="national-team" class="  " data-nav-group="national-team">
+                                    <a name="SubNavi" href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858" class="tm-subnav-item megamenu" onClick="tmEvent('subnavigation_spieler','click','nationalmannschaft');
+">National team</a>
+                                </li>
+                                <li id="news" class="  " data-nav-group="news">
+                                    <a name="SubNavi" href="/gianluigi-donnarumma/news/spieler/315858" class="tm-subnav-item megamenu" onClick="tmEvent('subnavigation_spieler','click','news');
+">News</a>
+                                </li>
+                                <li id="achievements" class="  " data-nav-group="achievements">
+                                    <a name="SubNavi" href="/gianluigi-donnarumma/erfolge/spieler/315858" class="tm-subnav-item megamenu" onClick="tmEvent('subnavigation_spieler','click','erfolge');
+">Achievements</a>
+                                </li>
+                                <li id="career" class="  " data-nav-group="career">
+                                    <a name="SubNavi" href="#subnavi" class="tm-subnav-item megamenu_drop" onClick="tmEvent('subnavigation_spieler','click','karriere');
+">Career</a>
+                                    <div class="dropdown_fullwidth " title=""><div><img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/></div></div>                            </li>
+                                <li id="subnavi-edit" class="  subnavi-edit" data-nav-group="subnavi-edit">
+                                    <a name="SubNavi" href="#subnavi" class="tm-subnav-item megamenu_drop" onClick="tmEvent('subnavigation_spieler','click','edit');
+"></a>
+                                    <div class="dropdown_fullwidth gasthinweis" title="Log in or register now"><div><img src="https://tmsi.akamaized.net/icons/tm_spinner_inverted.min.svg" width="40" height="40" class="navigation-loading-spinner"/></div></div>                            </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var stickySubTop = $('#subnavigation').offset().top;
+            stickySubTop = stickySubTop - 60;
+            var main = $("#main");
+            $(document).ready(function() {
+                $(window).on('scroll load', function() {
+                    if (!main.hasClass("stickySubnavigation")) {
+                        stickySubTop = $('#subnavigation').offset().top;
+                    }
+                    if ($(window).scrollTop() > stickySubTop) {
+                        main.addClass("stickySubnavigation");
+                    } else {
+                        main.removeClass("stickySubnavigation");
+                    }
+                });
+            });
+        </script>
+        <style>
+            .forum-anchor {
+                margin-top: -80px;
+            }
+        </style>
+
+        <div class="row">
+            <div class="large-8 columns">
+                <div
+                        id="svelte-performance-data"
+                        class="box tm-player-performance"
+                        style="display: none"
+                        data-competition-id="FR1"
+                        data-player-id="315858"
+                        data-translations='{"performanceDataButton":"Performance Data","galleryButton":"Gallery ","possibleGames":"Statistics","possibleGame":" Statistics","games":"Appearances","goals":"Goals","assists":"Assists","yellowCard":"Yellow card","yellowCards":"Yellow Cards","secondYellowCard":"Second yellow card","secondYellowCards":"Second Yellows","redCard":"Red card","redCards":"Red cards","startEleven":"Starting eleven","minutesPlayed":"Minutes","goalsContributed":"Goal participation","detailedStatsLink":"Detailed performance data","cleanSheets":"Clean Sheets","goalsConceded":"Goals conceded","performanceSeason":"Performance data :saison","blockedPenaltyPercent":"Penalty Saves"}'
+                        data-skeleton-id="svelte-performance-data--706133919"
+                        data-has-gallery='1'
+                >
+                </div>
+                <div class="box" id="svelte-performance-data--706133919">
+                    <div class="ssc-square" style="width: 100%; height: 292px; border: 5px solid white;"></div>
+                </div>
+
+                <div class="box viewport-tracking" data-viewport="Steckbrief">
+                    <h2 class="content-box-headline">Player data </h2>
+                    <div class="row collapse">
+                        <div class="large-6 large-push-6 small-12 columns">
+                            <div class="weitere-daten-spielerprofil">
+                                    <span class="content-box-subheadline">
+                        Main position                    </span>
+                                <div class="detail-position">
+                                    <div class="detail-position__box">
+                                        <dt class="detail-position__title">Main position:</dt>
+                                        <dd class="detail-position__position">Goalkeeper</dd>
+                                    </div>
+
+
+                                    <div class="matchfield__campo">
+                                        <div class="matchfield__interior"></div>
+                                        <div class="position position--primary position--1"></div>
+                                    </div>
+                                </div>
+                                <div class="box tm-player-market-value-development-container">
+                                    <tm-market-value-development-graph-integrated
+                                            mobile="false"
+                                            player-id="315858"></tm-market-value-development-graph-integrated>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="large-6 large-pull-6 small-12 columns spielerdatenundfakten">
+            <span class="content-box-subheadline show-for-small">
+                Facts and data            </span>
+                            <div class="info-table info-table--right-space ">
+                                <span class="info-table__content info-table__content--regular">Date of birth/Age:</span>
+                                <span class="info-table__content info-table__content--bold">
+
+                                                    <a href="/aktuell/waspassiertheute/aktuell/new/datum/1999-02-25">Feb 25, 1999 (24)</a>
+                        </span>
+                                <span class="info-table__content info-table__content--regular">Place of birth:</span>
+                                <span class="info-table__content info-table__content--bold">
+                         <span title="Napoli, Campania" style="cursor:pointer; color: #1d75a3;">Castellammare di Stabia&nbsp;&nbsp;<img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/flagge/tiny/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen lazy lazy" /></span>                    </span>
+                                <span class="info-table__content info-table__content--regular">Height:</span>
+                                <span class="info-table__content info-table__content--bold">1,96&nbsp;m</span>
+                                <span class="info-table__content info-table__content--regular">Citizenship:</span>
+                                <span class="info-table__content info-table__content--bold">
+                        <img src="https://tmssl.akamaized.net/images/flagge/tiny/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen" />&nbsp;&nbsp;Italy                    </span>
+                                <span class="info-table__content info-table__content--regular">Position:</span>
+                                <span class="info-table__content info-table__content--bold">
+                    Goalkeeper                </span>
+                                <span class="info-table__content info-table__content--regular">Foot:</span>
+                                <span class="info-table__content info-table__content--bold">right</span>
+                                <span class="info-table__content info-table__content--regular">Player agent:</span>
+                                <span class="info-table__content info-table__content--bold  info-table__content--flex">
+                                                    <a onclick="tmEvent(&quot;spielerprofil&quot;, &quot;click&quot;, &quot;berater-spielerdaten&quot;)" href="/team-raiola/beraterfirma/berater/11115">Team Raiola</a>                                                            <img src="https://tmsi.akamaized.net/berater/verified_premium_minified.png" alt="verified" title="verified" height="13" width="13">
+                                                                        </span>
+                                <span class="info-table__content info-table__content--regular">
+                    Current club:
+                </span>
+                                <span class="info-table__content info-table__content--bold info-table__content--flex">
+                    <a href="/paris-saint-germain/startseite/verein/">
+                        <img srcset="https://tmssl.akamaized.net/images/wappen/small/583.png?lm=1522312728 1x,
+                                            https://tmssl.akamaized.net/images/wappen/homepage/583.png?lm=1522312728 2x" alt="Paris Saint-Germain" height="15" width="15" />
+                    </a>
+                    <a title="Paris Saint-Germain" href="/fc-paris-saint-germain/startseite/verein/583">Paris Saint-Germain</a>                </span>
+
+                                <span class="info-table__content info-table__content--regular">Joined:</span>
+                                <span class="info-table__content info-table__content--bold">
+                            Jul 14, 2021                        </span>
+                                <span class="info-table__content info-table__content--regular">Contract expires:</span>
+                                <span class="info-table__content info-table__content--bold">Jun 30, 2026</span>
+
+                                <span class="info-table__content info-table__content--regular">Outfitter:</span>
+                                <span class="info-table__content info-table__content--bold">adidas</span>
+                                <span class="info-table__content info-table__content--regular">Social-Media:</span>
+                                <span class="info-table__content info-table__content--bold"><div class="socialmedia-icons" style="margin-top: 5px;">
+            <a href="http://twitter.com/donnarumma" target="_blank" title="Twitter"
+            >
+
+        <img data-src="https://tmsi.akamaized.net/icons/socialMedia/twitter-x-logo-square.svg" class="lazy" width="20px" height="20px" />
+        </a>
+            <a href="http://www.facebook.com/GigioDonnarumma/" target="_blank" title="Facebook"
+            >
+
+        <img data-src="https://tmsi.akamaized.net/icons/socialMedia/facebook.svg" class="lazy" width="20px" height="20px" />
+        </a>
+            <a href="http://instagram.com/donnarumma" target="_blank" title="Instagram"
+            >
+
+        <img data-src="https://tmsi.akamaized.net/icons/socialMedia/instagram.svg" class="lazy" width="20px" height="20px" />
+        </a>
+    </div>
+</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <tm-consent
+                        type="primis"
+                        no-checkbox
+                        embed="PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIGxhbmd1YWdlPSJqYXZhc2NyaXB0IiBzcmM9Imh0dHBzOi8vbGl2ZS5wcmltaXMudGVjaC9saXZlL2xpdmVWaWV3LnBocD9zPTExMjg2OSI+PC9zY3JpcHQ+">
+                </tm-consent><div class="verletzungsbox">
+                <div class="verletzt ausfall_3">
+                </div>
+                <div class="text">
+                    Red card suspension - Ligue 1<br /><span class="rueckkehr">until Dec 18, 2023</span>    </div>
+            </div>
+                <div class="box tm-player-additional-data">
+                    <span class="content-box-headline">Further information</span>
+                    <div class="content">
+                        Gianluigi Donnarumma is the brother of <a title="Antonio Donnarumma" href="/antonio-donnarumma/profil/spieler/88685">Antonio Donnarumma</a> (<a title="Calcio Padova" href="/calcio-padova/startseite/verein/3037">Calcio Padova</a>).<br /><br />    </div>
+                </div>
+                <tm-transfer-history player-id="315858"></tm-transfer-history>
+                <div
+                        class="box tm-player-additional-data viewport-tracking"
+                        data-viewport="Jugendvereine">
+                    <h2 class="content-box-headline">Youth clubs</h2>
+                    <div class="content">
+                        Club Napoli (2003-2013), AC Milan (2013-2015)
+                    </div>
+                </div>
+                <article data-teads></article>    <div class="box viewport-tracking">
+                <h2 class="content-box-headline">
+                    Stats of Gianluigi Donnarumma         </h2>
+                <div id="player-performance-table" data-player-id="315858" data-translations='{"games":"Appearances","goals":"Goals","assists":"Assists","minutesPlayed":"Minutes","detailedStatsLink":"Detailed performance data","cleanSheets":"Clean Sheets","goalsConceded":"Goals conceded","minutesPerGoal":"Minutes per goal","sum":"Total ","competition":"Competition"}'></div>
+                <a href="/gianluigi-donnarumma/leistungsdaten/spieler/315858"
+                   class="content-link">View full stats</a>
+            </div>
+            </div>
+            <div class="large-4 columns">
+
+                <div id="tm-next-matches-1729557087" class="next-matches-skeleton">
+                    <div class="ssc-square skeleton-table-header"></div>
+                    <div class="skeleton-flex-c skeleton-flex-col skeleton-h-var" style="--tm-skeleton-height: 70px;">
+                        <div class="ssc-square skeleton-hw-var skeleton-mb-2" style="--tm-skeleton-height: 14px; --tm-skeleton-width: 145px;"></div>
+                        <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 14px; --tm-skeleton-width: 100px;"></div>
+                    </div>
+                    <div class="skeleton-flex-align-center skeleton-flex-justify-evenly skeleton-h-var skeleton-mlr-20" style="--tm-skeleton-height: 80px;">
+                        <div class="skeleton-flex-align-center skeleton-flex-col">
+                            <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 50px; --tm-skeleton-width: 50px"></div>
+                            <div class="ssc-square skeleton-hw-var skeleton-mt-10" style="--tm-skeleton-height: 70px; --tm-skeleton-width: 70px;"></div>
+                        </div>
+                        <div class="ssc-square skeleton-hw-var" style="--tm-skeleton-height: 20px; --tm-skeleton-width: 40px"></div>
+                        <div class="skeleton-flex-align-center skeleton-flex-col">
+                            <div class="ssc-circle skeleton-hw-var" style="--tm-skeleton-height: 50px; --tm-skeleton-width: 50px"></div>
+                            <div class="ssc-square skeleton-hw-var skeleton-mt-10" style="--tm-skeleton-height: 70px; --tm-skeleton-width: 70px;"></div>
+                        </div>
+                    </div>
+
+                    <div class="ssc-square" style="height: 20px; width: 240px; margin: 40px auto 10px"></div>
+                    <div style="display: flex; justify-content: space-between; padding: 0 5px;">
+                        <div class="ssc-square" style="height: 50px; width: 156px;"></div>
+                        <div class="ssc-square" style="height: 50px; width: 156px;"></div>
+                    </div>
+                </div>
+
+                <tm-next-matches
+                        class="viewport-tracking"
+                        data-viewport="Naechste_Begegnungen"
+                        locale='en'
+                        type="player"
+                        identifier="315858"
+                        translations = '{"headline":"Next matches","matchDay":"Matchday"}'
+                        skeleton="tm-next-matches-1729557087"
+                >
+
+                    <div class="quote-slot" slot="quotes" onclick="tmEvent('werbung','click','begegnungsbox_spieler');">
+                        <span class='oddsServe' data-match='0' data-gameday='0' data-competition='0'></span>    </div>
+                </tm-next-matches>
+                <script>
+                    var nextMatchesEl = document.getElementsByTagName('tm-next-matches')[0];
+                    if(nextMatchesEl) {
+                        nextMatchesEl.addEventListener('nextMatchesReloadQuotes', (event) => {
+                            jQuery(document).trigger('begegnungenVereinSliderLoad');
+                        });
+                    }
+                </script>
+                <div class="werbung werbung-rectangle1">
+                    <div id="div-gpt-ad-1621526463511-0" style="min-width: 300px; min-height: 250px;">
+                        <script>googletag.cmd.push(() => { googletag.display("div-gpt-ad-1621526463511-0"); });</script>
+                    </div>
+                </div>
+                <tm-relevant-news type="player" id="315858"></tm-relevant-news>
+                <tm-current-rumors player-id="315858"></tm-current-rumors>
+                <div class="box viewport-tracking" data-viewport="Laenderspielkarriere">
+                    <h2 class="content-box-headline">National team career</h2>
+                    <div class="grid">
+                        <div class="grid national-career__row national-career__row--header">
+                            <div class="grid__heading grid__heading--center">
+                                #            </div>
+                            <div class="grid__heading">
+                                National team            </div>
+                            <div class="grid__heading grid__heading--center">
+                                Debut            </div>
+                            <div class="grid__heading grid__heading--center">
+                                <img
+                                        class="national-career__icon"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0OC41IDYwIiB4bWw6c3BhY2U9InByZXNlcnZlIj48cGF0aCBmaWxsPSIjMUIzMjUxIiBkPSJNNDUuODUgMi41NXY1NC44SDIuNjVWMi41NXoiLz48cGF0aCBmaWxsPSIjRkZGIiBkPSJNNDMuMiA1aC0zOHY1MGgzOFY1ek0zMC40IDMwLjljLS41IDIuOC0yLjkgNS01LjggNXMtNS40LTIuMi01LjgtNWgxMS42ek0zMS4zIDd2Ni4xSDE3LjJWN2gxNC4xek0xOC44IDI5Yy41LTIuOCAyLjktNSA1LjgtNXM1LjQgMi4yIDUuOCA1SDE4Ljh6bTEzLjMgMGMtLjUtMy44LTMuNi02LjctNy41LTYuN3MtNy4xIDIuOS03LjUgNi43SDcuM1Y3aDh2OGgxNy45VjdoOC4xdjIyaC05LjJ6TTcuMyAzMC45aDkuOGMuNSAzLjggMy42IDYuNyA3LjUgNi43czcuMS0yLjkgNy41LTYuN2g5LjJ2MjJoLTguMVY0NUgxNS4zdjcuOWgtOHYtMjJ6bTI0IDIyLjFIMTcuMnYtNmgxNC4xdjZ6Ii8+PC9zdmc+"
+                                        alt="Matches"
+                                        title="Matches"
+                                />
+                            </div>
+                            <div class="grid__heading grid__heading--center">
+                                <img
+                                        class="national-career__icon"
+                                        src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNSAxNSI+PGRlZnM+PHN0eWxlPi5he2ZpbGw6IzFiMzI1MX08L3N0eWxlPjwvZGVmcz48cGF0aCBjbGFzcz0iYSIgZD0iTTE1IDcuNUE3LjUgNy41IDAgMSAxIDcuNSAwIDcuNDkgNy40OSAwIDAgMSAxNSA3LjVaIi8+PGNpcmNsZSBjeD0iNi40MjUiIGN5PSI2LjQyNSIgcj0iNi40MjUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDEuMDc1IDEuMDc1KSIgc3R5bGU9ImZpbGw6I2ZmZiIvPjxwYXRoIGNsYXNzPSJhIiBkPSJtNS44IDYuOTc1LjY1IDJoMi4xbC42NS0yTDcuNSA1Ljc1Wm0xLjctNC44QTUuMzI1IDUuMzI1IDAgMSAwIDEyLjgyNSA3LjUgNS4zMTMgNS4zMTMgMCAwIDAgNy41IDIuMTc1Wm0xLjg1IDcuODc1LS42IDEuOWE1LjAyOSA1LjAyOSAwIDAgMS0xLjI1LjE3NSA1LjIgNS4yIDAgMCAxLTEuMjUtLjE3NWwtLjYyNS0xLjloLTJhNC43ODUgNC43ODUgMCAwIDEtLjc3NS0yLjM3NUw0LjQ1IDYuNWwtLjYyNS0xLjlBNC41MzQgNC41MzQgMCAwIDEgNS44NSAzLjE1bDEuNiAxLjE3NSAxLjYtMS4xNzVhNC43MzMgNC43MzMgMCAwIDEgMi4wMjUgMS40NUwxMC41IDYuNTI1IDEyLjEgNy43YTQuNDA2IDQuNDA2IDAgMCAxLS43NzUgMi4zNzVIOS4zNVoiLz48L3N2Zz4="
+                                        alt="Goals"
+                                        title="Tore "
+                                />
+                            </div>
+                        </div>
+
+                        <div class="grid national-career__row">
+                            <div class="grid__cell grid__cell--center  national-career__cell--green">
+                                1                </div>
+                            <div class="grid__cell grid__cell--club">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/flagge/verysmall/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen lazy lazy" /><a title="Italy" href="/italien/startseite/verein/3376">Italy</a>                        <svg class="national-career__icon national-career__icon--captain" viewBox="0 0 36 32">
+                                <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                    <g transform="translate(-2.000000, -4.000000)">
+                                        <g transform="translate(2.000000, 4.000000)">
+                                            <rect id="Rectangle-4" fill="#BE252C" x="0" y="6" width="36" height="20"></rect>
+                                            <rect id="Rectangle-2" fill="#BE252C" x="0" y="0" width="36" height="3"></rect>
+                                            <rect id="Rectangle-2" fill="#BE252C" x="0" y="29" width="36" height="3"></rect>
+                                            <path d="M21.6767578,18.2099609 L24.7597656,19.1875 C24.287107,20.9062586 23.5011448,22.1827758 22.4018555,23.0170898 C21.3025661,23.8514039 19.9078861,24.2685547 18.2177734,24.2685547 C16.1266171,24.2685547 14.4078843,23.5542064 13.0615234,22.1254883 C11.7151625,20.6967702 11.0419922,18.743502 11.0419922,16.265625 C11.0419922,13.6445181 11.7187432,11.608894 13.0722656,10.1586914 C14.425788,8.70848884 16.2053926,7.98339844 18.4111328,7.98339844 C20.3375747,7.98339844 21.9023377,8.55272868 23.1054688,9.69140625 C23.8216182,10.3645867 24.3587222,11.3313739 24.7167969,12.5917969 L21.5693359,13.34375 C21.3831371,12.5273397 20.9946319,11.8828149 20.4038086,11.4101562 C19.8129853,10.9374976 19.0950563,10.7011719 18.25,10.7011719 C17.0826765,10.7011719 16.1355831,11.120113 15.4086914,11.9580078 C14.6817998,12.7959026 14.3183594,14.1529854 14.3183594,16.0292969 C14.3183594,18.0201922 14.6764287,19.4381468 15.3925781,20.2832031 C16.1087275,21.1282594 17.0397078,21.5507812 18.1855469,21.5507812 C19.0306032,21.5507812 19.7574839,21.2822292 20.3662109,20.7451172 C20.9749379,20.2080051 21.4117825,19.3629615 21.6767578,18.2099609 L21.6767578,18.2099609 Z" fill="#FFFFFF"></path>
+                                        </g>
+                                    </g>
+                                </g>
+                            </svg>
+                            </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/spiel/index/spielbericht/2691521">Sep 1, 2016</a>
+                            </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/3376">60</a>
+                            </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/3376/nurEinsatz/2">-</a>
+                            </div>
+                        </div>
+
+                        <div class="grid national-career__row">
+                            <div class="grid__cell grid__cell--center  national-career__cell--red">
+                                1                </div>
+                            <div class="grid__cell grid__cell--club">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/flagge/verysmall/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen lazy lazy" /><a title="Italy U21" href="/italien-u21/startseite/verein/11947">Italy U21</a>                </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/spiel/index/spielbericht/2578296">Mar 24, 2016</a>
+                            </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/11947">7</a>
+                            </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/11947/nurEinsatz/2">-</a>
+                            </div>
+                        </div>
+
+                        <div class="grid national-career__row">
+                            <div class="grid__cell grid__cell--center  national-career__cell--red">
+                                1                </div>
+                            <div class="grid__cell grid__cell--club">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/flagge/verysmall/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen lazy lazy" /><a title="Italy U17" href="/italien-u17/startseite/verein/23133">Italy U17</a>                </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/spiel/index/spielbericht/2502347">Oct 15, 2014</a>
+                            </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/23133">10</a>
+                            </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/23133/nurEinsatz/2">-</a>
+                            </div>
+                        </div>
+
+                        <div class="grid national-career__row">
+                            <div class="grid__cell grid__cell--center  national-career__cell--red">
+                                -                </div>
+                            <div class="grid__cell grid__cell--club">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/flagge/verysmall/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen lazy lazy" /><a title="Italy U16" href="/italien-u16/startseite/verein/23243">Italy U16</a>                </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/spiel/index/spielbericht/2569330">Sep 9, 2014</a>
+                            </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/23243">3</a>
+                            </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/23243/nurEinsatz/2">-</a>
+                            </div>
+                        </div>
+
+                        <div class="grid national-career__row">
+                            <div class="grid__cell grid__cell--center  national-career__cell--red">
+                                1                </div>
+                            <div class="grid__cell grid__cell--club">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" data-src="https://tmssl.akamaized.net/images/flagge/verysmall/75.png?lm=1520611569" title="Italy" alt="Italy" class="flaggenrahmen lazy lazy" /><a title="Italy U15" href="/italien-u15/startseite/verein/28461">Italy U15</a>                </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/spiel/index/spielbericht/2577146">Feb 11, 2014</a>
+                            </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/28461">4</a>
+                            </div>
+                            <div class="grid__cell grid__cell--center">
+                                <a href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858/verein_id/28461/nurEinsatz/2">-</a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="/gianluigi-donnarumma/nationalmannschaft/spieler/315858"
+                       class="content-link">Go to national player profile</a></div>
+                <tm-player-compare
+                        id="viewport-tracking"
+                        headline="Compare Gianluigi Donnarumma with ..."
+                        data-viewport="Vergleiche_mit_"
+                        player-id="315858"
+                        player-full-name="Gianluigi Donnarumma"
+                        search-player="Search for players"
+                        button-text="Compare players"
+                ></tm-player-compare>
+
+                <div class="werbung werbung-rectangle2">
+                    <div id="div-gpt-ad-1621528018930-0" style="min-width: 300px; min-height: 250px;">
+                        <script>googletag.cmd.push(() => { googletag.display("div-gpt-ad-1621528018930-0"); });</script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="large-12 columns">
+                <div id="recommender" class="box" >
+                    <div class="OUTBRAIN" data-src="" data-widget-id="AR_1" data-ob-template="DE_Transfermarkt.de" ></div>
+                    <tm-consent
+                            no-checkbox
+                            type="outbrain"
+                            embed="PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIGFzeW5jPSJhc3luYyIgc3JjPSIvL3dpZGdldHMub3V0YnJhaW4uY29tL291dGJyYWluLmpzIj48L3NjcmlwdD4=">
+                    </tm-consent>
+                </div>
+            </div>
+        </div>
+
+        <div class="werbung werbung-fullsize_contentad">
+            <div id="div-gpt-ad-1621528173524-0" style="min-width: 728px; min-height: 90px;">
+                <script>googletag.cmd.push(() => { googletag.display("div-gpt-ad-1621528173524-0"); });</script>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="tm-footer">
+            <a href="/"
+               class="tm-footer__logo">
+                <img src="https://tmsi.akamaized.net/head/transfermarkt_logo.svg" alt="Transfermarkt" height="33" width="80"/>
+            </a>
+            <ul class="tm-footer__links">
+                <li class="tm-footer__links-item">
+                    <a href="/intern/impressum">
+                        Legal notice      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="/intern/web/datenschutz">
+                        Data protection      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="javascript:void(0)" class="cmp-link">
+                        Privacy      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="/intern/anb">
+                        General conditions of use      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="/intern/tmteam">
+                        TM-Team      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="/intern/faq">
+                        FAQ      </a>
+                </li>
+                <li class="tm-footer__links-item">
+                    <a href="/intern/fehlermelden">
+                        Found a mistake?      </a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+    <div id="menue_overlay"></div>
+</div>
+<script type="text/javascript">
+    var iam_data = {
+        "st":"transfer",
+        "cp":"ausland_co.uk_r",
+        "co":""
+    }
+</script>
+<script type="module">
+    var defaultOptions = {
+        tracking: !0,
+        refreshAds: !0
+    };
+    export var refreshAd = function() {
+        var e, n;
+        [ASCDP.hasOwnProperty("adS"), null === (e = ASCDP.adS) || void 0 === e ? void 0 : e.hasOwnProperty("reloadAds"), "function" == typeof(null === (n = ASCDP.adS) || void 0 === n ? void 0 : n.reloadAds)].every(function(e) {
+            return e
+        }) && ASCDP.adS.reloadAds()
+    };
+    export var TmTrackingAndAds = function(e, n) {
+        void 0 === n && (n = defaultOptions);
+        var r = ["tabelle", "reiter", "forum"].includes(e) ? e : "";
+        n.tracking && (gtag("event", "page_view", {
+            page_path: "/jsContent" + window.location.pathname
+        }), sendIvwData(r)), n.refreshAds && "undefined" != typeof ASCDP && refreshAd()
+    };
+    window.tmTrackingAndAds = function(e, n) {
+        return TmTrackingAndAds(e, n)
+    };
+</script>
+<script type="text/javascript">
+    const iommInterval = setInterval(() => {
+        if (typeof IOMm === 'function') {
+            IOMm('configure', {
+                st: iam_data.st,
+                dn: 'data-84a0f3455d.transfermarkt.com',
+                mh: 5
+            });
+            IOMm('pageview', {
+                cp: iam_data.cp,
+                co: iam_data.co
+            });
+            clearInterval(iommInterval);
+        }
+    }, 250);
+</script>
+<script type="text/javascript">
+    if(typeof(adet) == "boolean" && adet == false){
+        img_src="/static/singlepictures/jk99hhfsdh209nbnkjldgh90sghfsdlk";
+    } else {
+        img_src="/static/singlepictures/jku90whjlkjbwbta1g4b8h89fh8sgh8d";
+    }
+    var elem = document.createElement("img");
+    document.body.appendChild(elem);
+    elem.src = img_src;
+</script>
+
+<script>
+    $(function() {
+        var cnt = $('div.large-4.columns').length;
+        if (cnt == 1) {
+            var sidebarDiv = document.querySelector('div.large-4.columns');
+            if (sidebarDiv !== null) {
+                $('#werbung_recommender_sidebar_wrapper').appendTo(sidebarDiv);
+                $('#werbung_recommender_sidebar_wrapper').show();
+            }
+        }
+    });
+</script>
+<div id="werbung_recommender_sidebar_wrapper" style="display: none;">
+    <div
+            id="recommender_sidebar"
+            class="box"
+    >
+        <div class="OUTBRAIN" data-widget-id="SL_DT_SB"></div>
+        <tm-consent
+                no-checkbox
+                type="outbrain"
+                embed="PHNjcmlwdCB0eXBlPSJ0ZXh0L2phdmFzY3JpcHQiIGFzeW5jPSJhc3luYyIgc3JjPSIvL3dpZGdldHMub3V0YnJhaW4uY29tL291dGJyYWluLmpzIj48L3NjcmlwdD4=">
+        </tm-consent>
+    </div>
+</div>
+<script type="module" src="https://tmsi.akamaized.net/js/custom-element-globals/tm-global-elements.esm.js" defer></script><script nomodule="" src="https://tmsi.akamaized.net/js/custom-element-globals/tm-global-elements.js" defer></script><tm-consent type="adition" no-checkbox embed="PHNjcmlwdCBzcmM9Imh0dHBzOi8vY3JlYXRpdmUtY2RuLm9kZHNzZXJ2ZS5jb20vbG9hZGVyLmpzP3B1Ymxpc2hlcj10bSIgYXN5bmM9ImFzeW5jIj48L3NjcmlwdD4="></tm-consent><tm-consent type="googleanalytics" no-checkbox embed="PHNjcmlwdCBhc3luYyBzcmM9Imh0dHBzOi8vd3d3Lmdvb2dsZXRhZ21hbmFnZXIuY29tL2d0YWcvanM/aWQ9VUEtMzgxNjIwNC0xMyI+PC9zY3JpcHQ+"></tm-consent>
+<tm-consent type="pubmatic" no-checkbox embed="PHNjcmlwdCB0eXBlPSd0ZXh0L2phdmFzY3JpcHQnPgogICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyIFBXVD17fTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhciBnb29nbGV0YWcgPSBnb29nbGV0YWcgfHwge307CiAgICAgICAgICAgICAgICAgICAgICAgICAgICBnb29nbGV0YWcuY21kID0gZ29vZ2xldGFnLmNtZCB8fCBbXTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhciBncHRSYW4gPSBmYWxzZTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIFBXVC5qc0xvYWRlZCA9ICgpID0+IHsgLy9QdWJNYXRpYyBwd3QuanMgb24gbG9hZCBjYWxsYmFjayBpcyB1c2VkIHRvIGxvYWQgR1BUCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbG9hZEdQVCgpOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgfTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHZhciBsb2FkR1BUID0gZnVuY3Rpb24oKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gQ2hlY2sgdGhlIGdwdFJhbiBmbGFnCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgaWYgKCFncHRSYW4pIHsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgZ3B0UmFuID0gdHJ1ZTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyIGdhZHMgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyIHVzZVNTTCA9ICdodHRwczonID09IGRvY3VtZW50LmxvY2F0aW9uLnByb3RvY29sOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBnYWRzLnNyYyA9ICh1c2VTU0wgPyAnaHR0cHM6JyA6ICdodHRwOicpICsgJy8vc2VjdXJlcHViYWRzLmcuZG91YmxlY2xpY2submV0L3RhZy9qcy9ncHQuanMnOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YXIgbm9kZSA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgbm9kZS5wYXJlbnROb2RlLmluc2VydEJlZm9yZShnYWRzLCBub2RlKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB9CiAgICAgICAgICAgICAgICAgICAgICAgICAgICB9OwogICAgICAgICAgICAgICAgICAgICAgICAgICAgLy8gRmFpbHNhZmUgdG8gY2FsbCBncHQKICAgICAgICAgICAgICAgICAgICAgICAgICAgIHNldFRpbWVvdXQobG9hZEdQVCwgNTAwKTsKCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAoZnVuY3Rpb24oKSB7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyIHB1cmwgPSB3aW5kb3cubG9jYXRpb24uaHJlZjsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YXIgdXJsID0gJy8vYWRzLnB1Ym1hdGljLmNvbS9BZFNlcnZlci9qcy9wd3QvMTYzMjI5LzEwMTAzJzsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YXIgcHJvZmlsZVZlcnNpb25JZCA9ICcnOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmKHB1cmwuaW5kZXhPZigncHd0dj0nKT4wKXsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgdmFyIHJlZ2V4cCA9IC9wd3R2PSguKj8pKCZ8JCkvZzsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YXIgbWF0Y2hlcyA9IHJlZ2V4cC5leGVjKHB1cmwpOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGlmKG1hdGNoZXMubGVuZ3RoID49IDIgJiYgbWF0Y2hlc1sxXS5sZW5ndGggPiAwKXsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgcHJvZmlsZVZlcnNpb25JZCA9ICcvJyttYXRjaGVzWzFdOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0KICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YXIgd3RhZHMgPSBkb2N1bWVudC5jcmVhdGVFbGVtZW50KCdzY3JpcHQnKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB3dGFkcy5hc3luYyA9IHRydWU7CiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgd3RhZHMudHlwZSA9ICd0ZXh0L2phdmFzY3JpcHQnOwogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHd0YWRzLnNyYyA9IHVybCtwcm9maWxlVmVyc2lvbklkKycvcHd0LmpzJzsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB2YXIgbm9kZSA9IGRvY3VtZW50LmdldEVsZW1lbnRzQnlUYWdOYW1lKCdzY3JpcHQnKVswXTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICBub2RlLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKHd0YWRzLCBub2RlKTsKICAgICAgICAgICAgICAgICAgICAgICAgICAgIH0pKCk7CiAgICAgICAgICAgICAgICAgICAgICAgIDwvc2NyaXB0PgogICAgICAgICAgICAgICAgICAgICAgICA="></tm-consent><tm-consent type="amazonadvertising" no-checkbox embed="PHNjcmlwdD4hZnVuY3Rpb24odCwkLGUscyxpLGEsbyl7JFt0XXx8KCRbdF09e2luaXQ6ZnVuY3Rpb24oKXtfKCJpIixhcmd1bWVudHMpfSxmZXRjaEJpZHM6ZnVuY3Rpb24oKXtfKCJmIixhcmd1bWVudHMpfSxzZXREaXNwbGF5QmlkczpmdW5jdGlvbigpe30sdGFyZ2V0aW5nS2V5czpmdW5jdGlvbigpe3JldHVybltdfSxfUTpbXX0sKGE9ZS5jcmVhdGVFbGVtZW50KHMpKS5hc3luYz0hMCxhLnNyYz1pLChvPWUuZ2V0RWxlbWVudHNCeVRhZ05hbWUocylbMF0pLnBhcmVudE5vZGUuaW5zZXJ0QmVmb3JlKGEsbykpO2Z1bmN0aW9uIF8oZSxzKXskW3RdLl9RLnB1c2goW2Usc10pfX0oImFwc3RhZyIsd2luZG93LGRvY3VtZW50LCJzY3JpcHQiLCIvL2MuYW1hem9uLWFkc3lzdGVtLmNvbS9hYXgyL2Fwc3RhZy5qcyIpLGFwc3RhZy5pbml0KHtwdWJJRDoiNTEzNCIsYWRTZXJ2ZXI6Imdvb2dsZXRhZyJ9KTtjb25zdCBpbml0QW1hem9uQWRCaWRzPSh0LCQpPT57KCQmJiJ0Y2xvYWRlZCI9PT10LmV2ZW50U3RhdHVzfHwidXNlcmFjdGlvbmNvbXBsZXRlIj09PXQuZXZlbnRTdGF0dXMpJiZhcHN0YWcuZmV0Y2hCaWRzKAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzbG90czpbCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzbG90SUQ6ImRpdi1ncHQtYWQtMTYyMTUyNDkwMzk1Ni0wIixzbG90TmFtZToiNTg3NzgxNjQvRGVza3RvcC1CaWxsYm9hcmQtMSIsc2l6ZXM6W1s5NjAsOTBdLFs5NzAsMjUwXSxbOTUwLDkwXSxbNzI4LDkwXSxbOTcwLDkwXSxdfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3Nsb3RJRDoiZGl2LWdwdC1hZC0xNjIxNTI2NDYzNTExLTAiLHNsb3ROYW1lOiI1ODc3ODE2NC9EZXNrdG9wLU1lZGl1bVJlY3RhbmdsZS0xIixzaXplczpbWzMwMCwyNTBdLFszMzYsMjgwXSxdfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3Nsb3RJRDoiZGl2LWdwdC1hZC0xNjIxNTI3NTIxOTM5LTAiLHNsb3ROYW1lOiI1ODc3ODE2NC9EZXNrdG9wLVNreXNjcmFwZXItMSIsc2l6ZXM6W1sxNjAsNjAwXSxbMzM2LDI4MF0sWzMwMCwyNTBdLFszMDAsNjAwXSxbMTIwLCA2MDBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MjgwMTg5MzAtMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L0Rlc2t0b3AtTWVkaXVtUmVjdGFuZ2xlLTIiLHNpemVzOltbMzM2LDI4MF0sWzMwMCwyNTBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MjgxMjMzOTgtMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L0Rlc2t0b3AtU2t5c2NyYXBlci0yIixzaXplczpbWzMwMCwyNTBdLFszMzYsMjgwXSxbMTYwLDYwMF0sWzMwMCw2MDBdLCBbMTIwLCA2MDBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MjgxNzM1MjQtMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L0Rlc2t0b3AtQmlsbGJvYXJkLTIiLHNpemVzOltbOTUwLDkwXSxbOTcwLDI1MF0sWzcyOCw5MF0sWzk3MCw5MF0sWzk2MCw5MF0sWzMwMCwgMjUwXV19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MzQyODkyOTYtMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L01vYmlsZS1NZWRpdW1SZWN0YW5nbGUtMSIsc2l6ZXM6W1szMDAsMTAwXSxbMzAwLDI1MF0sXX0sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIHtzbG90SUQ6ImRpdi1ncHQtYWQtMTY3OTM0MTQ2ODE5My0wIixzbG90TmFtZToiNTg3NzgxNjQvTW9iaWxlLU1lZGl1bVJlY3RhbmdsZS0yIixzaXplczpbWzMwMCwgMjUwXSwgWzMyMCwgNTBdLCBbMjUwLCAyNTBdLCBbMzAwLCAxMDBdLCBbMzM2LCAyODBdLF19LAogICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICB7c2xvdElEOiJkaXYtZ3B0LWFkLTE2MjE1MzQzNjkyOTQtMCIsc2xvdE5hbWU6IjU4Nzc4MTY0L01vYmlsZS1IYWxmcGFnZS0xIixzaXplczpbWzMwMCw2MDBdLFszMDAsMjUwXSxdfSwKICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAge3Nsb3RJRDoiZGl2LWdwdC1hZC0xNjIxNTM0NDMyODI5LTAiLHNsb3ROYW1lOiI1ODc3ODE2NC9Nb2JpbGUtU3RpY2t5IixzaXplczpbWzMwMCw1MF0sWzMyMCw1MF0sXX0sXSx0aW1lb3V0OjJlM30sCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZ1bmN0aW9uKHQpe2dvb2dsZXRhZy5jbWQucHVzaChmdW5jdGlvbigpe2Fwc3RhZy5zZXREaXNwbGF5QmlkcygpLGdvb2dsZXRhZy5wdWJhZHMoKS5yZWZyZXNoKCl9KX0pfTsiZnVuY3Rpb24iPT10eXBlb2Ygd2luZG93Ll9fdGNmYXBpJiZ3aW5kb3cuX190Y2ZhcGkoImFkZEV2ZW50TGlzdGVuZXIiLDIsaW5pdEFtYXpvbkFkQmlkcyk7PC9zY3JpcHQ+"></tm-consent><tm-consent type="googleadvertising" no-checkbox embed="PHNjcmlwdCAgc3JjPSJodHRwczovL3NlY3VyZXB1YmFkcy5nLmRvdWJsZWNsaWNrLm5ldC90YWcvanMvZ3B0LmpzIiBhc3luYz0iYXN5bmMiPjwvc2NyaXB0Pg=="></tm-consent>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/player-compare/bundle.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/player-performance-stage/bundle.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/player-performance-stage/player-performance-table.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/market-value-development-graph-integrated/bundle.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/transfer-history/bundle.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/relevant-news/bundle.js"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/current-rumors/bundle.js"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/custom/tm-menu.min.js?lm=1702637982"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/custom/vendors.min.js?lm=1702637982"></script>
+<script type="text/javascript" src="https://tmsi.akamaized.net/js/svelte-components/consent/bundle.js"></script>
+<script type="text/javascript" src="https://tmssl.akamaized.net/js/custom/tm-skyscraper.min.js?lm=1702637982"></script>
+<script type="text/javascript">
+    /*<![CDATA[*/
+    var loginUrl='/profil/login';
+    var onlyDE = '';
+    var onlyMobile = '';
+    var onlyTablet = '';
+    var getUserID = '';
+
+    function sendIvwData(typ) {
+        if(typ == 'tabelle') {
+            var iam_data = {
+                "st":"transfer",
+                "cp":"ausland_co.uk_r_t",
+                "co":""
+            }
+
+        }else if(typ == 'reiter') {
+            var iam_data = {
+                "st":"transfer",
+                "cp":"ausland_co.uk_r_r",
+                "co":""
+            }
+
+        }else if(typ == 'forum') {
+            var iam_data = {
+                "st":"transfer",
+                "cp":"ausland_co.uk_r_forum",
+                "co":""
+            }
+
+        }else {
+            var iam_data = {
+                "st":"transfer",
+                "cp":"ausland_co.uk_r_s",
+                "co":""
+            }
+
+        }
+        if(typeof IOMm === 'function') {
+            IOMm('pageview', { cp: iam_data.cp, co: iam_data.co });
+        }
+    }
+    oddsServe("e4063cff1119f9fa72b2bff43adea786", -1);
+    /*]]>*/
+</script>
+</body>
+
+</html>

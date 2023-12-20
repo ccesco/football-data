@@ -11,9 +11,10 @@ import lombok.ToString;
 @AllArgsConstructor
 @Builder
 @EqualsAndHashCode
-public class Player {
-    private final String name;
+public class TransfermarktPlayerResponse {
+
     private final String id;
+    private final String name;
     private final String mainPosition;
     private final String mainFoot;
     private final String shirtNumber;
@@ -21,5 +22,4 @@ public class Player {
     private final String birthPlace;
     private final String nationality;
     private final String height;
-    private final String link;
 }
